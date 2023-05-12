@@ -8,7 +8,7 @@ class Bezeichnungen:
         pass
     
     #-----------
-    #Geräteliste 
+    #BezeichnungenListe 
     #-----------
     def bezeichnungen_methode(self):
 
@@ -23,7 +23,7 @@ class Bezeichnungen:
         cursor = conn.cursor()
 
 
-        cursor.execute("DROP TABLE IF EXISTS Bezeichnungen")
+        #cursor.execute("DROP TABLE IF EXISTS Bezeichnungen")
         cursor.execute("CREATE TABLE IF NOT EXISTS Bezeichnungen ('ID_Bezeichnung' TEXT, Bezeichnung TEXT)")
         
         bezeichnungen_tree = ET.parse(xml_file_path)

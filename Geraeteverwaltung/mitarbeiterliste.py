@@ -20,7 +20,7 @@ class MitarbeiterListe:
         conn = sqlite3.connect(db_path)
         cursor = conn.cursor()
 
-        cursor.execute('DROP TABLE IF EXISTS Mitarbeiter')
+        #cursor.execute('DROP TABLE IF EXISTS Mitarbeiter')
         cursor.execute('CREATE TABLE IF NOT EXISTS Mitarbeiter ("Vor-_x0020_Nachname" TEXT, "MA-Kürzel" TEXT, Anmeldename TEXT)')
 
         #mitarbeiter_tree = ET.parse('MitarbeiterListe.xml')

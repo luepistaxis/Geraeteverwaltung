@@ -40,9 +40,31 @@ def open_mask1():
         else:
             mask1_inventar_NrEntry.config(state='normal')
 
-    def handle_selection(event):
-        selected_option = combo_var.get()
-        print(selected_option)
+    #def bezeichnung_handle_selection(event):
+        #selected_option = combo_var.get()
+        #print(selected_option)
+
+    def handle_new_entry(event):
+        if event.keysym == "Return":
+            new_entry = typ_combo_var.get()
+            if new_entry:
+
+                cursor.execute("SELECT MAX(ID_Typ) FROM Typ")
+                max_id = cursor.fetchone()[0]
+
+                new_id = max_id + 1 if max_id is not None else 1
+
+                #Überprüfung ob Eintrag bereits in der Datenbank vorhanden ist
+                cursor.execute("SELECT Bezeichnung FROM Typ WHERE Bezeichnung = ?", (new_entry,))
+                existing_entry = cursor.fetchone()
+
+                if (existing_entry):
+                    pass
+                else:
+                    cursor.execute("INSERT INTO Typ (ID_Typ, Bezeichnung) VALUES (?, ?)", (new_id, new_entry,))
+                    connection.commit()
+        #cursor.close()
+        #connection.close()
 
     #Frame für Geräte
     mask1_frame = tk.Frame(mainwindow, width=950, height=500, bg="white")
@@ -77,22 +99,75 @@ def open_mask1():
     mask1_bezeichnung = tk.Label(mask1_deviceFrame, text="Bezeichnung:", fg="black", font=('Arial', 12))
     mask1_bezeichnung.place(x=19, y=35)
 
-    combo_var = tk.StringVar()
-    mask1_bezeichnungComboBox = ttk.Combobox(mask1_deviceFrame, textvariable=combo_var)
+    bezeichnung_combo_var = tk.StringVar()
+    mask1_bezeichnungComboBox = ttk.Combobox(mask1_deviceFrame, textvariable=bezeichnung_combo_var)
     mask1_bezeichnungComboBox.place(x=120, y=35)
 
     #Abrufen von Daten aus der Bezeichnungen Tabelle
     cursor.execute("SELECT Bezeichnung FROM Bezeichnungen")
-    data = cursor.fetchall()
+    bezeichnung_data = cursor.fetchall()
     #print(data)
 
-    #Daten in ComboBox einfügen
-    mask1_bezeichnungComboBox['values'] = [item[0] for item in data]
+    
 
-    mask1_bezeichnungComboBox.bind("<<ComboboxSelected>>", handle_selection)
+    #Daten in Bezeichnung ComboBox einfügen
+    mask1_bezeichnungComboBox['values'] = [item[0] for item in bezeichnung_data]
+    #Bezeichnung ComboBox Änderungsereignis behandeln
+    mask1_bezeichnungComboBox.bind("<<ComboboxSelected>>")
 
-    cursor.close()
-    connection.close()
+    mask1_typ = tk.Label(mask1_deviceFrame, text="Typ:", fg="black", font=('Arial', 12))
+    mask1_typ.place(x=83, y=60)
+
+
+
+    typ_combo_var = tk.StringVar()
+    mask1_typCombobox = ttk.Combobox(mask1_deviceFrame, textvariable=typ_combo_var)
+    mask1_typCombobox.place(x=120, y=60)
+
+    #Abrufen von Daten aus der Typ Tabelle
+    cursor.execute("SELECT Bezeichnung FROM Typ")
+    typ_data = cursor.fetchall()
+
+    #Daten in Typ ComboBox einfügen
+    mask1_typCombobox['values'] = [item[0] for item in typ_data]
+    #Typ ComboBox Änderungsereignis behandeln
+    mask1_typCombobox.bind("<<ComboboxSelected>>")
+    mask1_typCombobox.bind("<KeyPress>", handle_new_entry)
+
+    mask1_eigentuemer = tk.Label(mask1_deviceFrame, text="Eigentümer:", fg="black", font=('Arial', 12))
+    mask1_eigentuemer.place(x=29, y=85)
+    
+    eigentuemer_combo_var = tk.StringVar()
+    mask1_eigentuemerComboBox = ttk.Combobox(mask1_deviceFrame, textvariable=eigentuemer_combo_var)
+    mask1_eigentuemerComboBox.place(x=120, y=85)
+
+    cursor.execute("SELECT Eigentümer FROM Eigentuemer")
+    eigentuemer_data = cursor.fetchall()
+
+    mask1_eigentuemerComboBox['values'] = [item[0] for item in eigentuemer_data]
+
+    mask1_eigentuemerComboBox.bind("<<ComboboxSelected>>")
+    
+    mask1_raum = tk.Label(mask1_deviceFrame, text="Raum:", fg="black", font=('Arial', 12))
+    mask1_raum.place(x=300, y=10)
+    cursor.execute("SELECT Raum FROM Raum ORDER BY ID_Raum LIMIT 1")
+    default_value = cursor.fetchone()[0]
+    raum_combo_var = tk.StringVar(value=default_value)
+    mask1_raumCombobox = ttk.Combobox(mask1_deviceFrame, textvariable=raum_combo_var)
+    mask1_raumCombobox.place(x=350, y=10)
+
+    cursor.execute("SELECT Raum FROM Raum")
+    raum_data = cursor.fetchall()
+
+    mask1_raumCombobox['values'] = [item[0] for item in raum_data]
+
+    mask1_raumCombobox.bind("<<ComboboxSelected>>")
+
+    mask1_seriennr = tk.Label(mask1_deviceFrame, text="Seriennr.:", fg="black", font=('Arial', 12))
+    mask1_seriennr.place(x=278, y=35)
+    mask1_seriennrEntry = tk.Entry(mask1_deviceFrame) 
+    mask1_seriennrEntry.place(x=350, y=35)
+
 def open_mask2():
     buttons = [button1, button2, button3, button4, button5, button6]
     for button in buttons:

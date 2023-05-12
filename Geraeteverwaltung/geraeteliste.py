@@ -23,7 +23,7 @@ class GeraeteListe:
         cursor = conn.cursor()
 
 
-        cursor.execute("DROP TABLE IF EXISTS Ware")
+        #cursor.execute("DROP TABLE IF EXISTS Ware")
         cursor.execute("CREATE TABLE IF NOT EXISTS Ware ('Inventar_x0020_Nr' INT, Bezeichnung TEXT, Typ INT, 'Serien-Nr' INT)")
         
         geraete_tree = ET.parse(xml_file_path)
