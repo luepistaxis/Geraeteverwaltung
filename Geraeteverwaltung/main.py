@@ -4,6 +4,8 @@ from bezeichnungen import Bezeichnungen
 from typ import Typ
 from eigentuemer import Eigentuemer
 from raum import Raum
+from bewegungsarten import Bewegungsarten
+from uebersichtMitarbeiter import UebersichtMitarbeiter
 
 class Main:
     def __init__(self):
@@ -13,6 +15,8 @@ class Main:
         self.typ = Typ()
         self.eigentuemer = Eigentuemer()
         self.raum = Raum()
+        self.bewegungsarten = Bewegungsarten()
+        self.uebersichtMitarbeiter = UebersichtMitarbeiter()
 
     def run(self):
         self.geraeteliste.geraeteliste_methode()
@@ -21,6 +25,8 @@ class Main:
         self.typ.typ_methode()
         self.eigentuemer.eigentuemer_methode()
         self.raum.raum_methode()
+        self.bewegungsarten.bewegungsarten_methode()
+        self.uebersichtMitarbeiter.uebersichtMitarbeiter_methode()
 
 if __name__ == "__main__":
     main_instance = Main()

@@ -23,8 +23,8 @@ class GeraeteListe:
         cursor = conn.cursor()
 
 
-        #cursor.execute("DROP TABLE IF EXISTS Ware")
-        cursor.execute("CREATE TABLE IF NOT EXISTS Ware ('Inventar_x0020_Nr' INT, Bezeichnung TEXT, Typ INT, 'Serien-Nr' INT)")
+        cursor.execute("DROP TABLE IF EXISTS Ware")
+        cursor.execute("CREATE TABLE IF NOT EXISTS Ware ('Inventar_x0020_Nr' INT, Bezeichnung TEXT, Typ INT, 'Serien-Nr' INT, 'Eigentümer' TEXT, Raum TEXT, 'LetzterWertvonWaBewVor-MA_Ausgabe' TEXT, Status TEXT, 'Netto_x0020_Einkaufspreis' TEXT)")
         
         geraete_tree = ET.parse(xml_file_path)
 
@@ -56,8 +56,38 @@ class GeraeteListe:
             else:
                 seriennr = None
 
+            eigentuemer_element = child.find('Eigentümer')
+            if eigentuemer_element is not None:
+                eigentuemer = eigentuemer_element.text
+            else:
+                eigentuemer = None
+
+            raum_element = child.find('Raum')
+            if raum_element is not None:
+                raum = raum_element.text
+            else:
+                raum = None
+
+            mitarbeiter_element = child.find('LetzterWertvonWaBewVor-MA_Ausgabe')
+            if mitarbeiter_element is not None:
+                mitarbeiter = mitarbeiter_element.text
+            else:
+                mitarbeiter = None
+
+            status_element = child.find('Status')
+            if status_element is not None:
+                status = status_element.text
+            else:
+                status = None
+
+            preis_element = child.find('Netto_x0020_Einkaufspreis')
+            if preis_element is not None:
+                preis = preis_element.text
+            else:
+                preis = None
+
             #cursor.execute("ALTER TABLE Ware RENAME COLUMN 'Inventar_x0020_Nr' TO Inventarnr")
-            cursor.execute("INSERT INTO Ware ('Inventar_x0020_Nr', Bezeichnung, Typ, 'Serien-Nr') VALUES (?, ?, ?, ?)", (inventar, bezeichnung, typ, seriennr))
+            cursor.execute("INSERT INTO Ware ('Inventar_x0020_Nr', Bezeichnung, Typ, 'Serien-Nr', 'Eigentümer', Raum, 'LetzterWertvonWaBewVor-MA_Ausgabe', Status, 'Netto_x0020_Einkaufspreis') VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)", (inventar, bezeichnung, typ, seriennr, eigentuemer, raum, mitarbeiter, status, preis))
             
 
 

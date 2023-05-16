@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataroot xmlns:od="urn:schemas-microsoft-com:officedata" generated="2023-05-12T11:08:13">
+<TAB_R_Bewegungsarten>
+<ID_Bewegungsart>1</ID_Bewegungsart>
+<Bezeichnung>Ausgang</Bezeichnung>
+</TAB_R_Bewegungsarten>
+<TAB_R_Bewegungsarten>
+<ID_Bewegungsart>2</ID_Bewegungsart>
+<Bezeichnung>Lagereingang</Bezeichnung>
+</TAB_R_Bewegungsarten>
+<TAB_R_Bewegungsarten>
+<ID_Bewegungsart>3</ID_Bewegungsart>
+<Bezeichnung>Reperatur</Bezeichnung>
+</TAB_R_Bewegungsarten>
+<TAB_R_Bewegungsarten>
+<ID_Bewegungsart>4</ID_Bewegungsart>
+<Bezeichnung>Mitarbeiterausgabe</Bezeichnung>
+</TAB_R_Bewegungsarten>
+<TAB_R_Bewegungsarten>
+<ID_Bewegungsart>5</ID_Bewegungsart>
+<Bezeichnung>Schrott</Bezeichnung>
+</TAB_R_Bewegungsarten>
+<TAB_R_Bewegungsarten>
+<ID_Bewegungsart>6</ID_Bewegungsart>
+<Bezeichnung>Umtausch</Bezeichnung>
+</TAB_R_Bewegungsarten>
+</dataroot>

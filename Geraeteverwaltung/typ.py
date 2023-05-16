@@ -23,7 +23,7 @@ class Typ:
         cursor = conn.cursor()
 
 
-        #cursor.execute("DROP TABLE IF EXISTS Typ")
+        cursor.execute("DROP TABLE IF EXISTS Typ")
         cursor.execute("CREATE TABLE IF NOT EXISTS Typ ('ID_Typ' INT, Bezeichnung TEXT)")
         
         typ_tree = ET.parse(xml_file_path)
