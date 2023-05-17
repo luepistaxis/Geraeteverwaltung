@@ -415,7 +415,7 @@ def open_Ausgabe():
         global mask2_auswahl_mitarbeiter
         if mask2_auswahl_mitarbeiter == 'mitarbeiter':
             print('Mitarbeiter')
-            cursor.execute("UPDATE Ware SET Raum = NULL WHERE Inventar_x0020_Nr = ?", (mask2_inventar_NrEntryString,)) 
+            cursor.execute("UPDATE Ware SET Raum = '' WHERE Inventar_x0020_Nr = ?", (mask2_inventar_NrEntryString,)) 
             cursor.execute("UPDATE Ware SET 'LetzterWertvonWaBewVor-MA_Ausgabe' = ? WHERE Inventar_x0020_Nr = ?", (mask2_auswahlString, mask2_inventar_NrEntryString,))
             print(type(mask2_inventar_NrEntryString))
             print(mask2_auswahlString)
@@ -432,6 +432,27 @@ def open_Ausgabe():
         print(result)
         
         mask2_frame.destroy()
+
+    def fillout(event):
+        if event.keysym == "Return":
+            mask2_inventar_NrEntryString = mask2_inventar_NrEntry.get()
+            cursor.execute("SELECT Inventar_x0020_Nr FROM Ware WHERE Inventar_x0020_Nr = ?", (mask2_inventar_NrEntryString,))
+            result = cursor.fetchall()
+            #print(result)
+            if result == [] or len(mask2_inventar_NrEntryString) < 6:
+                print("false")
+            else:
+                cursor.execute("SELECT Bezeichnung FROM Ware WHERE Inventar_x0020_Nr = ?", (mask2_inventar_NrEntryString,))
+                bezeichnung_inhalt = cursor.fetchone()
+                cursor.execute("SELECT Typ FROM Ware WHERE Inventar_x0020_Nr = ?", (mask2_inventar_NrEntryString,))
+                typ_inhalt = cursor.fetchone()
+                typ_inhaltString = typ_inhalt[0]
+                cursor.execute("SELECT Status FROM Ware WHERE Inventar_x0020_Nr = ?", (mask2_inventar_NrEntryString,))
+                status_inhalt = cursor.fetchone()
+                mask2_bezeichnungInput.configure(text=bezeichnung_inhalt)
+                mask2_typInput.configure(text=typ_inhaltString)
+                mask2_statusInput.configure(text=status_inhalt)
+                #print(bezeichnung_inhalt)
 
 
         
@@ -547,14 +568,15 @@ def open_Ausgabe():
     mask2_inventar_NrEntry.config(validatecommand=(mask2_deviceInput.register(validate_entry), '%P'))
     mask2_inventar_NrEntry.config(state='normal')
     mask2_inventar_NrEntry.place(x=5, y=5, width=60)
+    mask2_inventar_NrEntry.bind("<KeyPress>", fillout)
 
-    mask2_bezeichnungInput = tk.Entry(mask2_deviceInput)
+    mask2_bezeichnungInput = tk.Label(mask2_deviceInput, text="", bg="white")
     mask2_bezeichnungInput.place(x=100, y=5, width=100)
 
-    mask2_typInput = tk.Entry(mask2_deviceInput)
+    mask2_typInput = tk.Label(mask2_deviceInput, text="", bg="white")
     mask2_typInput.place(x=210, y=5)
 
-    mask2_statusInput = tk.Label(mask2_deviceInput, bg="white")
+    mask2_statusInput = tk.Label(mask2_deviceInput, text="", bg="white")
     mask2_statusInput.place(x=350, y=5, width=100, height=20)
 
 
