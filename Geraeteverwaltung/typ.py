@@ -36,13 +36,13 @@ class Typ:
             if id_typ_element is not None:
                 id_typ = id_typ_element.text
             else:
-                id_typ = None
+                id_typ = ""
 
             bezeichnung_element = child.find('Bezeichnung')
             if bezeichnung_element is not None:
                 bezeichnung = bezeichnung_element.text
             else:
-                bezeichnung = None
+                bezeichnung = ""
 
             #cursor.execute("ALTER TABLE Ware RENAME COLUMN 'Inventar_x0020_Nr' TO Inventarnr")
             cursor.execute("INSERT INTO Typ ('ID_Typ', Bezeichnung) VALUES (?, ?)", (id_typ, bezeichnung))

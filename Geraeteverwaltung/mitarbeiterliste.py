@@ -34,19 +34,19 @@ class MitarbeiterListe:
             if name_element is not None:
                 name = name_element.text
             else:
-                name = None
+                name = ""
 
             ma_kuerzel_element = child.find('MA-Kürzel')
             if ma_kuerzel_element is not None:
                 ma_kuerzel = ma_kuerzel_element.text
             else:
-                ma_kuerzel = None
+                ma_kuerzel = ""
 
             anmeldename_element = child.find('Anmeldename')
             if anmeldename_element is not None:
                 anmeldename = anmeldename_element.text
             else:
-                anmeldename = None
+                anmeldename = ""
 
             cursor.execute("INSERT INTO Mitarbeiter ('Vor-_x0020_Nachname', 'MA-Kürzel', Anmeldename) VALUES (?, ?, ?)", (name, ma_kuerzel, anmeldename))
 

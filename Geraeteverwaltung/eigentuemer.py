@@ -36,13 +36,13 @@ class Eigentuemer:
             if id_eigentuemer_element is not None:
                 id_eigentuemer = id_eigentuemer_element.text
             else:
-                id_eigentuemer = None
+                id_eigentuemer = ""
 
             eigentuemer_element = child.find('Eigentümer')
             if eigentuemer_element is not None:
                 eigentuemer = eigentuemer_element.text
             else:
-                eigentuemer = None
+                eigentuemer = ""
 
             #cursor.execute("ALTER TABLE Ware RENAME COLUMN 'Inventar_x0020_Nr' TO Inventarnr")
             cursor.execute("INSERT INTO Eigentuemer ('ID-Eigentümer', 'Eigentümer') VALUES (?, ?)", (id_eigentuemer, eigentuemer))

@@ -23,7 +23,7 @@ class Bewegungsarten:
         cursor = conn.cursor()
 
 
-        #cursor.execute("DROP TABLE IF EXISTS Bewegungsarten")
+        cursor.execute("DROP TABLE IF EXISTS Bewegungsarten")
         cursor.execute("CREATE TABLE IF NOT EXISTS Bewegungsarten ('ID_Bewegungsart' TEXT, Bezeichnung TEXT)")
         
         bewegungsarten_tree = ET.parse(xml_file_path)

@@ -1,36 +1,37 @@
 import tkinter as tk
-from tkinter import ttk
+from tkinter import ttk, messagebox
 from ttkthemes import ThemedStyle
 from tkcalendar import DateEntry
-from tkcalendar import Calendar
 import locale
 import sqlite3
 
+#Kalender auf Deutsche Sprache
 locale.setlocale(locale.LC_ALL, 'de_DE')
 
 #Hinzufügen von neuem Feld
 mask1_value = 120
 mask2_value = 30
 mask3_value = 30
+mask2_auswahl_mitarbeiter = ''
 #SQLite Datenbank Verbindung
 database_path = "C:\\Users\\luisa.aslanidis\\VisualProjekte\\Geraeteverwaltung\\Geraeteverwaltung\\database.db"
 connection = sqlite3.connect(database_path)
 cursor = connection.cursor()
 
-def open_mask1():
 
-    
 
-    buttons = [button1, button2, button3, button4, button5, button6]
+def open_Wareneingang():
+
+    buttons = [wareneingang_btn, ausgabe_btn, warenausgang_btn, vorgaenge_btn, uebersichtMitarbeiter_btn, uebersichtGeraete_btn]
     for index, button in enumerate(buttons):
         button.state(['!pressed'])
         if index == 0:
             pass
         else:
             button.configure(style="TButton")
-    button1.state(['pressed'])
+    wareneingang_btn.state(['pressed'])
 
-    button1.configure(state=tk.DISABLED)
+    wareneingang_btn.configure(state=tk.DISABLED)
 
     #Funktion Max Länge für Entry
     def validate_entry(char):
@@ -50,32 +51,34 @@ def open_mask1():
         #selected_option = combo_var.get()
         #print(selected_option)
 
-    def handle_new_entry(event):
-        if event.keysym == "Return":
-            new_entry = typ_combo_var.get()
-            if new_entry:
+    def handle_new_entry():
+        #if event.keysym == "Return":
+        new_entry = typ_combo_var.get()
+            #if new_entry:
 
-                cursor.execute("SELECT MAX(ID_Typ) FROM Typ")
-                max_id = cursor.fetchone()[0]
+        cursor.execute("SELECT MAX(ID_Typ) FROM Typ")
+        max_id = cursor.fetchone()[0]
 
-                new_id = max_id + 1 if max_id is not None else 1
+        new_id = max_id + 1 if max_id is not None else 1
 
-                #Überprüfung ob Eintrag bereits in der Datenbank vorhanden ist
-                cursor.execute("SELECT Bezeichnung FROM Typ WHERE Bezeichnung = ?", (new_entry,))
-                existing_entry = cursor.fetchone()
+        #Überprüfung ob Eintrag bereits in der Datenbank vorhanden ist
+        cursor.execute("SELECT Bezeichnung FROM Typ WHERE Bezeichnung = ?", (new_entry,))
+        existing_entry = cursor.fetchone()
 
-                if (existing_entry):
-                    pass
-                else:
-                    cursor.execute("INSERT INTO Typ (ID_Typ, Bezeichnung) VALUES (?, ?)", (new_id, new_entry,))
-                    connection.commit()
+        if (existing_entry):
+            pass
+        else:
+            cursor.execute("INSERT INTO Typ (ID_Typ, Bezeichnung) VALUES (?, ?)", (new_id, new_entry,))
+            connection.commit()
         #cursor.close()
         #connection.close()
 
     def verwerfen():
         mask1_frame.destroy()
-        button1.configure(state=tk.NORMAL)
-        button1.state(['!pressed'])
+        wareneingang_btn.configure(state=tk.NORMAL)
+        wareneingang_btn.state(['!pressed'])
+        global mask1_value 
+        mask1_value = 120
 
     def speichern():
         inventarString = mask1_inventar_NrEntry.get()
@@ -86,14 +89,33 @@ def open_mask1():
         seriennrString = mask1_seriennrEntry.get()
         weitereString = mask1_weiterenrEntry.get()
         preisString = mask1_preisEntry.get()
-        
-        
-        if inventarString == "" or bezeichnungString == "" or typString == "" or eigentuemerString == "" or raumString == "":
 
-            return
-        cursor.execute("INSERT INTO Ware ('Inventar_x0020_Nr', Bezeichnung, Typ, 'Serien-Nr', 'Eigentümer', Raum, 'LetzterWertvonWaBewVor-MA_Ausgabe', Status, 'Netto_x0020_Einkaufspreis') VALUES (?, ?, ?, ?, ?, ?, NULL, 'freigegeben', ?)", (inventarString, bezeichnungString, typString, seriennrString, eigentuemerString, raumString, preisString))
-        connection.commit()
-        mask1_frame.destroy()
+        cursor.execute("SELECT Inventar_x0020_Nr FROM Ware WHERE Inventar_x0020_Nr = ?", (inventarString,))
+        result = cursor.fetchall()
+        #print(result)
+        if result == [] and len(inventarString) == 6:
+        
+            if inventarString == "" or bezeichnungString == "" or typString == "" or eigentuemerString == "" or raumString == "":
+
+                return
+            cursor.execute("INSERT INTO Ware ('Inventar_x0020_Nr', Bezeichnung, Typ, 'Serien-Nr', 'Eigentümer', Raum, 'LetzterWertvonWaBewVor-MA_Ausgabe', Status, 'Netto_x0020_Einkaufspreis') VALUES (?, ?, ?, ?, ?, ?, NULL, 'Freigegeben', ?)", (inventarString, bezeichnungString, typString, seriennrString, eigentuemerString, raumString, preisString))
+            #cursor.execute("UPDATE Ware SET Inventar_x0020_Nr = (SELECT Inventar_x0020_Nr FROM Ware ORDER BY Inventar_x0020_Nr ASC)")
+            #cursor.execute("CREATE INDEX IF NOT EXISTS indexname ON Ware('Inventar_x0020_Nr')")
+            cursor.execute("CREATE TEMPORARY TABLE TempTable AS SELECT * FROM Ware ORDER BY Inventar_x0020_Nr ASC")
+            cursor.execute('UPDATE Ware SET Inventar_x0020_Nr = (SELECT Inventar_x0020_Nr FROM TempTable WHERE TempTable.rowid = Ware.rowid), Bezeichnung = (SELECT Bezeichnung FROM TempTable WHERE TempTable.rowid = Ware.rowid), Typ = (SELECT Typ FROM TempTable WHERE TempTable.rowid = Ware.rowid), "Serien-Nr" = (SELECT "Serien-Nr" FROM TempTable WHERE TempTable.rowid = Ware.rowid), Eigentümer = (SELECT Eigentümer FROM TempTable WHERE TempTable.rowid = Ware.rowid), Raum = (SELECT Raum FROM TempTable WHERE TempTable.rowid = Ware.rowid), "LetzterWertvonWaBewVor-MA_Ausgabe" = (SELECT "LetzterWertvonWaBewVor-MA_Ausgabe" FROM TempTable WHERE TempTable.rowid = Ware.rowid), Status = (SELECT Status FROM TempTable WHERE TempTable.rowid = Ware.rowid), Netto_x0020_Einkaufspreis = (SELECT Netto_x0020_Einkaufspreis FROM TempTable WHERE TempTable.rowid = Ware.rowid)')        
+            cursor.execute("DROP TABLE TempTable")
+            handle_new_entry()
+            connection.commit()
+            mask1_frame.destroy()
+            warenausgang_btn.config(state="normal")
+            messagebox.showinfo("", "Erfolgreich hinzugefügt! :)")
+            open_Wareneingang()
+
+        elif len(inventarString) < 6:
+            messagebox.showerror("Fehlermeldung", "Die Inventar Nr ist zu kurz\nBitte gib eine 6-stellige Zahl ein.")
+
+        else:
+            messagebox.showerror("Fehlermeldung", "Gerät existiert schon!")
 
     def open_new_frame():
 
@@ -102,8 +124,8 @@ def open_mask1():
 
         def delete_frame():
             mask1_deviceFrame2.destroy()
-            mask1_value =- 120
-            return mask1_value
+            global mask1_value
+            mask1_value -= 120
 
         #Frame zum Eingeben der Geräte Informationen
         mask1_deviceFrame2 = tk.Frame(mask1_frame, borderwidth=1, relief="solid")
@@ -152,13 +174,13 @@ def open_mask1():
 
         #Abrufen von Daten aus der Typ Tabelle
         cursor.execute("SELECT Bezeichnung FROM Typ")
-        typ_data = cursor.fetchone()
+        typ_data = cursor.fetchall()
 
         #Daten in Typ ComboBox einfügen
         mask1_typCombobox['values'] = [item[0] for item in typ_data]
         #Typ ComboBox Änderungsereignis behandeln
         mask1_typCombobox.bind("<<ComboboxSelected>>")
-        mask1_typCombobox.bind("<KeyPress>", handle_new_entry)
+        #mask1_typCombobox.bind("<KeyPress>", handle_new_entry)
 
         mask1_eigentuemer = tk.Label(mask1_deviceFrame2, text="Eigentümer:", fg="black", font=('Arial', 12))
         mask1_eigentuemer.place(x=29, y=85)
@@ -286,7 +308,7 @@ def open_mask1():
     mask1_typCombobox['values'] = [item[0] for item in typ_data]
     #Typ ComboBox Änderungsereignis behandeln
     mask1_typCombobox.bind("<<ComboboxSelected>>")
-    mask1_typCombobox.bind("<KeyPress>", handle_new_entry)
+    #mask1_typCombobox.bind("<KeyPress>", handle_new_entry)
 
     mask1_eigentuemer = tk.Label(mask1_deviceFrame, text="Eigentümer:", fg="black", font=('Arial', 12))
     mask1_eigentuemer.place(x=29, y=85)
@@ -334,17 +356,14 @@ def open_mask1():
 
     
 
-def open_mask2():
-    mask2_value = 30
-
-
-    
-    buttons = [button1, button2, button3, button4, button5, button6]
+def open_Ausgabe():
+ 
+    buttons = [wareneingang_btn, ausgabe_btn, warenausgang_btn, vorgaenge_btn, uebersichtMitarbeiter_btn, uebersichtGeraete_btn]
     for button in buttons:
         button.state(['!pressed'])
-    button2.state(['pressed'])
+    ausgabe_btn.state(['pressed'])
     
-    button2.configure(state=tk.DISABLED)
+    ausgabe_btn.configure(state=tk.DISABLED)
 
     #Funktion Max Länge für Entry
     def validate_entry(char):
@@ -362,11 +381,60 @@ def open_mask2():
 
     def verwerfen():
         mask2_frame.destroy()
-        button2.configure(state=tk.NORMAL)
-        button2.state(['!pressed'])
+        ausgabe_btn.configure(state=tk.NORMAL)
+        ausgabe_btn.state(['!pressed'])
         global mask2_value 
         mask2_value = 30
-        return mask2_value
+
+    def update_combobox_choices(*args):
+            global mask2_auswahl_mitarbeiter
+            if mask2_auswahl_var.get() == "Mitarbeiter":
+                #Abrufen von Daten aus der Mitarbeiter Tabelle
+                cursor.execute('SELECT "Vor-_x0020_Nachname" FROM Mitarbeiter')
+                auswahl_data = cursor.fetchall()
+                #Daten in Mitarbeiter ComboBox einfügen
+                mask2_auswahl['values'] = [item[0] for item in auswahl_data]
+                #global mask2_auswahl_mitarbeiter 
+                mask2_auswahl_mitarbeiter = 'mitarbeiter'
+                
+            elif mask2_auswahl_var.get() == "Arbeitsplatz":
+                #Abrufen von Daten aus der Arbeitsplatz Tabelle
+                cursor.execute("SELECT Raum FROM Raum")
+                auswahl_data = cursor.fetchall()
+                #Daten in Raum ComboBox einfügen
+                mask2_auswahl['values'] = [item[0] for item in auswahl_data]
+                
+                mask2_auswahl_mitarbeiter = 'arbeitsplatz'
+                
+
+    def speichern():
+        global mask2_inventar_NrEntryString
+        global mask2_auswahlString
+        mask2_auswahlString = mask2_auswahl.get()
+        mask2_inventar_NrEntryString = mask2_inventar_NrEntry.get()
+        global mask2_auswahl_mitarbeiter
+        if mask2_auswahl_mitarbeiter == 'mitarbeiter':
+            print('Mitarbeiter')
+            cursor.execute("UPDATE Ware SET Raum = NULL WHERE Inventar_x0020_Nr = ?", (mask2_inventar_NrEntryString,)) 
+            cursor.execute("UPDATE Ware SET 'LetzterWertvonWaBewVor-MA_Ausgabe' = ? WHERE Inventar_x0020_Nr = ?", (mask2_auswahlString, mask2_inventar_NrEntryString,))
+            print(type(mask2_inventar_NrEntryString))
+            print(mask2_auswahlString)
+            connection.commit()
+        elif mask2_auswahl_mitarbeiter == 'arbeitsplatz':
+            cursor.execute("UPDATE Ware SET LetzterWertvonWaBewVor-MA_Ausgabe = NULL WHERE Inventar_x0020_Nr = ?", (mask2_inventar_NrEntryString,)) 
+            cursor.execute("UPDATE Ware SET Raum = ? WHERE Inventar_x0020_Nr = ?", (mask2_auswahlString, mask2_inventar_NrEntryString,))
+            print('Arbeitsplatz')
+            print(mask2_auswahlString)
+            print(mask2_inventar_NrEntryString)
+        
+        cursor.execute("SELECT * FROM Ware WHERE Inventar_x0020_Nr = ?", (mask2_inventar_NrEntryString,))
+        result = cursor.fetchall()
+        print(result)
+        
+        mask2_frame.destroy()
+
+
+        
 
     
     def open_new_frame():
@@ -408,20 +476,7 @@ def open_mask2():
     mask2_auswahl_var = tk.StringVar(value="")
     mask2_auswahl_var.set(None)
 
-    def update_combobox_choices(*args):
-        if mask2_auswahl_var.get() == "Mitarbeiter":
-            #Abrufen von Daten aus der Mitarbeiter Tabelle
-            cursor.execute('SELECT "Vor-_x0020_Nachname" FROM Mitarbeiter')
-            auswahl_data = cursor.fetchall()
-            #Daten in Mitarbeiter ComboBox einfügen
-            mask2_auswahl['values'] = [item[0] for item in auswahl_data]
-            
-        elif mask2_auswahl_var.get() == "Arbeitsplatz":
-            #Abrufen von Daten aus der Arbeitsplatz Tabelle
-            cursor.execute("SELECT Raum FROM Raum")
-            auswahl_data = cursor.fetchall()
-            #Daten in Raum ComboBox einfügen
-            mask2_auswahl['values'] = [item[0] for item in auswahl_data]
+    
     
     mask2_frame = tk.Frame(mainwindow, width=550, height=1000, bg="white")
     mask2_frame.place(x=161, y=1, anchor="nw", relheight=500, relwidth=950)
@@ -452,7 +507,7 @@ def open_mask2():
     mask2_device = tk.Label(mask2_frame, text="Geräte:", fg="black", bg='white', font=('Arial', 12))
     mask2_device.place(x=40, y=170)
 
-    mask2_speichern = tk.Button(mask2_frame, text="speichern", font=("Arial", 16))
+    mask2_speichern = tk.Button(mask2_frame, text="speichern", font=("Arial", 16), command=speichern)
     mask2_speichern.place(x=700, y=500)
 
     mask2_verwerfen = tk.Button(mask2_frame, text="verwerfen", font=("Arial", 16), command=verwerfen)
@@ -463,7 +518,7 @@ def open_mask2():
 
     #Frame zur Wahl von Geräten
     mask2_deviceFrame = tk.Frame(mask2_frame, borderwidth=1, relief="solid")
-    mask2_deviceFrame.place(relwidth=805, relheight=120, x=10, y=200)
+    mask2_deviceFrame.place(width=805, height=120, x=10, y=200)
 
     mask2_tablenameRow = tk.Frame(mask2_deviceFrame, borderwidth=1, relief="solid", bg="white")
     mask2_tablenameRow.place(x=0, y=0, height=30, width=805)
@@ -504,13 +559,14 @@ def open_mask2():
 
 
 
-def open_mask3():
-    buttons = [button1, button2, button3, button4, button5, button6]
+def open_Warenausgang():
+    
+    buttons = [wareneingang_btn, ausgabe_btn, warenausgang_btn, vorgaenge_btn, uebersichtMitarbeiter_btn, uebersichtGeraete_btn]
     for button in buttons:
         button.state(['!pressed'])
-    button3.state(['pressed'])
+    warenausgang_btn.state(['pressed'])
 
-    button3.configure(state=tk.DISABLED)
+    warenausgang_btn.configure(state=tk.DISABLED)
 
     def open_new_frame():
 
@@ -564,25 +620,38 @@ def open_mask3():
 
     def verwerfen():
         mask3_frame.destroy()
-        button3.configure(state=tk.NORMAL)
-        button3.state(['!pressed'])
+        warenausgang_btn.configure(state=tk.NORMAL)
+        warenausgang_btn.state(['!pressed'])
         mask3_value = 30
         return mask3_value
     
     mask3_frame = tk.Frame(mainwindow, bg="white")
     mask3_frame.place(x=161, y=1, anchor="nw", relheight=500, relwidth=805)
 
-    mask3_vorgang = ttk.Combobox(mask3_frame)
-    mask3_vorgang.place(x=40, y=130)
+    mask3_title = tk.Label(mask3_frame, fg="black", bg='white', text="Warenausgang", font=('Arial', 14))
+    mask3_title.place(x=10, y=10)
+
+    mask3_date = tk.Label(mask3_frame, fg="black", bg='white', text="Datum:", font=('Arial', 12))
+    mask3_date.place(x=40, y=50)
+    mask3_dateEntry = DateEntry(mask3_frame, date_pattern='dd.mm.yyyy', borderwidth=1, relief='solid', locale='de_DE')
+    mask3_dateEntry.place(x=100, y=50)
+
+    mask3_vorgang = tk.Label(mask3_frame, text="Vorgang:", fg="black", bg="white", font=('Arial', 12))
+    mask3_vorgang.place(x=26, y=90)
+
+    mask3_vorgangCombobox = ttk.Combobox(mask3_frame)
+    mask3_vorgangCombobox.place(x=100, y=90)
+
+
 
     #Abrufen von Daten aus der Typ Tabelle
     cursor.execute("SELECT Bezeichnung FROM Bewegungsarten")
     typ_data = cursor.fetchall()
 
     #Daten in Typ ComboBox einfügen
-    mask3_vorgang['values'] = [item[0] for item in typ_data]
+    mask3_vorgangCombobox['values'] = [item[0] for item in typ_data]
     #Typ ComboBox Änderungsereignis behandeln
-    mask3_vorgang.bind("<<ComboboxSelected>>")
+    mask3_vorgangCombobox.bind("<<ComboboxSelected>>")
 
     #mask3_auswahl_var.trace_add('write', update_combobox_choices)
 
@@ -639,28 +708,28 @@ def open_mask3():
     mask3_statusInput = tk.Label(mask3_deviceInput, bg="white")
     mask3_statusInput.place(x=350, y=5, width=100, height=20)
 
-def open_mask4():
-    buttons = [button1, button2, button3, button4, button5, button6]
+def open_vorgaenge():
+    buttons = [wareneingang_btn, ausgabe_btn, warenausgang_btn, vorgaenge_btn, uebersichtMitarbeiter_btn, uebersichtGeraete_btn]
     for button in buttons:
         button.state(['!pressed'])
-    button4.state(['pressed'])
+    vorgaenge_btn.state(['pressed'])
 
     mask4_frame = tk.Frame(mainwindow, bg="white")
     mask4_frame.place(x=161, y=1, anchor="nw", relheight=500, relwidth=805)
 
-def open_mask5():
-    buttons = [button1, button2, button3, button4, button5, button6]
+def open_uebersichtMitarbeiter():
+    buttons = [wareneingang_btn, ausgabe_btn, warenausgang_btn, vorgaenge_btn, uebersichtMitarbeiter_btn, uebersichtGeraete_btn]
     for button in buttons:
         button.state(['!pressed'])
-    button5.state(['pressed'])
+    uebersichtMitarbeiter_btn.state(['pressed'])
     mask5_frame = tk.Frame(mainwindow, bg="white")
     mask5_frame.place(x=161, y=1, anchor="nw", relheight=500, relwidth=805)
 
-def open_mask6():
-    buttons = [button1, button2, button3, button4, button5, button6]
+def open_uebersichtGeraete():
+    buttons = [wareneingang_btn, ausgabe_btn, warenausgang_btn, vorgaenge_btn, uebersichtMitarbeiter_btn, uebersichtGeraete_btn]
     for button in buttons:
         button.state(['!pressed'])
-    button6.state(['pressed'])
+    uebersichtGeraete_btn.state(['pressed'])
     mask6_frame = tk.Frame(mainwindow, bg="white")
     mask6_frame.place(x=161, y=1, anchor="nw", relheight=500, relwidth=805)
 
@@ -685,23 +754,23 @@ style.map("TButton", background=[("active", "#AAA")])
 
 
 # Buttons für die Menüpunkte
-button1 = ttk.Button(menu_frame, text="Warenaufnahme", command=open_mask1, style="TButton")
-button1.pack()
+wareneingang_btn = ttk.Button(menu_frame, text="Warenaufnahme", command=open_Wareneingang, style="TButton")
+wareneingang_btn.pack()
 
-button2 = ttk.Button(menu_frame, text="Ausgabe", command=open_mask2, style="TButton")
-button2.pack()
+ausgabe_btn = ttk.Button(menu_frame, text="Ausgabe", command=open_Ausgabe, style="TButton")
+ausgabe_btn.pack()
 
-button3 = ttk.Button(menu_frame, text="Warenausgang", command=open_mask3, style="TButton")
-button3.pack()
+warenausgang_btn = ttk.Button(menu_frame, text="Warenausgang", command=open_Warenausgang, style="TButton")
+warenausgang_btn.pack()
 
-button4 = ttk.Button(menu_frame, text="Alle Vorgänge", command=open_mask4, style="TButton")
-button4.pack()
+vorgaenge_btn = ttk.Button(menu_frame, text="Alle Vorgänge", command=open_uebersichtMitarbeiter, style="TButton")
+vorgaenge_btn.pack()
 
-button5 = ttk.Button(menu_frame, text="Übersicht Mitarbeiter", command=open_mask5, style="TButton")
-button5.pack()
+uebersichtMitarbeiter_btn = ttk.Button(menu_frame, text="Übersicht Mitarbeiter", command=open_uebersichtMitarbeiter, style="TButton")
+uebersichtMitarbeiter_btn.pack()
 
-button6 = ttk.Button(menu_frame, text="Übersicht Geräte", command=open_mask6, style="TButton")
-button6.pack()
+uebersichtGeraete_btn = ttk.Button(menu_frame, text="Übersicht Geräte", command=open_uebersichtGeraete, style="TButton")
+uebersichtGeraete_btn.pack()
 
 buttonExit = ttk.Button(menu_frame, text="Exit", command=mainwindow.destroy)
 buttonExit.pack(side="bottom")

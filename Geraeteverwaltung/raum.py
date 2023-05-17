@@ -36,13 +36,13 @@ class Raum:
             if id_raum_element is not None:
                 id_raum = id_raum_element.text
             else:
-                id_raum = None
+                id_raum = ""
 
             raum_element = child.find('Raum')
             if raum_element is not None:
                 raum = raum_element.text
             else:
-                raum = None
+                raum = ""
 
             #cursor.execute("ALTER TABLE Ware RENAME COLUMN 'Inventar_x0020_Nr' TO Inventarnr")
             cursor.execute("INSERT INTO Raum ('ID_Raum', Raum) VALUES (?, ?)", (id_raum, raum))
