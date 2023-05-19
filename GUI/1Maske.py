@@ -421,7 +421,7 @@ def open_Ausgabe():
             print(mask2_auswahlString)
             connection.commit()
         elif mask2_auswahl_mitarbeiter == 'arbeitsplatz':
-            cursor.execute("UPDATE Ware SET LetzterWertvonWaBewVor-MA_Ausgabe = NULL WHERE Inventar_x0020_Nr = ?", (mask2_inventar_NrEntryString,)) 
+            cursor.execute("UPDATE Ware SET LetzterWertvonWaBewVor-MA_Ausgabe = "" WHERE Inventar_x0020_Nr = ?", (mask2_inventar_NrEntryString,)) 
             cursor.execute("UPDATE Ware SET Raum = ? WHERE Inventar_x0020_Nr = ?", (mask2_auswahlString, mask2_inventar_NrEntryString,))
             print('Arbeitsplatz')
             print(mask2_auswahlString)
@@ -740,22 +740,136 @@ def open_vorgaenge():
     mask4_frame.place(x=161, y=1, anchor="nw", relheight=500, relwidth=805)
 
 def open_uebersichtMitarbeiter():
+    def toggle_frame():
+        if mask5_frame.winfo_ismapped():
+            mask5_frame.pack_forget()
+            open_uebersichtMitarbeiter()
+            print('gelöscht')
+
+        else:
+            mask5_frame.pack()
+            print('geöffnet')
+
+    uebersichtMitarbeiter_btn.configure(command=toggle_frame)
+
     buttons = [wareneingang_btn, ausgabe_btn, warenausgang_btn, vorgaenge_btn, uebersichtMitarbeiter_btn, uebersichtGeraete_btn]
     for button in buttons:
         button.state(['!pressed'])
     uebersichtMitarbeiter_btn.state(['pressed'])
+
     mask5_frame = tk.Frame(mainwindow, bg="white")
-    mask5_frame.place(x=161, y=1, anchor="nw", relheight=500, relwidth=805)
+    mask5_frame.place(x=161, y=1, anchor="nw", relheight=500, relwidth=950)
+
+    mask5_frame.place(x=161, y=0, anchor="nw", relheight=300, relwidth=150)
+    mask6_title = tk.Label(mask5_frame, fg="black", bg='white', text="Übersicht Mitarbeiter", font=('Arial', 14))
+    mask6_title.place(x=10, y=10)
+
+    cursor.execute('SELECT "LetzterWertvonWaBewVor-MA_Ausgabe" AS Mitarbeiter, Inventar_x0020_Nr AS InventarNr, Bezeichnung, Typ, "Serien-Nr" FROM Ware WHERE Mitarbeiter !="" ORDER BY Mitarbeiter')
+    rows = cursor.fetchall()
+
+    
+
+    tree = ttk.Treeview(mask5_frame)
+    scrollbar = tk.Scrollbar(mask5_frame, orient="vertical", command=tree.yview)
+    scrollbar.place(x=820, y=10, height=550)
+    tree.configure(yscrollcommand=scrollbar.set, height=25)
+
+    
+    columns = cursor.description
+    column_names = [column[0] for column in columns]
+    #column_names = column_names[1:]
+    tree['columns'] = column_names
+    
+    tree.column(column_names[0], width=150)
+    tree.column(column_names[1], width=65)
+    tree.column(column_names[2], width=100)
+    tree.column(column_names[3], width=150)
+    tree.column(column_names[4], width=150)
+
+
+    for column in column_names:
+        tree.heading(column, text=column)
+
+    tree.configure(show="tree headings tree")
+    style = ttk.Style()
+    #style.configure("Treeview.Heading", background="white", foreground="black")
+
+    for row in rows:
+        tree.insert('', 'end', values=row)
+    
+    scrollbar.config(command=tree.yview)
+
+    tree.configure(xscrollcommand=scrollbar.set)
+
+    tree.place(x=-200, y=40)
+
+
+
+    
 
 def open_uebersichtGeraete():
+    def toggle_frame():
+        if mask6_frame.winfo_ismapped():
+            mask6_frame.pack_forget()
+            open_uebersichtGeraete()
+            print('gelöscht')
+
+        else:
+            mask6_frame.pack()
+            print('geöffnet')
+
+    uebersichtGeraete_btn.configure(command=toggle_frame)
+
     buttons = [wareneingang_btn, ausgabe_btn, warenausgang_btn, vorgaenge_btn, uebersichtMitarbeiter_btn, uebersichtGeraete_btn]
     for button in buttons:
         button.state(['!pressed'])
     uebersichtGeraete_btn.state(['pressed'])
     mask6_frame = tk.Frame(mainwindow, bg="white")
-    mask6_frame.place(x=161, y=1, anchor="nw", relheight=500, relwidth=805)
+    mask6_frame.place(x=161, y=0, anchor="nw", relheight=300, relwidth=150)
+    mask6_title = tk.Label(mask6_frame, fg="black", bg='white', text="Übersicht Geräte", font=('Arial', 14))
+    mask6_title.place(x=10, y=10)
 
+    cursor.execute('SELECT Inventar_x0020_Nr AS InventarNr, Bezeichnung, Typ, "Serien-Nr", Eigentümer, Raum, "LetzterWertvonWaBewVor-MA_Ausgabe" AS Mitarbeiter, Status, Netto_x0020_Einkaufspreis AS Einkaufspreis FROM Ware')
+    rows = cursor.fetchall()
 
+    
+
+    tree = ttk.Treeview(mask6_frame)
+    scrollbar = tk.Scrollbar(mask6_frame, orient="vertical", command=tree.yview)
+    scrollbar.place(x=820, y=10, height=550)
+    tree.configure(yscrollcommand=scrollbar.set, height=25)
+
+    
+    columns = cursor.description
+    column_names = [column[0] for column in columns]
+    #column_names = column_names[1:]
+    tree['columns'] = column_names
+    
+    tree.column(column_names[0], width=65)
+    tree.column(column_names[1], width=75)
+    tree.column(column_names[2], width=100)
+    tree.column(column_names[3], width=100)
+    tree.column(column_names[4], width=100)
+    tree.column(column_names[5], width=100)
+    tree.column(column_names[6], width=100)
+    tree.column(column_names[7], width=90)
+    tree.column(column_names[8], width=100)
+
+    for column in column_names:
+        tree.heading(column, text=column)
+
+    tree.configure(show="tree headings tree")
+    style = ttk.Style()
+    #style.configure("Treeview.Heading", background="white", foreground="black")
+
+    for row in rows:
+        tree.insert('', 'end', values=row)
+    
+    scrollbar.config(command=tree.yview)
+
+    tree.configure(xscrollcommand=scrollbar.set)
+
+    tree.place(x=-200, y=40)
 
 
 
