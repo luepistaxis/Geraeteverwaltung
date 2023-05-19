@@ -4,6 +4,7 @@ from ttkthemes import ThemedStyle
 from tkcalendar import DateEntry
 import locale
 import sqlite3
+import getpass
 
 #Kalender auf Deutsche Sprache
 locale.setlocale(locale.LC_ALL, 'de_DE')
@@ -13,6 +14,10 @@ mask1_value = 120
 mask2_value = 30
 mask3_value = 30
 mask2_auswahl_mitarbeiter = ''
+
+
+
+benutzername = getpass.getuser()
 #SQLite Datenbank Verbindung
 database_path = "C:\\Users\\luisa.aslanidis\\VisualProjekte\\Geraeteverwaltung\\Geraeteverwaltung\\database.db"
 connection = sqlite3.connect(database_path)
@@ -357,6 +362,8 @@ def open_Wareneingang():
     
 
 def open_Ausgabe():
+
+    beschreibung = "Ausgabe"
  
     buttons = [wareneingang_btn, ausgabe_btn, warenausgang_btn, vorgaenge_btn, uebersichtMitarbeiter_btn, uebersichtGeraete_btn]
     for button in buttons:
@@ -430,7 +437,19 @@ def open_Ausgabe():
         cursor.execute("SELECT * FROM Ware WHERE Inventar_x0020_Nr = ?", (mask2_inventar_NrEntryString,))
         result = cursor.fetchall()
         print(result)
-        
+        cursor.execute("SELECT MAX(Nummer) FROM Vorgang")
+        test = cursor.fetchone()
+        liste = int(test[0])
+        bla = liste + 1
+        test1 = (liste,)
+        print(test1)
+        #cursor.execute("SELECT MAX(ID-WaBewVor) FROM Vorgang")
+        #wert = cursor.fetchall()
+        #print(wert)
+        #aktuellWert = wert[0]
+        datumString = mask2_dateEntry.get()
+        cursor.execute("INSERT INTO Vorgang (Nummer, 'WaBewVor-Datum', BewArt_KurzBeschreibung, InventarNr, 'WaBewVor-MA_Ausgabe', 'WaBewVor-Benutzer') VALUES(?, ?, ? ,?, ? ,?)", (bla, datumString, beschreibung, mask2_inventar_NrEntryString, mask2_auswahlString, benutzername,))
+        connection.commit()
         mask2_frame.destroy()
 
     def fillout(event):
@@ -574,7 +593,7 @@ def open_Ausgabe():
     mask2_bezeichnungInput.place(x=100, y=5, width=100)
 
     mask2_typInput = tk.Label(mask2_deviceInput, text="", bg="white")
-    mask2_typInput.place(x=210, y=5)
+    mask2_typInput.place(x=210, y=5, width=100, height=20)
 
     mask2_statusInput = tk.Label(mask2_deviceInput, text="", bg="white")
     mask2_statusInput.place(x=350, y=5, width=100, height=20)
@@ -764,15 +783,15 @@ def open_uebersichtMitarbeiter():
     mask6_title = tk.Label(mask5_frame, fg="black", bg='white', text="Übersicht Mitarbeiter", font=('Arial', 14))
     mask6_title.place(x=10, y=10)
 
-    cursor.execute('SELECT "LetzterWertvonWaBewVor-MA_Ausgabe" AS Mitarbeiter, Inventar_x0020_Nr AS InventarNr, Bezeichnung, Typ, "Serien-Nr" FROM Ware WHERE Mitarbeiter !="" ORDER BY Mitarbeiter')
+    cursor.execute('SELECT "LetzterWertvonWaBewVor-MA_Ausgabe" AS Mitarbeiter, Inventar_x0020_Nr AS InventarNr, Bezeichnung, Typ, "Serien-Nr", Andere_x0020_Nummer AS Weitere FROM Ware WHERE Mitarbeiter !="" ORDER BY Mitarbeiter')
     rows = cursor.fetchall()
 
     
 
     tree = ttk.Treeview(mask5_frame)
     scrollbar = tk.Scrollbar(mask5_frame, orient="vertical", command=tree.yview)
-    scrollbar.place(x=820, y=10, height=550)
-    tree.configure(yscrollcommand=scrollbar.set, height=25)
+    scrollbar.place(x=1081, y=60, height=620)
+    tree.configure(yscrollcommand=scrollbar.set, height=30)
 
     
     columns = cursor.description
@@ -780,11 +799,12 @@ def open_uebersichtMitarbeiter():
     #column_names = column_names[1:]
     tree['columns'] = column_names
     
-    tree.column(column_names[0], width=150)
+    tree.column(column_names[0], width=180)
     tree.column(column_names[1], width=65)
     tree.column(column_names[2], width=100)
-    tree.column(column_names[3], width=150)
-    tree.column(column_names[4], width=150)
+    tree.column(column_names[3], width=250)
+    tree.column(column_names[4], width=245)
+    tree.column(column_names[5], width=240)
 
 
     for column in column_names:
@@ -801,7 +821,7 @@ def open_uebersichtMitarbeiter():
 
     tree.configure(xscrollcommand=scrollbar.set)
 
-    tree.place(x=-200, y=40)
+    tree.place(x=-200, y=60)
 
 
 
@@ -829,15 +849,15 @@ def open_uebersichtGeraete():
     mask6_title = tk.Label(mask6_frame, fg="black", bg='white', text="Übersicht Geräte", font=('Arial', 14))
     mask6_title.place(x=10, y=10)
 
-    cursor.execute('SELECT Inventar_x0020_Nr AS InventarNr, Bezeichnung, Typ, "Serien-Nr", Eigentümer, Raum, "LetzterWertvonWaBewVor-MA_Ausgabe" AS Mitarbeiter, Status, Netto_x0020_Einkaufspreis AS Einkaufspreis FROM Ware')
+    cursor.execute('SELECT Inventar_x0020_Nr AS InventarNr, Bezeichnung, Typ, "Serien-Nr", Andere_x0020_Nummer AS Weitere, Eigentümer, Raum, "LetzterWertvonWaBewVor-MA_Ausgabe" AS Mitarbeiter, Status, Netto_x0020_Einkaufspreis AS Einkaufspreis FROM Ware')
     rows = cursor.fetchall()
 
     
 
     tree = ttk.Treeview(mask6_frame)
     scrollbar = tk.Scrollbar(mask6_frame, orient="vertical", command=tree.yview)
-    scrollbar.place(x=820, y=10, height=550)
-    tree.configure(yscrollcommand=scrollbar.set, height=25)
+    scrollbar.place(x=1081, y=60, height=620)
+    tree.configure(yscrollcommand=scrollbar.set, height=30)
 
     
     columns = cursor.description
@@ -847,13 +867,14 @@ def open_uebersichtGeraete():
     
     tree.column(column_names[0], width=65)
     tree.column(column_names[1], width=75)
-    tree.column(column_names[2], width=100)
-    tree.column(column_names[3], width=100)
-    tree.column(column_names[4], width=100)
-    tree.column(column_names[5], width=100)
+    tree.column(column_names[2], width=180)
+    tree.column(column_names[3], width=140)
+    tree.column(column_names[4], width=150)
+    tree.column(column_names[5], width=80)
     tree.column(column_names[6], width=100)
     tree.column(column_names[7], width=90)
     tree.column(column_names[8], width=100)
+    tree.column(column_names[9], width=100)
 
     for column in column_names:
         tree.heading(column, text=column)
@@ -869,14 +890,14 @@ def open_uebersichtGeraete():
 
     tree.configure(xscrollcommand=scrollbar.set)
 
-    tree.place(x=-200, y=40)
+    tree.place(x=-200, y=60)
 
 
 
 # Hauptfenster erstellen
 mainwindow = tk.Tk()
 mainwindow.title("Geräteverwaltung")
-mainwindow.geometry("1000x600")
+mainwindow.geometry("1280x720")
 
 # Frame für die senkrechte Menüleiste
 menu_frame = tk.Frame(mainwindow)

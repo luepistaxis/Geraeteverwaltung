@@ -6,6 +6,7 @@ from eigentuemer import Eigentuemer
 from raum import Raum
 from bewegungsarten import Bewegungsarten
 from uebersichtMitarbeiter import UebersichtMitarbeiter
+from vorgang import Vorgang
 
 class Main:
     def __init__(self):
@@ -17,6 +18,7 @@ class Main:
         self.raum = Raum()
         self.bewegungsarten = Bewegungsarten()
         self.uebersichtMitarbeiter = UebersichtMitarbeiter()
+        self.vorgang = Vorgang()
 
     def run(self):
         self.geraeteliste.geraeteliste_methode()
@@ -27,6 +29,7 @@ class Main:
         self.raum.raum_methode()
         self.bewegungsarten.bewegungsarten_methode()
         self.uebersichtMitarbeiter.uebersichtMitarbeiter_methode()
+        self.vorgang.vorgang_methode()
 
 if __name__ == "__main__":
     main_instance = Main()

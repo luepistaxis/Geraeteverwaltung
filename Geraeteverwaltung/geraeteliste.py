@@ -17,14 +17,14 @@ class GeraeteListe:
 
         # Datenbankpfad erstellen
         db_path = os.path.join(script_dir, 'database.db')
-        xml_file_path = os.path.join(script_dir, 'C:\\Users\\luisa.aslanidis\\VisualProjekte\\Geraeteverwaltung\\Geraeteverwaltung\\GeraeteListe.xml') 
+        xml_file_path = os.path.join(script_dir, 'C:\\Users\\luisa.aslanidis\\VisualProjekte\\Geraeteverwaltung\\Geraeteverwaltung\\GeraeteAktuell.xml') 
 
         conn = sqlite3.connect(db_path)
         cursor = conn.cursor()
 
 
         cursor.execute("DROP TABLE IF EXISTS Ware")
-        cursor.execute("CREATE TABLE IF NOT EXISTS Ware ('Inventar_x0020_Nr' INT, Bezeichnung TEXT, Typ INT, 'Serien-Nr' INT, 'Eigentümer' TEXT, Raum TEXT, 'LetzterWertvonWaBewVor-MA_Ausgabe' TEXT, Status TEXT, 'Netto_x0020_Einkaufspreis' TEXT)")
+        cursor.execute("CREATE TABLE IF NOT EXISTS Ware ('Inventar_x0020_Nr' INT, Bezeichnung TEXT, Typ INT, 'Serien-Nr' TEXT, Andere_x0020_Nummer TEXT, 'Eigentümer' TEXT, Raum TEXT, 'LetzterWertvonWaBewVor-MA_Ausgabe' TEXT, Status TEXT, 'Netto_x0020_Einkaufspreis')")
         
         geraete_tree = ET.parse(xml_file_path)
 
@@ -55,6 +55,12 @@ class GeraeteListe:
                 seriennr = seriennr_element.text
             else:
                 seriennr = ""
+
+            weitere_element = child.find('Andere_x0020_Nummer')
+            if weitere_element is not None:
+                weitere = weitere_element.text
+            else:
+                weitere = ""
 
             eigentuemer_element = child.find('Eigentümer')
             if eigentuemer_element is not None:
@@ -87,7 +93,7 @@ class GeraeteListe:
                 preis = ""
 
             #cursor.execute("ALTER TABLE Ware RENAME COLUMN 'Inventar_x0020_Nr' TO Inventarnr")
-            cursor.execute("INSERT INTO Ware ('Inventar_x0020_Nr', Bezeichnung, Typ, 'Serien-Nr', 'Eigentümer', Raum, 'LetzterWertvonWaBewVor-MA_Ausgabe', Status, 'Netto_x0020_Einkaufspreis') VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)", (inventar, bezeichnung, typ, seriennr, eigentuemer, raum, mitarbeiter, status, preis))
+            cursor.execute("INSERT INTO Ware ('Inventar_x0020_Nr', Bezeichnung, Typ, 'Serien-Nr', Andere_x0020_Nummer, 'Eigentümer', Raum, 'LetzterWertvonWaBewVor-MA_Ausgabe', Status, 'Netto_x0020_Einkaufspreis') VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)", (inventar, bezeichnung, typ, seriennr, weitere, eigentuemer, raum, mitarbeiter, status, preis))
             
 
 
