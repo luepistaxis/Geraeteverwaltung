@@ -15,6 +15,8 @@ mask2_value = 30
 mask3_value = 30
 mask2_auswahl_mitarbeiter = ''
 
+l = 1280
+w = 720
 
 
 benutzername = getpass.getuser()
@@ -26,6 +28,13 @@ cursor = connection.cursor()
 
 
 def open_Wareneingang():
+    beschreibung = "Lagereingang"
+    def toggle_frame():
+        mask1_frame.destroy()
+        open_Wareneingang()
+        print('gelöscht')
+
+    wareneingang_btn.configure(command=toggle_frame)
 
     buttons = [wareneingang_btn, ausgabe_btn, warenausgang_btn, vorgaenge_btn, uebersichtMitarbeiter_btn, uebersichtGeraete_btn]
     for index, button in enumerate(buttons):
@@ -36,7 +45,7 @@ def open_Wareneingang():
             button.configure(style="TButton")
     wareneingang_btn.state(['pressed'])
 
-    wareneingang_btn.configure(state=tk.DISABLED)
+    #wareneingang_btn.configure(state=tk.DISABLED)
 
     #Funktion Max Länge für Entry
     def validate_entry(char):
@@ -82,8 +91,8 @@ def open_Wareneingang():
         mask1_frame.destroy()
         wareneingang_btn.configure(state=tk.NORMAL)
         wareneingang_btn.state(['!pressed'])
-        global mask1_value 
-        mask1_value = 120
+        #global mask1_value 
+        #mask1_value = 120
 
     def speichern():
         inventarString = mask1_inventar_NrEntry.get()
@@ -110,6 +119,21 @@ def open_Wareneingang():
             cursor.execute('UPDATE Ware SET Inventar_x0020_Nr = (SELECT Inventar_x0020_Nr FROM TempTable WHERE TempTable.rowid = Ware.rowid), Bezeichnung = (SELECT Bezeichnung FROM TempTable WHERE TempTable.rowid = Ware.rowid), Typ = (SELECT Typ FROM TempTable WHERE TempTable.rowid = Ware.rowid), "Serien-Nr" = (SELECT "Serien-Nr" FROM TempTable WHERE TempTable.rowid = Ware.rowid), Eigentümer = (SELECT Eigentümer FROM TempTable WHERE TempTable.rowid = Ware.rowid), Raum = (SELECT Raum FROM TempTable WHERE TempTable.rowid = Ware.rowid), "LetzterWertvonWaBewVor-MA_Ausgabe" = (SELECT "LetzterWertvonWaBewVor-MA_Ausgabe" FROM TempTable WHERE TempTable.rowid = Ware.rowid), Status = (SELECT Status FROM TempTable WHERE TempTable.rowid = Ware.rowid), Netto_x0020_Einkaufspreis = (SELECT Netto_x0020_Einkaufspreis FROM TempTable WHERE TempTable.rowid = Ware.rowid)')        
             cursor.execute("DROP TABLE TempTable")
             handle_new_entry()
+            cursor.execute("SELECT * FROM Ware WHERE Inventar_x0020_Nr = ?", (inventarString,))
+            result = cursor.fetchall()
+            print(result)
+            cursor.execute("SELECT MAX(Nummer) FROM Vorgang")
+            test = cursor.fetchone()
+            liste = int(test[0])
+            bla = liste + 1
+            test1 = (liste,)
+            print(test1)
+            #cursor.execute("SELECT MAX(ID-WaBewVor) FROM Vorgang")
+            #wert = cursor.fetchall()
+            #print(wert)
+            #aktuellWert = wert[0]
+            datumString = mask1_dateEntry.get()
+            cursor.execute("INSERT INTO Vorgang (Nummer, 'WaBewVor-Datum', BewArt_KurzBeschreibung, InventarNr, 'WaBewVor-MA_Ausgabe', 'WaBewVor-Benutzer') VALUES(?, ?, ? ,?, ?, ?)", (bla, datumString, beschreibung, inventarString, "" ,benutzername,))
             connection.commit()
             mask1_frame.destroy()
             warenausgang_btn.config(state="normal")
@@ -121,6 +145,8 @@ def open_Wareneingang():
 
         else:
             messagebox.showerror("Fehlermeldung", "Gerät existiert schon!")
+        
+        
 
     def open_new_frame():
 
@@ -238,7 +264,7 @@ def open_Wareneingang():
 
     #Frame für Geräte
     mask1_frame = tk.Frame(mainwindow, bg="white")
-    mask1_frame.place(x=161, y=1, anchor="nw", relheight=500, relwidth=950)
+    mask1_frame.place(x=161, y=1, anchor="nw", height=w, width=l)
 
     
     mask1_title = tk.Label(mask1_frame, fg="black", bg='white', text="Warenaufnahme", font=('Arial', 14))
@@ -362,6 +388,12 @@ def open_Wareneingang():
     
 
 def open_Ausgabe():
+    def toggle_frame():
+        mask2_frame.destroy()
+        open_Ausgabe()
+        print('gelöscht')
+
+    ausgabe_btn.configure(command=toggle_frame)
 
     beschreibung = "Ausgabe"
  
@@ -370,7 +402,7 @@ def open_Ausgabe():
         button.state(['!pressed'])
     ausgabe_btn.state(['pressed'])
     
-    ausgabe_btn.configure(state=tk.DISABLED)
+    #ausgabe_btn.configure(state=tk.DISABLED)
 
     #Funktion Max Länge für Entry
     def validate_entry(char):
@@ -518,8 +550,8 @@ def open_Ausgabe():
 
     
     
-    mask2_frame = tk.Frame(mainwindow, width=550, height=1000, bg="white")
-    mask2_frame.place(x=161, y=1, anchor="nw", relheight=500, relwidth=950)
+    mask2_frame = tk.Frame(mainwindow, bg="white")
+    mask2_frame.place(x=161, y=1, anchor="nw", height=w, width=l)
 
     mask2_title = tk.Label(mask2_frame, fg="black", bg='white', text="Mitarbeiterausgabe", font=('Arial', 14))
     mask2_title.place(x=10, y=10)
@@ -601,13 +633,19 @@ def open_Ausgabe():
 
 
 def open_Warenausgang():
+    def toggle_frame():
+        mask3_frame.destroy()
+        open_Warenausgang()
+        print('gelöscht')
+
+    warenausgang_btn.configure(command=toggle_frame)
     
     buttons = [wareneingang_btn, ausgabe_btn, warenausgang_btn, vorgaenge_btn, uebersichtMitarbeiter_btn, uebersichtGeraete_btn]
     for button in buttons:
         button.state(['!pressed'])
     warenausgang_btn.state(['pressed'])
 
-    warenausgang_btn.configure(state=tk.DISABLED)
+    #warenausgang_btn.configure(state=tk.DISABLED)
 
     def open_new_frame():
 
@@ -666,8 +704,48 @@ def open_Warenausgang():
         mask3_value = 30
         return mask3_value
     
+    def speichern():
+        inventarString = mask3_inventar_NrEntry.get()
+        cursor.execute("SELECT MAX(Nummer) FROM Vorgang")
+        test = cursor.fetchone()
+        liste = int(test[0])
+        bla = liste + 1
+        datumString = mask3_dateEntry.get()
+        beschreibung = mask3_vorgangCombobox.get()
+        bestaetigung = messagebox.askokcancel("Bestätigung", "Möchten Sie das Gerät wirklich löschen?")
+        if bestaetigung:
+            cursor.execute("DELETE FROM Ware WHERE Inventar_x0020_Nr = ?", (inventarString,))
+            cursor.execute("INSERT INTO Vorgang (Nummer, 'WaBewVor-Datum', BewArt_KurzBeschreibung, InventarNr, 'WaBewVor-MA_Ausgabe', 'WaBewVor-Benutzer') VALUES(?, ?, ? ,?, ?, ?)", (bla, datumString, beschreibung, inventarString,"", benutzername,))
+            connection.commit()
+            mask3_frame.destroy()
+            messagebox.showinfo("Löschen", "Das Gerät wurde erfolgreich gelöscht.")
+            open_Warenausgang()
+        
+
+
+    def fillout(event):
+        if event.keysym == "Return":
+            mask3_inventar_NrEntryString = mask3_inventar_NrEntry.get()
+            cursor.execute("SELECT Inventar_x0020_Nr FROM Ware WHERE Inventar_x0020_Nr = ?", (mask3_inventar_NrEntryString,))
+            result = cursor.fetchall()
+            #print(result)
+            if result == [] or len(mask3_inventar_NrEntryString) < 6:
+                print("false")
+            else:
+                cursor.execute("SELECT Bezeichnung FROM Ware WHERE Inventar_x0020_Nr = ?", (mask3_inventar_NrEntryString,))
+                bezeichnung_inhalt = cursor.fetchone()
+                cursor.execute("SELECT Typ FROM Ware WHERE Inventar_x0020_Nr = ?", (mask3_inventar_NrEntryString,))
+                typ_inhalt = cursor.fetchone()
+                typ_inhaltString = typ_inhalt[0]
+                cursor.execute("SELECT Status FROM Ware WHERE Inventar_x0020_Nr = ?", (mask3_inventar_NrEntryString,))
+                status_inhalt = cursor.fetchone()
+                mask3_bezeichnungInput.configure(text=bezeichnung_inhalt)
+                mask3_typInput.configure(text=typ_inhaltString)
+                mask3_statusInput.configure(text=status_inhalt)
+                #print(bezeichnung_inhalt)
+    
     mask3_frame = tk.Frame(mainwindow, bg="white")
-    mask3_frame.place(x=161, y=1, anchor="nw", relheight=500, relwidth=805)
+    mask3_frame.place(x=161, y=1, anchor="nw", height=w, width=l)
 
     mask3_title = tk.Label(mask3_frame, fg="black", bg='white', text="Warenausgang", font=('Arial', 14))
     mask3_title.place(x=10, y=10)
@@ -699,7 +777,7 @@ def open_Warenausgang():
     mask3_device = tk.Label(mask3_frame, text="Geräte:", fg="black", bg='white', font=('Arial', 12))
     mask3_device.place(x=40, y=170)
 
-    mask3_speichern = tk.Button(mask3_frame, text="speichern", font=("Arial", 16))
+    mask3_speichern = tk.Button(mask3_frame, text="speichern", font=("Arial", 16), command=speichern)
     mask3_speichern.place(x=700, y=500)
 
     mask3_verwerfen = tk.Button(mask3_frame, text="verwerfen", font=("Arial", 16), command=verwerfen)
@@ -710,7 +788,7 @@ def open_Warenausgang():
 
     #Frame zur Wahl von Geräten
     mask3_deviceFrame = tk.Frame(mask3_frame, borderwidth=1, relief="solid")
-    mask3_deviceFrame.place(relwidth=805, relheight=120, x=10, y=200)
+    mask3_deviceFrame.place(width=805, height=120, x=10, y=200)
 
     mask3_tablenameRow = tk.Frame(mask3_deviceFrame, borderwidth=1, relief="solid", bg="white")
     mask3_tablenameRow.place(x=0, y=0, height=30, width=805)
@@ -739,14 +817,15 @@ def open_Warenausgang():
     mask3_inventar_NrEntry.config(validatecommand=(mask3_deviceInput.register(validate_entry), '%P'))
     mask3_inventar_NrEntry.config(state='normal')
     mask3_inventar_NrEntry.place(x=5, y=5, width=60)
+    mask3_inventar_NrEntry.bind("<KeyPress>", fillout)
 
-    mask3_bezeichnungInput = tk.Entry(mask3_deviceInput)
+    mask3_bezeichnungInput = tk.Label(mask3_deviceInput, text="", bg="white")
     mask3_bezeichnungInput.place(x=100, y=5, width=100)
 
-    mask3_typInput = tk.Entry(mask3_deviceInput)
-    mask3_typInput.place(x=210, y=5)
+    mask3_typInput = tk.Label(mask3_deviceInput, text="", bg="white")
+    mask3_typInput.place(x=210, y=5, width=100)
 
-    mask3_statusInput = tk.Label(mask3_deviceInput, bg="white")
+    mask3_statusInput = tk.Label(mask3_deviceInput, text="", bg="white")
     mask3_statusInput.place(x=350, y=5, width=100, height=20)
 
 def open_vorgaenge():
@@ -757,6 +836,52 @@ def open_vorgaenge():
 
     mask4_frame = tk.Frame(mainwindow, bg="white")
     mask4_frame.place(x=161, y=1, anchor="nw", relheight=500, relwidth=805)
+
+    mask5_title = tk.Label(mask4_frame, fg="black", bg='white', text="Alle Vorgänge", font=('Arial', 14))
+    mask5_title.place(x=10, y=10)
+
+    cursor.execute('SELECT Nummer, "WaBewVor-Datum", BewArt_KurzBeschreibung AS Beschreibung, InventarNr, "WaBewVor-MA_Ausgabe" AS Mitarbeiter, "WaBewVor-Benutzer" AS "bearbeitet durch" FROM Vorgang ORDER BY Nummer DESC')
+    rows = cursor.fetchall()
+
+    
+
+    tree = ttk.Treeview(mask4_frame)
+    scrollbar = tk.Scrollbar(mask4_frame, orient="vertical", command=tree.yview)
+    scrollbar.place(x=1081, y=60, height=620)
+    tree.configure(yscrollcommand=scrollbar.set, height=30)
+
+    
+    columns = cursor.description
+    column_names = [column[0] for column in columns]
+    #column_names = column_names[1:]
+    tree['columns'] = column_names
+    
+    tree.column(column_names[0], width=70)
+    tree.column(column_names[1], width=150)
+    tree.column(column_names[2], width=200)
+    tree.column(column_names[3], width=100)
+    tree.column(column_names[4], width=180)
+    tree.column(column_names[5], width=120)
+
+
+    for column in column_names:
+        tree.heading(column, text=column)
+
+    tree.configure(show="tree headings tree")
+    style = ttk.Style()
+    #style.configure("Treeview.Heading", background="white", foreground="black")
+
+    for row in rows:
+        tree.insert('', 'end', values=row)
+    
+    scrollbar.config(command=tree.yview)
+
+    tree.configure(xscrollcommand=scrollbar.set)
+
+    tree.place(x=-200, y=60)
+
+
+
 
 def open_uebersichtMitarbeiter():
     def toggle_frame():
@@ -779,9 +904,9 @@ def open_uebersichtMitarbeiter():
     mask5_frame = tk.Frame(mainwindow, bg="white")
     mask5_frame.place(x=161, y=1, anchor="nw", relheight=500, relwidth=950)
 
-    mask5_frame.place(x=161, y=0, anchor="nw", relheight=300, relwidth=150)
-    mask6_title = tk.Label(mask5_frame, fg="black", bg='white', text="Übersicht Mitarbeiter", font=('Arial', 14))
-    mask6_title.place(x=10, y=10)
+    #mask5_frame.place(x=161, y=0, anchor="nw", relheight=300, relwidth=150)
+    mask5_title = tk.Label(mask5_frame, fg="black", bg='white', text="Übersicht Mitarbeiter", font=('Arial', 14))
+    mask5_title.place(x=10, y=10)
 
     cursor.execute('SELECT "LetzterWertvonWaBewVor-MA_Ausgabe" AS Mitarbeiter, Inventar_x0020_Nr AS InventarNr, Bezeichnung, Typ, "Serien-Nr", Andere_x0020_Nummer AS Weitere FROM Ware WHERE Mitarbeiter !="" ORDER BY Mitarbeiter')
     rows = cursor.fetchall()
@@ -920,7 +1045,7 @@ ausgabe_btn.pack()
 warenausgang_btn = ttk.Button(menu_frame, text="Warenausgang", command=open_Warenausgang, style="TButton")
 warenausgang_btn.pack()
 
-vorgaenge_btn = ttk.Button(menu_frame, text="Alle Vorgänge", command=open_uebersichtMitarbeiter, style="TButton")
+vorgaenge_btn = ttk.Button(menu_frame, text="Alle Vorgänge", command=open_vorgaenge, style="TButton")
 vorgaenge_btn.pack()
 
 uebersichtMitarbeiter_btn = ttk.Button(menu_frame, text="Übersicht Mitarbeiter", command=open_uebersichtMitarbeiter, style="TButton")
