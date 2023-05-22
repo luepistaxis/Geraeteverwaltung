@@ -15,8 +15,12 @@ mask2_value = 30
 mask3_value = 30
 mask2_auswahl_mitarbeiter = ''
 
+#Länge und Breite der Frames
 l = 1280
 w = 720
+
+
+
 
 
 benutzername = getpass.getuser()
@@ -32,7 +36,7 @@ def open_Wareneingang():
     def toggle_frame():
         mask1_frame.destroy()
         open_Wareneingang()
-        print('gelöscht')
+        #print('gelöscht')
 
     wareneingang_btn.configure(command=toggle_frame)
 
@@ -110,7 +114,7 @@ def open_Wareneingang():
         if result == [] and len(inventarString) == 6:
         
             if inventarString == "" or bezeichnungString == "" or typString == "" or eigentuemerString == "" or raumString == "":
-
+                messagebox.showerror("Fehlermeldung", "Nicht alle Pflichtfelder wurden ausgefüllt.\nAchten Sie darauf, dass alle Pflichtfelder ausgefüllt sind.")
                 return
             cursor.execute("INSERT INTO Ware ('Inventar_x0020_Nr', Bezeichnung, Typ, 'Serien-Nr', 'Eigentümer', Raum, 'LetzterWertvonWaBewVor-MA_Ausgabe', Status, 'Netto_x0020_Einkaufspreis') VALUES (?, ?, ?, ?, ?, ?, NULL, 'Freigegeben', ?)", (inventarString, bezeichnungString, typString, seriennrString, eigentuemerString, raumString, preisString))
             #cursor.execute("UPDATE Ware SET Inventar_x0020_Nr = (SELECT Inventar_x0020_Nr FROM Ware ORDER BY Inventar_x0020_Nr ASC)")
@@ -121,13 +125,13 @@ def open_Wareneingang():
             handle_new_entry()
             cursor.execute("SELECT * FROM Ware WHERE Inventar_x0020_Nr = ?", (inventarString,))
             result = cursor.fetchall()
-            print(result)
+            #print(result)
             cursor.execute("SELECT MAX(Nummer) FROM Vorgang")
             test = cursor.fetchone()
             liste = int(test[0])
             bla = liste + 1
-            test1 = (liste,)
-            print(test1)
+            #test1 = (liste,)
+            #print(test1)
             #cursor.execute("SELECT MAX(ID-WaBewVor) FROM Vorgang")
             #wert = cursor.fetchall()
             #print(wert)
@@ -277,8 +281,8 @@ def open_Wareneingang():
     mask1_device = tk.Label(mask1_frame, text="Geräte:", fg="black", bg='white', font=('Arial', 12))
     mask1_device.place(x=40, y=90)
 
-    mask1_hinzufügen = tk.Button(mask1_frame, text="+", font=('Arial', 16), command=open_new_frame)
-    mask1_hinzufügen.place(x=500, y=90, height=30, width=30)
+    #mask1_hinzufügen = tk.Button(mask1_frame, text="+", font=('Arial', 16), command=open_new_frame)
+    #mask1_hinzufügen.place(x=500, y=90, height=30, width=30)
 
     mask1_speichern = tk.Button(mask1_frame, text="speichern", font=("Arial", 16), command=speichern)
     mask1_speichern.place(x=700, y=500)
@@ -452,37 +456,47 @@ def open_Ausgabe():
         mask2_auswahlString = mask2_auswahl.get()
         mask2_inventar_NrEntryString = mask2_inventar_NrEntry.get()
         global mask2_auswahl_mitarbeiter
-        if mask2_auswahl_mitarbeiter == 'mitarbeiter':
-            print('Mitarbeiter')
-            cursor.execute("UPDATE Ware SET Raum = '' WHERE Inventar_x0020_Nr = ?", (mask2_inventar_NrEntryString,)) 
-            cursor.execute("UPDATE Ware SET 'LetzterWertvonWaBewVor-MA_Ausgabe' = ? WHERE Inventar_x0020_Nr = ?", (mask2_auswahlString, mask2_inventar_NrEntryString,))
-            print(type(mask2_inventar_NrEntryString))
-            print(mask2_auswahlString)
-            connection.commit()
-        elif mask2_auswahl_mitarbeiter == 'arbeitsplatz':
-            cursor.execute("UPDATE Ware SET LetzterWertvonWaBewVor-MA_Ausgabe = "" WHERE Inventar_x0020_Nr = ?", (mask2_inventar_NrEntryString,)) 
-            cursor.execute("UPDATE Ware SET Raum = ? WHERE Inventar_x0020_Nr = ?", (mask2_auswahlString, mask2_inventar_NrEntryString,))
-            print('Arbeitsplatz')
-            print(mask2_auswahlString)
-            print(mask2_inventar_NrEntryString)
-        
-        cursor.execute("SELECT * FROM Ware WHERE Inventar_x0020_Nr = ?", (mask2_inventar_NrEntryString,))
+        #mask2_bezeichnungInputString = mask2_bezeichnungInput.get()
+        cursor.execute("SELECT Inventar_x0020_Nr FROM Ware WHERE Inventar_x0020_Nr = ?", (mask2_inventar_NrEntryString,))
         result = cursor.fetchall()
-        print(result)
-        cursor.execute("SELECT MAX(Nummer) FROM Vorgang")
-        test = cursor.fetchone()
-        liste = int(test[0])
-        bla = liste + 1
-        test1 = (liste,)
-        print(test1)
-        #cursor.execute("SELECT MAX(ID-WaBewVor) FROM Vorgang")
-        #wert = cursor.fetchall()
-        #print(wert)
-        #aktuellWert = wert[0]
-        datumString = mask2_dateEntry.get()
-        cursor.execute("INSERT INTO Vorgang (Nummer, 'WaBewVor-Datum', BewArt_KurzBeschreibung, InventarNr, 'WaBewVor-MA_Ausgabe', 'WaBewVor-Benutzer') VALUES(?, ?, ? ,?, ? ,?)", (bla, datumString, beschreibung, mask2_inventar_NrEntryString, mask2_auswahlString, benutzername,))
-        connection.commit()
-        mask2_frame.destroy()
+        #print(result)
+        if mask2_auswahlString !="None":
+            if mask2_inventar_NrEntryString != [] and len(mask2_inventar_NrEntryString) == 6:
+                if mask2_auswahl_mitarbeiter == 'mitarbeiter':
+                    #print('Mitarbeiter')
+                    cursor.execute("UPDATE Ware SET Raum = '' WHERE Inventar_x0020_Nr = ?", (mask2_inventar_NrEntryString,)) 
+                    cursor.execute("UPDATE Ware SET 'LetzterWertvonWaBewVor-MA_Ausgabe' = ? WHERE Inventar_x0020_Nr = ?", (mask2_auswahlString, mask2_inventar_NrEntryString,))
+                    #print(type(mask2_inventar_NrEntryString))
+                    #print(mask2_auswahlString)
+                    connection.commit()
+                elif mask2_auswahl_mitarbeiter == 'arbeitsplatz':
+                    cursor.execute("UPDATE Ware SET 'LetzterWertvonWaBewVor-MA_Ausgabe' = '' WHERE Inventar_x0020_Nr = ?", (mask2_inventar_NrEntryString,)) 
+                    cursor.execute("UPDATE Ware SET Raum = ? WHERE Inventar_x0020_Nr = ?", (mask2_auswahlString, mask2_inventar_NrEntryString,))
+                    #print('Arbeitsplatz')
+                    #print(mask2_auswahlString)
+                    #print(mask2_inventar_NrEntryString)
+                
+                cursor.execute("SELECT * FROM Ware WHERE Inventar_x0020_Nr = ?", (mask2_inventar_NrEntryString,))
+                result = cursor.fetchall()
+                #print(result)
+                cursor.execute("SELECT MAX(Nummer) FROM Vorgang")
+                test = cursor.fetchone()
+                liste = int(test[0])
+                bla = liste + 1
+                #test1 = (liste,)
+                #print(test1)
+                #cursor.execute("SELECT MAX(ID-WaBewVor) FROM Vorgang")
+                #wert = cursor.fetchall()
+                #print(wert)
+                #aktuellWert = wert[0]
+                datumString = mask2_dateEntry.get()
+                cursor.execute("INSERT INTO Vorgang (Nummer, 'WaBewVor-Datum', BewArt_KurzBeschreibung, InventarNr, 'WaBewVor-MA_Ausgabe', 'WaBewVor-Benutzer') VALUES(?, ?, ? ,?, ? ,?)", (bla, datumString, beschreibung, mask2_inventar_NrEntryString, mask2_auswahlString, benutzername,))
+                connection.commit()
+                mask2_frame.destroy()
+            else:
+                messagebox.showerror("Fehlermeldung", "Dieses Gerät existiert nicht.")
+        else:
+            messagebox.showerror("Fehlermeldung", "Sie müssen einen Mitarbeiter oder Arbeitsplatz auswählen.")
 
     def fillout(event):
         if event.keysym == "Return":
@@ -491,7 +505,10 @@ def open_Ausgabe():
             result = cursor.fetchall()
             #print(result)
             if result == [] or len(mask2_inventar_NrEntryString) < 6:
-                print("false")
+                #print("false")
+                mask2_bezeichnungInput.configure(text="")
+                mask2_statusInput.configure(text="")
+                mask2_typInput.configure(text="")
             else:
                 cursor.execute("SELECT Bezeichnung FROM Ware WHERE Inventar_x0020_Nr = ?", (mask2_inventar_NrEntryString,))
                 bezeichnung_inhalt = cursor.fetchone()
@@ -585,8 +602,8 @@ def open_Ausgabe():
     mask2_verwerfen = tk.Button(mask2_frame, text="verwerfen", font=("Arial", 16), command=verwerfen)
     mask2_verwerfen.place(x=700, y=10)
 
-    mask2_hinzufügen = tk.Button(mask2_frame, text="+", font=('Arial', 16), command=open_new_frame)
-    mask2_hinzufügen.place(x=500, y=170, height=30, width=30)
+    #mask2_hinzufügen = tk.Button(mask2_frame, text="+", font=('Arial', 16), command=open_new_frame)
+    #mask2_hinzufügen.place(x=500, y=170, height=30, width=30)
 
     #Frame zur Wahl von Geräten
     mask2_deviceFrame = tk.Frame(mask2_frame, borderwidth=1, relief="solid")
@@ -605,7 +622,7 @@ def open_Ausgabe():
     mask2_typ.place(x=250, y=0)
 
     mask2_status = tk.Label(mask2_tablenameRow, text="Status:", fg="black", font=("Arial", 12), bg="white")
-    mask2_status.place(x=350, y=0)
+    mask2_status.place(x=360, y=0)
 
     mask2_deviceInput = tk.Frame(mask2_deviceFrame, borderwidth=1, relief="solid")
     mask2_deviceInput.place(x=0, y=30, height=30, width=805)
@@ -625,10 +642,10 @@ def open_Ausgabe():
     mask2_bezeichnungInput.place(x=100, y=5, width=100)
 
     mask2_typInput = tk.Label(mask2_deviceInput, text="", bg="white")
-    mask2_typInput.place(x=210, y=5, width=100, height=20)
+    mask2_typInput.place(x=220, y=5, width=100, height=20)
 
     mask2_statusInput = tk.Label(mask2_deviceInput, text="", bg="white")
-    mask2_statusInput.place(x=350, y=5, width=100, height=20)
+    mask2_statusInput.place(x=340, y=5, width=100, height=20)
 
 
 
@@ -783,8 +800,8 @@ def open_Warenausgang():
     mask3_verwerfen = tk.Button(mask3_frame, text="verwerfen", font=("Arial", 16), command=verwerfen)
     mask3_verwerfen.place(x=700, y=10)
 
-    mask3_hinzufügen = tk.Button(mask3_frame, text="+", font=('Arial', 16), command=open_new_frame)
-    mask3_hinzufügen.place(x=500, y=170, height=30, width=30)
+    #mask3_hinzufügen = tk.Button(mask3_frame, text="+", font=('Arial', 16), command=open_new_frame)
+    #mask3_hinzufügen.place(x=500, y=170, height=30, width=30)
 
     #Frame zur Wahl von Geräten
     mask3_deviceFrame = tk.Frame(mask3_frame, borderwidth=1, relief="solid")
@@ -840,7 +857,7 @@ def open_vorgaenge():
     mask5_title = tk.Label(mask4_frame, fg="black", bg='white', text="Alle Vorgänge", font=('Arial', 14))
     mask5_title.place(x=10, y=10)
 
-    cursor.execute('SELECT Nummer, "WaBewVor-Datum", BewArt_KurzBeschreibung AS Beschreibung, InventarNr, "WaBewVor-MA_Ausgabe" AS Mitarbeiter, "WaBewVor-Benutzer" AS "bearbeitet durch" FROM Vorgang ORDER BY Nummer DESC')
+    cursor.execute('SELECT Nummer, "WaBewVor-Datum", BewArt_KurzBeschreibung AS Beschreibung, InventarNr, "WaBewVor-MA_Ausgabe" AS "ausgegeben an", "WaBewVor-Benutzer" AS "bearbeitet durch" FROM Vorgang ORDER BY Nummer DESC')
     rows = cursor.fetchall()
 
     
@@ -974,7 +991,7 @@ def open_uebersichtGeraete():
     mask6_title = tk.Label(mask6_frame, fg="black", bg='white', text="Übersicht Geräte", font=('Arial', 14))
     mask6_title.place(x=10, y=10)
 
-    cursor.execute('SELECT Inventar_x0020_Nr AS InventarNr, Bezeichnung, Typ, "Serien-Nr", Andere_x0020_Nummer AS Weitere, Eigentümer, Raum, "LetzterWertvonWaBewVor-MA_Ausgabe" AS Mitarbeiter, Status, Netto_x0020_Einkaufspreis AS Einkaufspreis FROM Ware')
+    cursor.execute('SELECT Inventar_x0020_Nr AS InventarNr, Bezeichnung, Typ, "Serien-Nr", Andere_x0020_Nummer AS Weitere, Eigentümer, Raum, "LetzterWertvonWaBewVor-MA_Ausgabe" AS Mitarbeiter, Status, Netto_x0020_Einkaufspreis AS Preis FROM Ware ORDER BY Inventar_x0020_Nr DESC')
     rows = cursor.fetchall()
 
     
@@ -990,16 +1007,16 @@ def open_uebersichtGeraete():
     #column_names = column_names[1:]
     tree['columns'] = column_names
     
-    tree.column(column_names[0], width=65)
-    tree.column(column_names[1], width=75)
-    tree.column(column_names[2], width=180)
-    tree.column(column_names[3], width=140)
-    tree.column(column_names[4], width=150)
-    tree.column(column_names[5], width=80)
-    tree.column(column_names[6], width=100)
-    tree.column(column_names[7], width=90)
-    tree.column(column_names[8], width=100)
-    tree.column(column_names[9], width=100)
+    tree.column(column_names[0], width=65)  #InventarNr
+    tree.column(column_names[1], width=75)  #Bezeichnung
+    tree.column(column_names[2], width=180) #Typ
+    tree.column(column_names[3], width=140) #SerienNr
+    tree.column(column_names[4], width=150) #Weitere
+    tree.column(column_names[5], width=80)  #Eigentümer
+    tree.column(column_names[6], width=100) #Raum
+    tree.column(column_names[7], width=160) #Mitarbeiter
+    tree.column(column_names[8], width=80)  #Status
+    tree.column(column_names[9], width=50)  #Einkaufspreis
 
     for column in column_names:
         tree.heading(column, text=column)
