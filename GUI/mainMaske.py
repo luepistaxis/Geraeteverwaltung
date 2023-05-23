@@ -5,7 +5,6 @@ from tkcalendar import DateEntry
 import locale
 import sqlite3
 import getpass
-import os
 
 #Kalender auf Deutsche Sprache
 locale.setlocale(locale.LC_ALL, 'de_DE')
@@ -420,11 +419,11 @@ def open_Ausgabe():
     
     #Funktion zum Eingabe überprüfen
     def check_entry(*args):
-        char = mask2_inventarnr.get()
+        char = mask2_inventar_NrEntry.get()
         if len(char) >= 6:
-            mask2_inventarnr.config(state='readonly')
+            mask2_inventar_NrEntry.config(state='readonly')
         else:
-            mask2_inventarnr.config(state='normal')
+            mask2_inventar_NrEntry.config(state='normal')
 
     def verwerfen():
         mask2_frame.destroy()
@@ -464,8 +463,9 @@ def open_Ausgabe():
         cursor.execute("SELECT Inventar_x0020_Nr FROM Ware WHERE Inventar_x0020_Nr = ?", (mask2_inventar_NrEntryString,))
         result = cursor.fetchall()
         #print(result)
-        if mask2_auswahlString !="None":
-            if mask2_inventar_NrEntryString != [] and len(mask2_inventar_NrEntryString) == 6:
+        print(mask2_auswahlString)
+        if mask2_auswahlString !="None" and mask2_auswahlString !="Mitarbeiter" and mask2_auswahlString !="Arbeitsplatz":
+            if result !=[] and len(mask2_inventar_NrEntryString) == 6:
                 if mask2_auswahl_mitarbeiter == 'mitarbeiter':
                     #print('Mitarbeiter')
                     cursor.execute("UPDATE Ware SET Raum = '' WHERE Inventar_x0020_Nr = ?", (mask2_inventar_NrEntryString,)) 
@@ -651,13 +651,11 @@ def open_Ausgabe():
     mask2_statusInput = tk.Label(mask2_deviceInput, text="", bg="white")
     mask2_statusInput.place(x=340, y=5, width=100, height=20)
 
-
-
 def open_Warenausgang():
     def toggle_frame():
         mask3_frame.destroy()
         open_Warenausgang()
-        print('gelöscht')
+        #print('gelöscht')
 
     warenausgang_btn.configure(command=toggle_frame)
     
@@ -703,7 +701,6 @@ def open_Warenausgang():
         mask3_delete = tk.Button(mask3_deviceInput2, text="-", font=('Arial', 16), command=delete_frame)
         mask3_delete.place(x=500, y=0, height=30, width=30)
 
-
     #Funktion Max Länge für Entry
     def validate_entry(char):
         if len(char) > 6 :
@@ -712,11 +709,11 @@ def open_Warenausgang():
     
     #Funktion zum Eingabe überprüfen
     def check_entry(*args):
-        char = mask3_inventarnr.get()
+        char = mask3_inventar_NrEntry.get()
         if len(char) >= 6:
-            mask3_inventarnr.config(state='readonly')
+            mask3_inventar_NrEntry.config(state='readonly')
         else:
-            mask3_inventarnr.config(state='normal')
+            mask3_inventar_NrEntry.config(state='normal')
 
     def verwerfen():
         mask3_frame.destroy()
@@ -727,23 +724,32 @@ def open_Warenausgang():
     
     def speichern():
         inventarString = mask3_inventar_NrEntry.get()
+        vorgangString = mask3_vorgangCombobox.get()
         cursor.execute("SELECT MAX(Nummer) FROM Vorgang")
         test = cursor.fetchone()
         liste = int(test[0])
         bla = liste + 1
         datumString = mask3_dateEntry.get()
         beschreibung = mask3_vorgangCombobox.get()
-        bestaetigung = messagebox.askokcancel("Bestätigung", "Möchten Sie das Gerät wirklich löschen?")
-        if bestaetigung:
-            cursor.execute("DELETE FROM Ware WHERE Inventar_x0020_Nr = ?", (inventarString,))
-            cursor.execute("INSERT INTO Vorgang (Nummer, 'WaBewVor-Datum', BewArt_KurzBeschreibung, InventarNr, 'WaBewVor-MA_Ausgabe', 'WaBewVor-Benutzer') VALUES(?, ?, ? ,?, ?, ?)", (bla, datumString, beschreibung, inventarString,"", benutzername,))
-            connection.commit()
-            mask3_frame.destroy()
-            messagebox.showinfo("Löschen", "Das Gerät wurde erfolgreich gelöscht.")
-            open_Warenausgang()
+        cursor.execute("SELECT Inventar_x0020_Nr FROM Ware WHERE Inventar_x0020_Nr = ?", (inventarString,))
+        result = cursor.fetchall()
+        if vorgangString !="":
+            if result !=[] and len(inventarString) == 6:
+                bestaetigung = messagebox.askokcancel("Bestätigung", "Möchten Sie das Gerät wirklich löschen?")
+                if bestaetigung:
+                    cursor.execute("DELETE FROM Ware WHERE Inventar_x0020_Nr = ?", (inventarString,))
+                    cursor.execute("INSERT INTO Vorgang (Nummer, 'WaBewVor-Datum', BewArt_KurzBeschreibung, InventarNr, 'WaBewVor-MA_Ausgabe', 'WaBewVor-Benutzer') VALUES(?, ?, ? ,?, ?, ?)", (bla, datumString, beschreibung, inventarString,"", benutzername,))
+                    connection.commit()
+                    mask3_frame.destroy()
+                    messagebox.showinfo("Löschen", "Das Gerät wurde erfolgreich gelöscht.")
+                    open_Warenausgang()
+            else:
+                messagebox.showerror("Fehlermeldung", "Dieses Gerät existiert nicht.")
+        else:
+            messagebox.showerror("Fehlermeldung", "Sie müssen einen Vorgang auswählen.")
+
+
         
-
-
     def fillout(event):
         if event.keysym == "Return":
             mask3_inventar_NrEntryString = mask3_inventar_NrEntry.get()
@@ -781,8 +787,6 @@ def open_Warenausgang():
 
     mask3_vorgangCombobox = ttk.Combobox(mask3_frame)
     mask3_vorgangCombobox.place(x=100, y=90)
-
-
 
     #Abrufen von Daten aus der Typ Tabelle
     cursor.execute("SELECT Bezeichnung FROM Bewegungsarten")
@@ -864,14 +868,11 @@ def open_vorgaenge():
     cursor.execute('SELECT Nummer, "WaBewVor-Datum", BewArt_KurzBeschreibung AS Beschreibung, InventarNr, "WaBewVor-MA_Ausgabe" AS "ausgegeben an", "WaBewVor-Benutzer" AS "bearbeitet durch" FROM Vorgang ORDER BY Nummer DESC')
     rows = cursor.fetchall()
 
-    
-
     tree = ttk.Treeview(mask4_frame)
     scrollbar = tk.Scrollbar(mask4_frame, orient="vertical", command=tree.yview)
     scrollbar.place(x=1081, y=60, height=620)
     tree.configure(yscrollcommand=scrollbar.set, height=30)
 
-    
     columns = cursor.description
     column_names = [column[0] for column in columns]
     #column_names = column_names[1:]
@@ -883,7 +884,6 @@ def open_vorgaenge():
     tree.column(column_names[3], width=100)
     tree.column(column_names[4], width=180)
     tree.column(column_names[5], width=120)
-
 
     for column in column_names:
         tree.heading(column, text=column)
@@ -900,9 +900,6 @@ def open_vorgaenge():
     tree.configure(xscrollcommand=scrollbar.set)
 
     tree.place(x=-200, y=60)
-
-
-
 
 def open_uebersichtMitarbeiter():
     def toggle_frame():
