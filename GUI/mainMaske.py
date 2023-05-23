@@ -24,7 +24,8 @@ benutzername = getpass.getuser()
 
 #SQLite Datenbank Verbindung
 db_filename = 'database.db'
-database_path = "K:\\IT-Assistenz\\Geräteverwaltung\\Geraeteverwaltung\\Geraeteverwaltung\\database.db"
+#database_path = "K:\\IT-Assistenz\\Geräteverwaltung\\Geraeteverwaltung\\Geraeteverwaltung\\database.db"
+database_path = "C:\Users\luisa.aslanidis\VisualProjekte\Geraeteverwaltung\Geraeteverwaltung"
 connection = sqlite3.connect(database_path)
 cursor = connection.cursor()
 
