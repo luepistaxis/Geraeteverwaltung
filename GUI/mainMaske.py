@@ -391,9 +391,7 @@ def open_Wareneingang():
     mask1_preis.place(x=282, y=85)
     mask1_preisEntry = tk.Entry(mask1_deviceFrame) 
     mask1_preisEntry.place(x=390, y=85)
-
     
-
 def open_Ausgabe():
     def toggle_frame():
         mask2_frame.destroy()
@@ -463,38 +461,27 @@ def open_Ausgabe():
         cursor.execute("SELECT Inventar_x0020_Nr FROM Ware WHERE Inventar_x0020_Nr = ?", (mask2_inventar_NrEntryString,))
         result = cursor.fetchall()
         #print(result)
-        print(mask2_auswahlString)
+        #print(mask2_auswahlString)
         if mask2_auswahlString !="None" and mask2_auswahlString !="Mitarbeiter" and mask2_auswahlString !="Arbeitsplatz":
             if result !=[] and len(mask2_inventar_NrEntryString) == 6:
                 if mask2_auswahl_mitarbeiter == 'mitarbeiter':
                     #print('Mitarbeiter')
                     cursor.execute("UPDATE Ware SET Raum = '' WHERE Inventar_x0020_Nr = ?", (mask2_inventar_NrEntryString,)) 
                     cursor.execute("UPDATE Ware SET 'LetzterWertvonWaBewVor-MA_Ausgabe' = ? WHERE Inventar_x0020_Nr = ?", (mask2_auswahlString, mask2_inventar_NrEntryString,))
-                    #print(type(mask2_inventar_NrEntryString))
-                    #print(mask2_auswahlString)
                     connection.commit()
                 elif mask2_auswahl_mitarbeiter == 'arbeitsplatz':
                     cursor.execute("UPDATE Ware SET 'LetzterWertvonWaBewVor-MA_Ausgabe' = '' WHERE Inventar_x0020_Nr = ?", (mask2_inventar_NrEntryString,)) 
                     cursor.execute("UPDATE Ware SET Raum = ? WHERE Inventar_x0020_Nr = ?", (mask2_auswahlString, mask2_inventar_NrEntryString,))
-                    #print('Arbeitsplatz')
-                    #print(mask2_auswahlString)
-                    #print(mask2_inventar_NrEntryString)
+
                 
                 cursor.execute("SELECT * FROM Ware WHERE Inventar_x0020_Nr = ?", (mask2_inventar_NrEntryString,))
                 result = cursor.fetchall()
-                #print(result)
                 cursor.execute("SELECT MAX(Nummer) FROM Vorgang")
                 test = cursor.fetchone()
                 liste = int(test[0])
-                bla = liste + 1
-                #test1 = (liste,)
-                #print(test1)
-                #cursor.execute("SELECT MAX(ID-WaBewVor) FROM Vorgang")
-                #wert = cursor.fetchall()
-                #print(wert)
-                #aktuellWert = wert[0]
+                test1 = liste + 1
                 datumString = mask2_dateEntry.get()
-                cursor.execute("INSERT INTO Vorgang (Nummer, 'WaBewVor-Datum', BewArt_KurzBeschreibung, InventarNr, 'WaBewVor-MA_Ausgabe', 'WaBewVor-Benutzer') VALUES(?, ?, ? ,?, ? ,?)", (bla, datumString, beschreibung, mask2_inventar_NrEntryString, mask2_auswahlString, benutzername,))
+                cursor.execute("INSERT INTO Vorgang (Nummer, 'WaBewVor-Datum', BewArt_KurzBeschreibung, InventarNr, 'WaBewVor-MA_Ausgabe', 'WaBewVor-Benutzer') VALUES(?, ?, ? ,?, ? ,?)", (test1, datumString, beschreibung, mask2_inventar_NrEntryString, mask2_auswahlString, benutzername,))
                 connection.commit()
                 mask2_frame.destroy()
             else:
