@@ -22,6 +22,21 @@ w = 720
 #Benutzername für die Vorgänge 
 benutzername = getpass.getuser()
 
+#Darkmode
+dark_theme = {
+    'bg': '#333333',
+    'fg': '#ffffff',
+    'button_bg': '#555555',
+    'button_fg': '#ffffff'
+}
+
+white_theme = {
+    'bg': '#ffffff',
+    'fg': '#000000',
+    'button_bg': '#eeeeee',
+    'button_fg': '#000000'
+}
+
 #SQLite Datenbank Verbindung
 db_filename = 'database.db'
 #database_path = "K:\\IT-Assistenz\\Geräteverwaltung\\Geraeteverwaltung\\Geraeteverwaltung\\database.db"
@@ -106,7 +121,7 @@ def open_Wareneingang():
             if inventarString == "" or bezeichnungString == "" or typString == "" or eigentuemerString == "" or raumString == "":
                 messagebox.showerror("Fehlermeldung", "Nicht alle Pflichtfelder wurden ausgefüllt.\nAchten Sie darauf, dass alle Pflichtfelder ausgefüllt sind.")
                 return
-            cursor.execute("INSERT INTO Ware ('Inventar_x0020_Nr', Bezeichnung, Typ, 'Serien-Nr', Weitere, 'Eigentümer', Raum, 'LetzterWertvonWaBewVor-MA_Ausgabe', Status, 'Netto_x0020_Einkaufspreis') VALUES (?, ?, ?, ?, ?, ?, ?, '', 'Freigegeben', ?)", (inventarString, bezeichnungString, typString, seriennrString, weitereString, eigentuemerString, raumString, preisString))
+            cursor.execute("INSERT INTO Ware ('Inventar_x0020_Nr', Bezeichnung, Typ, 'Serien-Nr', Andere_x0020_Nummer, 'Eigentümer', Raum, 'LetzterWertvonWaBewVor-MA_Ausgabe', Status, 'Netto_x0020_Einkaufspreis') VALUES (?, ?, ?, ?, ?, ?, ?, '', 'Freigegeben', ?)", (inventarString, bezeichnungString, typString, seriennrString, weitereString, eigentuemerString, raumString, preisString))
             #cursor.execute("UPDATE Ware SET Inventar_x0020_Nr = (SELECT Inventar_x0020_Nr FROM Ware ORDER BY Inventar_x0020_Nr ASC)")
             #cursor.execute("CREATE INDEX IF NOT EXISTS indexname ON Ware('Inventar_x0020_Nr')")
             cursor.execute("CREATE TEMPORARY TABLE TempTable AS SELECT * FROM Ware ORDER BY Inventar_x0020_Nr ASC")
@@ -445,6 +460,7 @@ def open_Ausgabe():
 
                 cursor.execute("SELECT * FROM Ware WHERE Inventar_x0020_Nr = ?", (mask2_inventar_NrEntryString,))
                 result = cursor.fetchall()
+                handle_new_entry()
                 cursor.execute("SELECT MAX(Nummer) FROM Vorgang")
                 test = cursor.fetchone()
                 liste = int(test[0])
@@ -481,6 +497,33 @@ def open_Ausgabe():
                 mask2_typInput.configure(text=typ_inhaltString)
                 mask2_statusInput.configure(text=status_inhalt)
                 #print(bezeichnung_inhalt)
+
+    def handle_new_entry():
+        #if event.keysym == "Return":
+        new_entry = mask2_auswahl.get()
+            #if new_entry:
+        if mask2_auswahl_mitarbeiter == 'mitarbeiter':
+
+            #Überprüfung ob Eintrag bereits in der Datenbank vorhanden ist
+            cursor.execute("SELECT 'Vor-_x0020_Nachname' FROM Mitarbeiter WHERE 'Vor-_x0020_Nachname' = ?", (new_entry,))
+            existing_entry = cursor.fetchone()
+
+            if (existing_entry):
+                pass
+            else:
+                cursor.execute("INSERT INTO Mitarbeiter ('Vor-_x0020_Nachname') VALUES (?)", (new_entry,))
+                connection.commit()
+
+        elif mask2_auswahl_mitarbeiter == 'arbeitsplatz':
+            #Überprüfung ob Eintrag bereits in der Datenbank vorhanden ist
+            cursor.execute("SELECT Raum FROM Raum WHERE Raum = ?", (new_entry,))
+            existing_entry = cursor.fetchone()
+
+            if (existing_entry):
+                pass
+            else:
+                cursor.execute("INSERT INTO Raum (Raum) VALUES (?)", (new_entry,))
+                connection.commit()
 
     def open_new_frame():
 
@@ -538,6 +581,7 @@ def open_Ausgabe():
     mask2_arbeitsplatzRadioBtn = tk.Radiobutton(mask2_frame, text="Arbeitsplatz", font=('Arial', 12), bg="white", variable=mask2_auswahl_var, value="Arbeitsplatz")
     mask2_arbeitsplatzRadioBtn.place(x=140, y=80)
 
+    
     mask2_auswahl = ttk.Combobox(mask2_frame, textvariable=mask2_auswahl_var)
     mask2_auswahl.place(x=40, y=130)
 
