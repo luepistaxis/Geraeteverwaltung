@@ -4,17 +4,17 @@ import getpass
 
 from tkinter import ttk
 from ttkthemes import ThemedStyle
-from maske1 import Maske1
-from maske2 import Maske2
-from maske3 import Maske3
-from maske4 import Maske4
-from maske5 import Maske5
-from maske6 import Maske6
+from wareneingang_maske import Wareneingang
+from ausgabe_maske import Ausgabe
+from warenausgang_maske import Warenausgang
+from vorgaenge_maske import Vorgaenge
+from uebersicht_mitarbeiter_maske import UebersichtMitarbeiter
+from uebersicht_geraete_maske import UebersichtGeraete
 
-#Kalender auf Deutsche Sprache
+# Kalender auf Deutsche Sprache
 locale.setlocale(locale.LC_ALL, 'de_DE')
 
-#Benutzername für die Vorgänge 
+# Benutzername für die Vorgänge 
 benutzername = getpass.getuser()
 
 
@@ -35,51 +35,51 @@ class MainWindow(tk.Tk):
         style.map("TButton", background=[("active", "#AAA")])
 
         # Buttons für die Menüpunkte
-        self.wareneingang_btn = ttk.Button(self.menu_frame, text="Warenaufnahme", command=self.open_maske1, style="TButton")
+        self.wareneingang_btn = ttk.Button(self.menu_frame, text="Warenaufnahme", command=self.open_wareneingang, style="TButton")
         self.wareneingang_btn.pack()
 
-        self.ausgabe_btn = ttk.Button(self.menu_frame, text="Ausgabe", command=self.open_maske2, style="TButton")
+        self.ausgabe_btn = ttk.Button(self.menu_frame, text="Ausgabe", command=self.open_ausgabe, style="TButton")
         self.ausgabe_btn.pack()
 
-        self.warenausgang_btn = ttk.Button(self.menu_frame, text="Warenausgang", command=self.open_maske3, style="TButton")
+        self.warenausgang_btn = ttk.Button(self.menu_frame, text="Warenausgang", command=self.open_warenausgang, style="TButton")
         self.warenausgang_btn.pack()
 
-        self.vorgaenge_btn = ttk.Button(self.menu_frame, text="Alle Vorgänge", command=self.open_maske4, style="TButton")
+        self.vorgaenge_btn = ttk.Button(self.menu_frame, text="Alle Vorgänge", command=self.open_vorgaenge, style="TButton")
         self.vorgaenge_btn.pack()
 
-        self.uebersichtMitarbeiter_btn = ttk.Button(self.menu_frame, text="Übersicht Mitarbeiter", command=self.open_maske5, style="TButton")
+        self.uebersichtMitarbeiter_btn = ttk.Button(self.menu_frame, text="Übersicht Mitarbeiter", command=self.open_uebersicht_mitarbeiter, style="TButton")
         self.uebersichtMitarbeiter_btn.pack()
 
-        self.uebersichtGeraete_btn = ttk.Button(self.menu_frame, text="Übersicht Geräte", command=self.open_maske6, style="TButton")
+        self.uebersichtGeraete_btn = ttk.Button(self.menu_frame, text="Übersicht Geräte", command=self.open_uebersicht_geraete, style="TButton")
         self.uebersichtGeraete_btn.pack()
 
         self.buttonExit = ttk.Button(self.menu_frame, text="Exit", command=self.destroy)
         self.buttonExit.pack(side="bottom")
 
-        self.maske1 = Maske1(self, self.wareneingang_btn, self.ausgabe_btn, self.warenausgang_btn, self.vorgaenge_btn, self.uebersichtMitarbeiter_btn, self.uebersichtGeraete_btn)
-        self.maske2 = Maske2(self, self.wareneingang_btn, self.ausgabe_btn, self.warenausgang_btn, self.vorgaenge_btn, self.uebersichtMitarbeiter_btn, self.uebersichtGeraete_btn)
-        self.maske3 = Maske3(self, self.wareneingang_btn, self.ausgabe_btn, self.warenausgang_btn, self.vorgaenge_btn, self.uebersichtMitarbeiter_btn, self.uebersichtGeraete_btn)
-        self.maske4 = Maske4(self, self.wareneingang_btn, self.ausgabe_btn, self.warenausgang_btn, self.vorgaenge_btn, self.uebersichtMitarbeiter_btn, self.uebersichtGeraete_btn)
-        self.maske5 = Maske5(self, self.wareneingang_btn, self.ausgabe_btn, self.warenausgang_btn, self.vorgaenge_btn, self.uebersichtMitarbeiter_btn, self.uebersichtGeraete_btn)
-        self.maske6 = Maske6(self, self.wareneingang_btn, self.ausgabe_btn, self.warenausgang_btn, self.vorgaenge_btn, self.uebersichtMitarbeiter_btn, self.uebersichtGeraete_btn)
+        self.wareneingang = Wareneingang(self, self.wareneingang_btn, self.ausgabe_btn, self.warenausgang_btn, self.vorgaenge_btn, self.uebersichtMitarbeiter_btn, self.uebersichtGeraete_btn)
+        self.ausgabe = Ausgabe(self, self.wareneingang_btn, self.ausgabe_btn, self.warenausgang_btn, self.vorgaenge_btn, self.uebersichtMitarbeiter_btn, self.uebersichtGeraete_btn)
+        self.warenausgang = Warenausgang(self, self.wareneingang_btn, self.ausgabe_btn, self.warenausgang_btn, self.vorgaenge_btn, self.uebersichtMitarbeiter_btn, self.uebersichtGeraete_btn)
+        self.vorgaenge = Vorgaenge(self, self.wareneingang_btn, self.ausgabe_btn, self.warenausgang_btn, self.vorgaenge_btn, self.uebersichtMitarbeiter_btn, self.uebersichtGeraete_btn)
+        self.uebersicht_mitarbeiter = UebersichtMitarbeiter(self, self.wareneingang_btn, self.ausgabe_btn, self.warenausgang_btn, self.vorgaenge_btn, self.uebersichtMitarbeiter_btn, self.uebersichtGeraete_btn)
+        self.uebersicht_geraete = UebersichtGeraete(self, self.wareneingang_btn, self.ausgabe_btn, self.warenausgang_btn, self.vorgaenge_btn, self.uebersichtMitarbeiter_btn, self.uebersichtGeraete_btn)
 
-    def open_maske1(self):
-        self.maske1.open_wareneingang()
+    def open_wareneingang(self):
+        self.wareneingang.open_wareneingang()
 
-    def open_maske2(self):
-        self.maske2.open_ausgabe()
+    def open_ausgabe(self):
+        self.ausgabe.ausgabe()
 
-    def open_maske3(self):
-        self.maske3.open_warenausgang()
+    def open_warenausgang(self):
+        self.warenausgang.open_warenausgang()
 
-    def open_maske4(self):
-        self.maske4.open_vorgaenge()
+    def open_vorgaenge(self):
+        self.vorgaenge.open_vorgaenge()
 
-    def open_maske5(self):
-        self.maske5.open_uebersicht_mitarbeiter()
+    def open_uebersicht_mitarbeiter(self):
+        self.uebersicht_mitarbeiter.open_uebersicht_mitarbeiter()
     
-    def open_maske6(self):
-        self.maske6.open_uebersicht_geraete()
+    def open_uebersicht_geraete(self):
+        self.uebersicht_geraete.open_uebersicht_geraete()
 
     def run(self):
         self.mainloop()

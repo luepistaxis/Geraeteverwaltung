@@ -1,17 +1,15 @@
 import sqlite3
-import locale
 import tkinter as tk
+import getpass
+import os
 from tkinter import ttk
 from tkinter import messagebox
-from ttkthemes import ThemedStyle
 from tkcalendar import DateEntry
-import getpass
 
-
-#SQLite Datenbank Verbindung
-db_filename = 'database.db'
+# Datenbank Verbindung
+gui_folder = os.path.dirname(os.path.abspath(__file__))
 #database_path = "K:\\IT-Assistenz\\Geräteverwaltung\\Geraeteverwaltung\\Geraeteverwaltung\\database.db"
-database_path = "C:\\Users\\luisa.aslanidis\\VisualProjekte\\Test1\\Datenbank\\database.db"
+database_path = os.path.join(gui_folder, "..", "Datenbank", "database.db")
 connection = sqlite3.connect(database_path)
 cursor = connection.cursor()
 
@@ -19,9 +17,7 @@ cursor = connection.cursor()
 l = 1280
 w = 720
 
-
-
-class Maske1(tk.Frame):
+class Wareneingang(tk.Frame):
     def __init__(self, parent, wareneingang_btn, ausgabe_btn, warenausgang_btn, vorgaenge_btn, uebersichtMitarbeiter_btn, uebersichtGeraete_btn):
         super().__init__(parent)
         self.parent = parent
