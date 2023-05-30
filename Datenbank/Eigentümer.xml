@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataroot xmlns:od="urn:schemas-microsoft-com:officedata" generated="2023-05-12T15:06:04">
+<TAB_R_Eigentümer>
+<ID-Eigentümer>1</ID-Eigentümer>
+<Eigentümer>NET CHECK</Eigentümer>
+</TAB_R_Eigentümer>
+<TAB_R_Eigentümer>
+<ID-Eigentümer>2</ID-Eigentümer>
+<Eigentümer>NC Plan</Eigentümer>
+</TAB_R_Eigentümer>
+<TAB_R_Eigentümer>
+<ID-Eigentümer>3</ID-Eigentümer>
+<Eigentümer>NC Group</Eigentümer>
+</TAB_R_Eigentümer>
+<TAB_R_Eigentümer>
+<ID-Eigentümer>4</ID-Eigentümer>
+<Eigentümer>NC SYSTEMS</Eigentümer>
+</TAB_R_Eigentümer>
+</dataroot>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataroot xmlns:od="urn:schemas-microsoft-com:officedata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  xsi:noNamespaceSchemaLocation="TAB_R_Bezeichnungen.xsd" generated="2023-05-12T11:08:13">
+<TAB_R_Bezeichnungen>
+<ID_Bezeichnung>1</ID_Bezeichnung>
+<Bezeichnung>Drucker</Bezeichnung>
+<ID-Kat>6</ID-Kat>
+</TAB_R_Bezeichnungen>
+<TAB_R_Bezeichnungen>
+<ID_Bezeichnung>2</ID_Bezeichnung>
+<Bezeichnung>PC</Bezeichnung>
+<ID-Kat>6</ID-Kat>
+</TAB_R_Bezeichnungen>
+<TAB_R_Bezeichnungen>
+<ID_Bezeichnung>3</ID_Bezeichnung>
+<Bezeichnung>Monitor</Bezeichnung>
+<ID-Kat>6</ID-Kat>
+</TAB_R_Bezeichnungen>
+<TAB_R_Bezeichnungen>
+<ID_Bezeichnung>4</ID_Bezeichnung>
+<Bezeichnung>Notebook</Bezeichnung>
+<ID-Kat>6</ID-Kat>
+</TAB_R_Bezeichnungen>
+<TAB_R_Bezeichnungen>
+<ID_Bezeichnung>5</ID_Bezeichnung>
+<Bezeichnung>Laptop</Bezeichnung>
+<ID-Kat>6</ID-Kat>
+</TAB_R_Bezeichnungen>
+<TAB_R_Bezeichnungen>
+<ID_Bezeichnung>6</ID_Bezeichnung>
+<Bezeichnung>Mobiltelefon</Bezeichnung>
+<ID-Kat>3</ID-Kat>
+</TAB_R_Bezeichnungen>
+</dataroot>
