@@ -37,17 +37,17 @@ class Vorgaenge(tk.Frame):
             button.state(['!pressed'])
         self.vorgaenge_btn.state(['pressed'])
 
-        mask4_frame = tk.Frame(self.parent, bg="white")
-        mask4_frame.place(x=161, y=1, anchor="nw", relheight=500, relwidth=805)
+        vorgaenge_frame = tk.Frame(self.parent, bg="white")
+        vorgaenge_frame.place(x=161, y=1, anchor="nw", relheight=500, relwidth=805)
 
-        mask5_title = tk.Label(mask4_frame, fg="black", bg='white', text="Alle Vorgänge", font=('Arial', 14))
-        mask5_title.place(x=10, y=10)
+        title = tk.Label(vorgaenge_frame, fg="black", bg='white', text="Alle Vorgänge", font=('Arial', 14))
+        title.place(x=10, y=10)
 
         cursor.execute('SELECT Nummer, "WaBewVor-Datum", BewArt_KurzBeschreibung AS Beschreibung, InventarNr, "WaBewVor-MA_Ausgabe" AS "ausgegeben an", "WaBewVor-Benutzer" AS "bearbeitet durch" FROM Vorgang ORDER BY Nummer DESC')
         rows = cursor.fetchall()
 
-        tree = ttk.Treeview(mask4_frame)
-        scrollbar = tk.Scrollbar(mask4_frame, orient="vertical", command=tree.yview)
+        tree = ttk.Treeview(vorgaenge_frame)
+        scrollbar = tk.Scrollbar(vorgaenge_frame, orient="vertical", command=tree.yview)
         scrollbar.place(x=1081, y=60, height=620)
         tree.configure(yscrollcommand=scrollbar.set, height=30)
 
@@ -67,8 +67,6 @@ class Vorgaenge(tk.Frame):
             tree.heading(column, text=column)
 
         tree.configure(show="tree headings tree")
-        style = ttk.Style()
-        #style.configure("Treeview.Heading", background="white", foreground="black")
 
         for row in rows:
             tree.insert('', 'end', values=row)

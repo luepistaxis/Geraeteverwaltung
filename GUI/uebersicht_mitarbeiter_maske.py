@@ -29,12 +29,12 @@ class UebersichtMitarbeiter(tk.Frame):
 
     def open_uebersicht_mitarbeiter(self):
         def toggle_frame():
-            if mask5_frame.winfo_ismapped():
-                mask5_frame.pack_forget()
+            if uebersicht_mitarbeiter_frame.winfo_ismapped():
+                uebersicht_mitarbeiter_frame.pack_forget()
                 self.open_uebersicht_mitarbeiter()
 
             else:
-                mask5_frame.pack()
+                uebersicht_mitarbeiter_frame.pack()
 
 
         self.uebersichtMitarbeiter_btn.configure(command=toggle_frame)
@@ -44,18 +44,18 @@ class UebersichtMitarbeiter(tk.Frame):
             button.state(['!pressed'])
         self.uebersichtMitarbeiter_btn.state(['pressed'])
 
-        mask5_frame = tk.Frame(self.parent, bg="white")
-        mask5_frame.place(x=161, y=1, anchor="nw", relheight=500, relwidth=950)
+        uebersicht_mitarbeiter_frame = tk.Frame(self.parent, bg="white")
+        uebersicht_mitarbeiter_frame.place(x=161, y=1, anchor="nw", relheight=500, relwidth=950)
 
         #mask5_frame.place(x=161, y=0, anchor="nw", relheight=300, relwidth=150)
-        mask5_title = tk.Label(mask5_frame, fg="black", bg='white', text="Übersicht Mitarbeiter", font=('Arial', 14))
-        mask5_title.place(x=10, y=10)
+        title = tk.Label(uebersicht_mitarbeiter_frame, fg="black", bg='white', text="Übersicht Mitarbeiter", font=('Arial', 14))
+        title.place(x=10, y=10)
 
         cursor.execute('SELECT "LetzterWertvonWaBewVor-MA_Ausgabe" AS Mitarbeiter, Inventar_x0020_Nr AS InventarNr, Bezeichnung, Typ, "Serien-Nr", Andere_x0020_Nummer AS Weitere FROM Ware WHERE Mitarbeiter !="" ORDER BY Mitarbeiter')
         rows = cursor.fetchall()
 
-        tree = ttk.Treeview(mask5_frame)
-        scrollbar = tk.Scrollbar(mask5_frame, orient="vertical", command=tree.yview)
+        tree = ttk.Treeview(uebersicht_mitarbeiter_frame)
+        scrollbar = tk.Scrollbar(uebersicht_mitarbeiter_frame, orient="vertical", command=tree.yview)
         scrollbar.place(x=1081, y=60, height=620)
         tree.configure(yscrollcommand=scrollbar.set, height=30)
 
@@ -75,8 +75,6 @@ class UebersichtMitarbeiter(tk.Frame):
             tree.heading(column, text=column)
 
         tree.configure(show="tree headings tree")
-        style = ttk.Style()
-        #style.configure("Treeview.Heading", background="white", foreground="black")
 
         for row in rows:
             tree.insert('', 'end', values=row)
