@@ -8,6 +8,7 @@ from bewegungsarten import Bewegungsarten
 from vorgang import Vorgang
 from vorgang_erweitert import Vorgang_erweitert
 from vorgaenge import Vorgaenge
+from benutzer import Benutzer
 
 class Main:
     def __init__(self):
@@ -21,6 +22,7 @@ class Main:
         self.vorgang = Vorgang()
         self.vorgang_erweitert = Vorgang_erweitert()
         self.vorgaenge = Vorgaenge()
+        self.benutzer = Benutzer()
 
     def run(self):
         self.geraeteliste.geraeteliste_methode()
@@ -33,6 +35,7 @@ class Main:
         self.vorgang.vorgang_methode()
         self.vorgang_erweitert.vorgang_erweitert_methode()
         self.vorgaenge.vorgaenge_methode()
+        self.benutzer.benutzer_methode()
 
 if __name__ == "__main__":
     main_instance = Main()
