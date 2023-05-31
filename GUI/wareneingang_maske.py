@@ -30,7 +30,6 @@ class Wareneingang(tk.Frame):
         #Benutzername für die Vorgänge 
         self.benutzername = getpass.getuser()
         
-
     def open_wareneingang(self):
         self.beschreibung = "Lagereingang"
         def toggle_frame():
@@ -62,7 +61,7 @@ class Wareneingang(tk.Frame):
             #if event.keysym == "Return":
             new_entry = typ_combo_var.get()
                 #if new_entry:
-
+    
             cursor.execute("SELECT MAX(ID_Typ) FROM Typ")
             max_id = cursor.fetchone()[0]
 
@@ -98,8 +97,6 @@ class Wareneingang(tk.Frame):
             cursor.execute("SELECT Inventar_x0020_Nr FROM Ware WHERE Inventar_x0020_Nr = ?", (inventar_string,))
             result = cursor.fetchall()
             if result == [] and len(inventar_string) == 6:
-
-            
                 if inventar_string == "" or bezeichnung_string == "" or typ_string == "" or eigentuemer_string == "" or raum_string == "":
                     messagebox.showerror("Fehlermeldung", "Nicht alle Pflichtfelder wurden ausgefüllt.\nAchten Sie darauf, dass alle Pflichtfelder ausgefüllt sind.")
                     return

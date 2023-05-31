@@ -14,7 +14,6 @@ cursor = connection.cursor()
 l = 1280
 w = 720
 
-
 class UebersichtMitarbeiter(tk.Frame):
     
     def __init__(self, parent, wareneingang_btn, ausgabe_btn, warenausgang_btn, vorgaenge_btn, uebersichtMitarbeiter_btn, uebersichtGeraete_btn):
@@ -35,7 +34,6 @@ class UebersichtMitarbeiter(tk.Frame):
 
             else:
                 uebersicht_mitarbeiter_frame.pack()
-
 
         self.uebersichtMitarbeiter_btn.configure(command=toggle_frame)
 

@@ -31,7 +31,6 @@ class Warenausgang(tk.Frame):
         #Benutzername für die Vorgänge 
         self.benutzername = getpass.getuser()
 
-
     def open_warenausgang(self):
         def toggle_frame():
             warenausgang_frame.destroy()

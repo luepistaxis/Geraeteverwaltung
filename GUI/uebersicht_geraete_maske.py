@@ -14,7 +14,6 @@ cursor = connection.cursor()
 l = 1280
 w = 720
 
-
 class UebersichtGeraete(tk.Frame):
     
     def __init__(self, parent, wareneingang_btn, ausgabe_btn, warenausgang_btn, vorgaenge_btn, uebersichtMitarbeiter_btn, uebersichtGeraete_btn):

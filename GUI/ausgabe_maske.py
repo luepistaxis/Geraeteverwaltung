@@ -204,7 +204,6 @@ class Ausgabe(tk.Frame):
         arbeitsplatz_radiobtn = tk.Radiobutton(ausgabe_frame, text="Arbeitsplatz", font=('Arial', 12), bg="white", variable=auswahl_var, value="Arbeitsplatz")
         arbeitsplatz_radiobtn.place(x=140, y=80)
 
-        
         auswahl = ttk.Combobox(ausgabe_frame, textvariable=auswahl_var)
         auswahl.place(x=40, y=130)
 

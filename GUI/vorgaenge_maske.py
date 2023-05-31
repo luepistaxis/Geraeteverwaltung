@@ -12,7 +12,6 @@ w = 720
 #Benutzername für die Vorgänge 
 benutzername = getpass.getuser()
 
-
 class Vorgaenge(tk.Frame):
 
     # Datenbank Verbindung
@@ -22,7 +21,6 @@ class Vorgaenge(tk.Frame):
     connection = sqlite3.connect(database_path)
     cursor = connection.cursor()
 
-    
     def __init__(self, parent, wareneingang_btn, ausgabe_btn, warenausgang_btn, vorgaenge_btn, uebersichtMitarbeiter_btn, uebersichtGeraete_btn):
         super().__init__(parent)
         self.parent = parent
@@ -48,7 +46,6 @@ class Vorgaenge(tk.Frame):
         self.cursor.execute('SELECT * FROM Vorgaenge ORDER BY Nummer DESC')
         self.rows = self.cursor.fetchall()
         
-
         self.tree = ttk.Treeview(self.vorgaenge_frame)
         scrollbar = tk.Scrollbar(self.vorgaenge_frame, orient="vertical", command=self.tree.yview)
         scrollbar.place(x=1081, y=60, height=620)
@@ -79,4 +76,3 @@ class Vorgaenge(tk.Frame):
         self.tree.configure(xscrollcommand=scrollbar.set)
 
         self.tree.place(x=-200, y=60)
-        

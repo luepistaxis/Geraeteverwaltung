@@ -17,7 +17,6 @@ locale.setlocale(locale.LC_ALL, 'de_DE')
 # Benutzername für die Vorgänge 
 benutzername = getpass.getuser()
 
-
 class MainWindow(tk.Tk):
     def __init__(self):
         super().__init__()
