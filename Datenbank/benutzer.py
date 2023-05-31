@@ -24,7 +24,7 @@ class Benutzer:
 
         cursor.execute("DROP TABLE IF EXISTS Benutzer")
         cursor.execute("CREATE TABLE IF NOT EXISTS Benutzer (benutzer_id TEXT, password TEXT)")
-        cursor.execute("INSERT INTO Benutzer (benutzer_id, password) VALUES ('luisa.aslanidis', '1234qwer')")
+        cursor.execute("INSERT INTO Benutzer (benutzer_id, password) VALUES ('luisa.aslanidis', '1234qwer'),('knec', 'test')")
 
         conn.commit()
         conn.close()

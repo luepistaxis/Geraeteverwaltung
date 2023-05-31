@@ -1,9 +1,11 @@
 import sqlite3
 import tkinter as tk
 from tkinter import messagebox
-from getpass import getpass
+import getpass
 import os
 from mainWindow import MainWindow
+
+benutzername = getpass.getuser()
 
 # Datenbank Verbindung
 gui_folder = os.path.dirname(os.path.abspath(__file__))
@@ -43,7 +45,7 @@ class LoginWindow(tk.Tk):
         if username_table is not None:
             cursor.execute("SELECT password FROM Benutzer WHERE benutzer_id = ?", (username,))
             password_table = cursor.fetchone()
-            if username == username_table[0] and password == password_table[0]:
+            if username == username_table[0] and password == password_table[0] and username == benutzername:
                 self.destroy()
                 window = MainWindow()
                 window.mainloop()
