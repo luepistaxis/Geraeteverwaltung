@@ -32,7 +32,7 @@ class Wareneingang(tk.Frame):
         
 
     def open_wareneingang(self):
-        beschreibung = "Lagereingang"
+        self.beschreibung = "Lagereingang"
         def toggle_frame():
             wareneingang_frame.destroy()
             self.open_wareneingang()
@@ -98,6 +98,7 @@ class Wareneingang(tk.Frame):
             cursor.execute("SELECT Inventar_x0020_Nr FROM Ware WHERE Inventar_x0020_Nr = ?", (inventar_string,))
             result = cursor.fetchall()
             if result == [] and len(inventar_string) == 6:
+
             
                 if inventar_string == "" or bezeichnung_string == "" or typ_string == "" or eigentuemer_string == "" or raum_string == "":
                     messagebox.showerror("Fehlermeldung", "Nicht alle Pflichtfelder wurden ausgefüllt.\nAchten Sie darauf, dass alle Pflichtfelder ausgefüllt sind.")
@@ -111,10 +112,14 @@ class Wareneingang(tk.Frame):
                 result = cursor.fetchall()
                 cursor.execute("SELECT MAX(Nummer) FROM Vorgang")
                 test = cursor.fetchone()
+                print(test)
                 liste = int(test[0])
+                print(liste)
                 next_number = liste + 1
                 datum_string = date_entry.get()
-                cursor.execute("INSERT INTO Vorgang (Nummer, 'WaBewVor-Datum', BewArt_KurzBeschreibung, InventarNr, 'WaBewVor-MA_Ausgabe', 'WaBewVor-Benutzer') VALUES(?, ?, ? ,?, ?, ?)", (next_number, datum_string, beschreibung, inventar_string, "" ,self.benutzername,))
+                cursor.execute("INSERT INTO Vorgaenge (Nummer, Datum, Beschreibung, InventarNr, ausgegeben_an, bearbeitet_durch) VALUES(?, ?, ? ,?, ?, ?)", (next_number, datum_string, self.beschreibung, inventar_string, "" ,self.benutzername,))
+                test14 = cursor.fetchall()
+                print(test14)
                 connection.commit()
                 wareneingang_frame.destroy()
                 #self.warenausgang_btn.config(state="normal")

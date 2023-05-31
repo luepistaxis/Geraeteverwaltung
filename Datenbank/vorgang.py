@@ -17,14 +17,14 @@ class Vorgang:
 
         # Datenbankpfad erstellen
         db_path = os.path.join(script_dir, 'database.db')
-        xml_file_path = os.path.join(script_dir, 'C:\\Users\\luisa.aslanidis\\VisualProjekte\\Geraeteverwaltung\\Geraeteverwaltung\\Vorgaenge1.xml')  
+        xml_file_path = os.path.join(script_dir, 'C:\\Users\\luisa.aslanidis\\VisualProjekte\\Test1\\Datenbank\\Vorgang.xml')  
 
         conn = sqlite3.connect(db_path)
         cursor = conn.cursor()
 
 
         cursor.execute("DROP TABLE IF EXISTS Vorgang")
-        cursor.execute("CREATE TABLE IF NOT EXISTS Vorgang (Nummer INT, 'WaBewVor-Datum' TEXT, BewArt_KurzBeschreibung TEXT, InventarNr TEXT, 'WaBewVor-MA_Ausgabe' TEXT, 'WaBewVor-Benutzer' TEXT)")
+        cursor.execute("CREATE TABLE IF NOT EXISTS Vorgang (Nummer INT, Datum TEXT, Beschreibung TEXT, InventarNr TEXT, ausgegeben_an TEXT, bearbeitet_durch TEXT)")
         
         Vorgang_tree = ET.parse(xml_file_path)
 
@@ -39,13 +39,13 @@ class Vorgang:
             else:
                 nummer = ""
 
-            datum_element = child.find('WaBewVor-Datum')
+            datum_element = child.find('Datum')
             if datum_element is not None:
                 datum = datum_element.text
             else:
                 datum = ""
 
-            vorgang_element = child.find('BewArt_KurzBeschreibung')
+            vorgang_element = child.find('Beschreibung')
             if vorgang_element is not None:
                 vorgang = vorgang_element.text
             else:
@@ -57,13 +57,13 @@ class Vorgang:
             else:
                 inventarnr = ""
 
-            ausgabe_element = child.find('WaBewVor-MA_Ausgabe')
+            ausgabe_element = child.find('ausgegeben_an')
             if ausgabe_element is not None:
                 ausgabe = ausgabe_element.text
             else:
                 ausgabe = ""
 
-            bearbeitet_element = child.find('WaBewVor-Benutzer')
+            bearbeitet_element = child.find('bearbeitet_durch')
             if bearbeitet_element is not None:
                 bearbeitet = bearbeitet_element.text
             else:
@@ -72,7 +72,7 @@ class Vorgang:
             
 
             #cursor.execute("ALTER TABLE Ware RENAME COLUMN 'Inventar_x0020_Nr' TO Inventarnr")
-            cursor.execute("INSERT INTO Vorgang (Nummer, 'WaBewVor-Datum', BewArt_KurzBeschreibung, InventarNr, 'WaBewVor-MA_Ausgabe', 'WaBewVor-Benutzer') VALUES (?, ?, ? ,?, ? ,?)", (nummer, datum, vorgang, inventarnr, ausgabe, bearbeitet))
+            cursor.execute("INSERT INTO Vorgang (Nummer, Datum, Beschreibung, InventarNr, ausgegeben_an, bearbeitet_durch) VALUES (?, ?, ? ,?, ? ,?)", (nummer, datum, vorgang, inventarnr, ausgabe, bearbeitet))
             
 
 

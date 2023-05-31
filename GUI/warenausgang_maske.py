@@ -81,7 +81,7 @@ class Warenausgang(tk.Frame):
                     bestaetigung = messagebox.askokcancel("Bestätigung", "Möchten Sie das Gerät wirklich löschen?")
                     if bestaetigung:
                         cursor.execute("DELETE FROM Ware WHERE Inventar_x0020_Nr = ?", (inventar_string,))
-                        cursor.execute("INSERT INTO Vorgang (Nummer, 'WaBewVor-Datum', BewArt_KurzBeschreibung, InventarNr, 'WaBewVor-MA_Ausgabe', 'WaBewVor-Benutzer') VALUES(?, ?, ? ,?, ?, ?)", (next_number, datum_string, beschreibung, inventar_string,"", self.benutzername,))
+                        cursor.execute("INSERT INTO Vorgaenge (Nummer, Datum, Beschreibung, InventarNr, ausgegeben_an, bearbeitet_durch) VALUES(?, ?, ? ,?, ?, ?)", (next_number, datum_string, beschreibung, inventar_string,"", self.benutzername,))
                         connection.commit()
                         warenausgang_frame.destroy()
                         messagebox.showinfo("Löschen", "Das Gerät wurde erfolgreich gelöscht.")
@@ -165,10 +165,10 @@ class Warenausgang(tk.Frame):
         bezeichnung.place(x=100, y=0)
 
         typ = tk.Label(tablename_row, text="Typ:", fg="black", font=("Arial", 12), bg="white")
-        typ.place(x=250, y=0)
+        typ.place(x=300, y=0)
 
         status = tk.Label(tablename_row, text="Status:", fg="black", font=("Arial", 12), bg="white")
-        status.place(x=350, y=0)
+        status.place(x=480, y=0)
 
         device_input = tk.Frame(device_frame, borderwidth=1, relief="solid")
         device_input.place(x=0, y=30, height=30, width=805)
@@ -188,7 +188,7 @@ class Warenausgang(tk.Frame):
         bezeichnung_input.place(x=100, y=5, width=100)
 
         typ_input = tk.Label(device_input, text="", bg="white")
-        typ_input.place(x=210, y=5, width=100)
+        typ_input.place(x=230, y=5, width=200)
 
         status_input = tk.Label(device_input, text="", bg="white")
-        status_input.place(x=350, y=5, width=100, height=20)
+        status_input.place(x=450, y=5, width=100, height=20)

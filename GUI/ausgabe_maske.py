@@ -71,7 +71,7 @@ class Ausgabe(tk.Frame):
                 global auswahl_mitarbeiter
                 if auswahl_var.get() == "Mitarbeiter":
                     #Abrufen von Daten aus der Mitarbeiter Tabelle
-                    cursor.execute('SELECT "Vor-_x0020_Nachname" FROM Mitarbeiter')
+                    cursor.execute('SELECT Name FROM Mitarbeiter')
                     auswahl_data = cursor.fetchall()
                     #Daten in Mitarbeiter ComboBox einfügen
                     auswahl['values'] = [item[0] for item in auswahl_data]
@@ -104,8 +104,9 @@ class Ausgabe(tk.Frame):
                         #print('Mitarbeiter')
                         cursor.execute("UPDATE Ware SET Raum = '' WHERE Inventar_x0020_Nr = ?", (inventarnr_entry_string,)) 
                         cursor.execute("UPDATE Ware SET 'LetzterWertvonWaBewVor-MA_Ausgabe' = ? WHERE Inventar_x0020_Nr = ?", (auswahl_string, inventarnr_entry_string,))
-                        cursor.execute("CREATE TEMPORARY TABLE TempTable AS SELECT * FROM Mitarbeiter ORDER BY 'Vor-_x0020_Nachname' ASC")
-                        cursor.execute('UPDATE Mitarbeiter SET "Vor-_x0020_Nachname" = (SELECT "Vor-_x0020_Nachname" FROM TempTable WHERE TempTable.rowid = Mitarbeiter.rowid), "MA-Kürzel" = (SELECT "MA-Kürzel" FROM TempTable WHERE TempTable.rowid = Mitarbeiter.rowid), Anmeldename = (SELECT Anmeldename FROM TempTable WHERE TempTable.rowid = Mitarbeiter.rowid)')        
+                        cursor.execute("CREATE TEMPORARY TABLE TempTable AS SELECT * FROM Mitarbeiter ORDER BY Name ASC")
+                        connection.commit()
+                        cursor.execute('UPDATE Mitarbeiter SET Name = (SELECT Name FROM TempTable WHERE TempTable.rowid = Mitarbeiter.rowid), Kuerzel = (SELECT Kuerzel FROM TempTable WHERE TempTable.rowid = Mitarbeiter.rowid), Anmeldename = (SELECT Anmeldename FROM TempTable WHERE TempTable.rowid = Mitarbeiter.rowid)')        
                         cursor.execute("DROP TABLE TempTable")
                         connection.commit()
                     elif auswahl_mitarbeiter == 'arbeitsplatz':
@@ -119,12 +120,12 @@ class Ausgabe(tk.Frame):
                     result = cursor.fetchall()
                     
                     handle_new_entry()
-                    cursor.execute("SELECT MAX(Nummer) FROM Vorgang")
+                    cursor.execute("SELECT MAX(Nummer) FROM Vorgaenge")
                     test = cursor.fetchone()
                     liste = int(test[0])
                     next_number = liste + 1
                     datum_string = date_entry.get()
-                    cursor.execute("INSERT INTO Vorgang (Nummer, 'WaBewVor-Datum', BewArt_KurzBeschreibung, InventarNr, 'WaBewVor-MA_Ausgabe', 'WaBewVor-Benutzer') VALUES(?, ?, ? ,?, ? ,?)", (next_number, datum_string, beschreibung, inventarnr_entry_string, auswahl_string, benutzername,))
+                    cursor.execute("INSERT INTO Vorgaenge (Nummer, Datum, Beschreibung, InventarNr, ausgegeben_an, bearbeitet_durch) VALUES(?, ?, ? ,?, ? ,?)", (next_number, datum_string, beschreibung, inventarnr_entry_string, auswahl_string, benutzername,))
                     connection.commit()
                     ausgabe_frame.destroy()
                 else:
@@ -159,13 +160,13 @@ class Ausgabe(tk.Frame):
             if auswahl_mitarbeiter == 'mitarbeiter':
 
                 #Überprüfung ob Eintrag bereits in der Datenbank vorhanden ist
-                cursor.execute("SELECT 'Vor-_x0020_Nachname' FROM Mitarbeiter WHERE 'Vor-_x0020_Nachname' = ?", (new_entry,))
+                cursor.execute("SELECT Name FROM Mitarbeiter WHERE Name = ?", (new_entry,))
                 existing_entry = cursor.fetchone()
 
                 if (existing_entry):
                     pass
                 else:
-                    cursor.execute("INSERT INTO Mitarbeiter ('Vor-_x0020_Nachname') VALUES (?)", (new_entry,))
+                    cursor.execute("INSERT INTO Mitarbeiter (Name) VALUES (?)", (new_entry,))
                     connection.commit()
 
             elif auswahl_mitarbeiter == 'arbeitsplatz':
@@ -178,7 +179,7 @@ class Ausgabe(tk.Frame):
                 else:
                     cursor.execute("INSERT INTO Raum (Raum) VALUES (?)", (new_entry,))
                     connection.commit()
-                    
+
             current_values = auswahl['values']
             updated_values = sorted(current_values + (new_entry,))
             auswahl['values']= updated_values

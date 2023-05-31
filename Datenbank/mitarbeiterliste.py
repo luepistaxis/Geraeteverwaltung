@@ -21,7 +21,7 @@ class MitarbeiterListe:
         cursor = conn.cursor()
 
         cursor.execute('DROP TABLE IF EXISTS Mitarbeiter')
-        cursor.execute('CREATE TABLE IF NOT EXISTS Mitarbeiter ("Vor-_x0020_Nachname" TEXT, "MA-Kürzel" TEXT, Anmeldename TEXT)')
+        cursor.execute('CREATE TABLE IF NOT EXISTS Mitarbeiter (Name TEXT, Kuerzel TEXT, Anmeldename TEXT)')
 
         #mitarbeiter_tree = ET.parse('MitarbeiterListe.xml')
         mitarbeiter_tree = ET.parse(xml_file_path)
@@ -30,13 +30,13 @@ class MitarbeiterListe:
 
         #Testen, ob Feld gefüllt ist oder nicht
         for child in mitarbeiter_xml_root:
-            name_element = child.find('Vor-_x0020_Nachname')
+            name_element = child.find('Name')
             if name_element is not None:
                 name = name_element.text
             else:
                 name = ""
 
-            ma_kuerzel_element = child.find('MA-Kürzel')
+            ma_kuerzel_element = child.find('Kuerzel')
             if ma_kuerzel_element is not None:
                 ma_kuerzel = ma_kuerzel_element.text
             else:
@@ -48,7 +48,7 @@ class MitarbeiterListe:
             else:
                 anmeldename = ""
 
-            cursor.execute("INSERT INTO Mitarbeiter ('Vor-_x0020_Nachname', 'MA-Kürzel', Anmeldename) VALUES (?, ?, ?)", (name, ma_kuerzel, anmeldename))
+            cursor.execute("INSERT INTO Mitarbeiter (Name, Kuerzel, Anmeldename) VALUES (?, ?, ?)", (name, ma_kuerzel, anmeldename))
 
         conn.commit()
         conn.close()

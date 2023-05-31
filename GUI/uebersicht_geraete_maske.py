@@ -46,7 +46,7 @@ class UebersichtGeraete(tk.Frame):
         uebersicht_geraete_frame.place(x=161, y=0, anchor="nw", relheight=300, relwidth=150)
         title = tk.Label(uebersicht_geraete_frame, fg="black", bg='white', text="Übersicht Geräte", font=('Arial', 14))
         title.place(x=10, y=10)
-
+        
         cursor.execute('SELECT Inventar_x0020_Nr AS InventarNr, Bezeichnung, Typ, "Serien-Nr", Andere_x0020_Nummer AS Weitere, Eigentümer, Raum, "LetzterWertvonWaBewVor-MA_Ausgabe" AS Mitarbeiter, Status, Netto_x0020_Einkaufspreis AS Preis FROM Ware ORDER BY Inventar_x0020_Nr DESC')
         rows = cursor.fetchall()
 

@@ -17,7 +17,7 @@ class Eigentuemer:
 
         # Datenbankpfad erstellen
         db_path = os.path.join(script_dir, 'database.db')
-        xml_file_path = os.path.join(script_dir, 'C:\\Users\\luisa.aslanidis\\VisualProjekte\\Geraeteverwaltung\\Geraeteverwaltung\\Eigentümer.xml')  
+        xml_file_path = os.path.join(script_dir, 'C:\\Users\\luisa.aslanidis\\VisualProjekte\\Test1\\Datenbank\\Eigentümer.xml') 
 
         conn = sqlite3.connect(db_path)
         cursor = conn.cursor()

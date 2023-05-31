@@ -17,14 +17,14 @@ class GeraeteListe:
 
         # Datenbankpfad erstellen
         db_path = os.path.join(script_dir, 'database.db')
-        xml_file_path = os.path.join(script_dir, 'C:\\Users\\luisa.aslanidis\\VisualProjekte\\Geraeteverwaltung\\Geraeteverwaltung\\GeraeteAktuell.xml') 
+        xml_file_path = os.path.join(script_dir, 'C:\\Users\\luisa.aslanidis\\VisualProjekte\\Test1\\Datenbank\\GeraeteAktuell1.xml') 
 
         conn = sqlite3.connect(db_path)
         cursor = conn.cursor()
 
 
         cursor.execute("DROP TABLE IF EXISTS Ware")
-        cursor.execute("CREATE TABLE IF NOT EXISTS Ware ('Inventar_x0020_Nr' INT, Bezeichnung TEXT, Typ INT, 'Serien-Nr' TEXT, Andere_x0020_Nummer TEXT, 'Eigentümer' TEXT, Raum TEXT, 'LetzterWertvonWaBewVor-MA_Ausgabe' TEXT, Status TEXT, 'Netto_x0020_Einkaufspreis')")
+        cursor.execute("CREATE TABLE IF NOT EXISTS Ware ('ID-Ware' INT, 'Inventar_x0020_Nr' INT, Bezeichnung TEXT, Typ INT, 'Serien-Nr' TEXT, Andere_x0020_Nummer TEXT, 'Eigentümer' TEXT, Raum TEXT, 'LetzterWertvonWaBewVor-MA_Ausgabe' TEXT, Status TEXT, 'Netto_x0020_Einkaufspreis')")
         
         geraete_tree = ET.parse(xml_file_path)
 
@@ -32,6 +32,12 @@ class GeraeteListe:
 
         #Testen, ob Feld gefüllt ist oder nicht
         for child in geraete_xml_root:
+            id_element = child.find('ID-Ware')
+            if id_element is not None:
+                id = id_element.text
+            else:
+                id = ""
+
             inventar_element = child.find('Inventar_x0020_Nr')
             if inventar_element is not None:
                 inventar = inventar_element.text
@@ -93,14 +99,10 @@ class GeraeteListe:
                 preis = ""
 
             #cursor.execute("ALTER TABLE Ware RENAME COLUMN 'Inventar_x0020_Nr' TO Inventarnr")
-            cursor.execute("INSERT INTO Ware ('Inventar_x0020_Nr', Bezeichnung, Typ, 'Serien-Nr', Andere_x0020_Nummer, 'Eigentümer', Raum, 'LetzterWertvonWaBewVor-MA_Ausgabe', Status, 'Netto_x0020_Einkaufspreis') VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)", (inventar, bezeichnung, typ, seriennr, weitere, eigentuemer, raum, mitarbeiter, status, preis))
+            cursor.execute("INSERT INTO Ware ('ID-Ware', 'Inventar_x0020_Nr', Bezeichnung, Typ, 'Serien-Nr', Andere_x0020_Nummer, 'Eigentümer', Raum, 'LetzterWertvonWaBewVor-MA_Ausgabe', Status, 'Netto_x0020_Einkaufspreis') VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)", (id, inventar, bezeichnung, typ, seriennr, weitere, eigentuemer, raum, mitarbeiter, status, preis))
             
-
-
-            #cursor.execute("PRAGMA table_info('Ware')")
-            #print(cursor.fetchall())
-
-
+        cursor.execute('UPDATE Ware SET Raum = "LetzterWertvonWaBewVor-MA_Ausgabe" WHERE "LetzterWertvonWaBewVor-MA_Ausgabe" LIKE "Arbeitsplatz%"')
+        cursor.execute('UPDATE Ware SET "LetzterWertvonWaBewVor-MA_Ausgabe" = "" WHERE "LetzterWertvonWaBewVor-MA_Ausgabe" LIKE "Arbeitsplatz%"')
 
         conn.commit()
         conn.close()

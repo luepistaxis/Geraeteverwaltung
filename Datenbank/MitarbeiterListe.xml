@@ -1,1774 +1,1633 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dataroot xmlns:od="urn:schemas-microsoft-com:officedata" generated="2023-05-05T15:33:41">
+<dataroot xmlns:od="urn:schemas-microsoft-com:officedata" generated="2023-05-30T12:22:11">
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Abdulmalek Al-Almeri</Vor-_x0020_Nachname>
+<Name>Abdulmalek Al-Almeri</Name>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Adnan Hodzic</Vor-_x0020_Nachname>
-<MA-Kürzel>AH</MA-Kürzel>
+<Name>Adnan Hodzic</Name>
+<Kuerzel>AH</Kuerzel>
 <Anmeldename>ahodzic</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Adrian Istoc</Vor-_x0020_Nachname>
-<MA-Kürzel>AI</MA-Kürzel>
+<Name>Adrian Istoc</Name>
+<Kuerzel>AI</Kuerzel>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Adrian Roman</Vor-_x0020_Nachname>
-<MA-Kürzel>ARo</MA-Kürzel>
+<Name>Adrian Roman</Name>
+<Kuerzel>ARo</Kuerzel>
 <Anmeldename>Roman</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Adrian Turcu</Vor-_x0020_Nachname>
-<MA-Kürzel>ATu</MA-Kürzel>
+<Name>Adrian Turcu</Name>
+<Kuerzel>ATu</Kuerzel>
 <Anmeldename>aturcu</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Agnieszka Kopietz</Vor-_x0020_Nachname>
+<Name>Agnieszka Kopietz</Name>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Alan Baribuhari</Vor-_x0020_Nachname>
-<MA-Kürzel>AB</MA-Kürzel>
+<Name>Alan Baribuhari</Name>
+<Kuerzel>AB</Kuerzel>
 <Anmeldename>alan.baribuhari</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Alejandra Rincon Hidalgo</Vor-_x0020_Nachname>
+<Name>Alejandra Rincon Hidalgo</Name>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Aleksandar Adamovic</Vor-_x0020_Nachname>
+<Name>Aleksandar Adamovic</Name>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Aleksandar Dimitrievski</Vor-_x0020_Nachname>
+<Name>Aleksandar Dimitrievski</Name>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Aleksandar Miric</Vor-_x0020_Nachname>
+<Name>Aleksandar Miric</Name>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Aleksandar Puric</Vor-_x0020_Nachname>
-<MA-Kürzel>apur</MA-Kürzel>
+<Name>Aleksandar Puric</Name>
+<Kuerzel>apur</Kuerzel>
 <Anmeldename>AP</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Aleksandra Terentic Zivanovic</Vor-_x0020_Nachname>
-<MA-Kürzel>AT</MA-Kürzel>
+<Name>Aleksander Perica</Name>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Aleksei Zinov</Vor-_x0020_Nachname>
-<MA-Kürzel>AZ</MA-Kürzel>
+<Name>Aleksandra Terentic Zivanovic</Name>
+<Kuerzel>AT</Kuerzel>
+</TAB_R_Mitarbeiter_für_Ausgabe>
+<TAB_R_Mitarbeiter_für_Ausgabe>
+<Name>Aleksei Zinov</Name>
+<Kuerzel>AZ</Kuerzel>
 <Anmeldename>azirnov</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Ales Motycka</Vor-_x0020_Nachname>
-<MA-Kürzel>AM</MA-Kürzel>
+<Name>Ales Motycka</Name>
+<Kuerzel>AM</Kuerzel>
 <Anmeldename>amotycka</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Alexander vom Dorp</Vor-_x0020_Nachname>
-<MA-Kürzel>AvD</MA-Kürzel>
+<Name>Alexander vom Dorp</Name>
+<Kuerzel>AvD</Kuerzel>
 <Anmeldename>avomdorp</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Ana Maria Mirica</Vor-_x0020_Nachname>
-<MA-Kürzel>AMM</MA-Kürzel>
+<Name>Ana Maria Mirica</Name>
+<Kuerzel>AMM</Kuerzel>
 <Anmeldename>amirica</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>André Christoph</Vor-_x0020_Nachname>
-<MA-Kürzel>AC</MA-Kürzel>
+<Name>André Christoph</Name>
+<Kuerzel>AC</Kuerzel>
 <Anmeldename>achristoph</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Andre Reichardt</Vor-_x0020_Nachname>
-<MA-Kürzel>Are</MA-Kürzel>
+<Name>Andre Reichardt</Name>
+<Kuerzel>Are</Kuerzel>
 <Anmeldename>areichardt</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Andreas Anschütz</Vor-_x0020_Nachname>
-<MA-Kürzel>AAn</MA-Kürzel>
+<Name>Andreas Anschütz</Name>
+<Kuerzel>AAn</Kuerzel>
 <Anmeldename>aanschuetz</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Andreas Cys</Vor-_x0020_Nachname>
-<MA-Kürzel>ACy</MA-Kürzel>
+<Name>Andreas Cys</Name>
+<Kuerzel>ACy</Kuerzel>
 <Anmeldename>acys</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Andreas Hill</Vor-_x0020_Nachname>
-<MA-Kürzel>ah</MA-Kürzel>
+<Name>Andreas Hill</Name>
+<Kuerzel>ah</Kuerzel>
 <Anmeldename>ahill</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Andreas Nagorsen</Vor-_x0020_Nachname>
-<MA-Kürzel>AN</MA-Kürzel>
+<Name>Andreas Nagorsen</Name>
+<Kuerzel>AN</Kuerzel>
 <Anmeldename>anagorsen</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Andreas Nier</Vor-_x0020_Nachname>
-<MA-Kürzel>AnNi</MA-Kürzel>
+<Name>Andreas Nier</Name>
+<Kuerzel>AnNi</Kuerzel>
 <Anmeldename>anier</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Andreas Untrieser</Vor-_x0020_Nachname>
-<MA-Kürzel>AU</MA-Kürzel>
+<Name>Andreas Untrieser</Name>
+<Kuerzel>AU</Kuerzel>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Andreas Wöffler</Vor-_x0020_Nachname>
-<MA-Kürzel>AW</MA-Kürzel>
+<Name>Andreas Wöffler</Name>
+<Kuerzel>AW</Kuerzel>
 <Anmeldename>awoeffler</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Andrej Beliakov</Vor-_x0020_Nachname>
-<MA-Kürzel>AB</MA-Kürzel>
+<Name>Andrej Beliakov</Name>
+<Kuerzel>AB</Kuerzel>
 <Anmeldename>abeliakov</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Andrej Mirica</Vor-_x0020_Nachname>
-<MA-Kürzel>ACM</MA-Kürzel>
+<Name>Andrej Mirica</Name>
+<Kuerzel>ACM</Kuerzel>
 <Anmeldename>acmirica</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Andriamilaitso Andriamarozara</Vor-_x0020_Nachname>
-<MA-Kürzel>AA</MA-Kürzel>
+<Name>Andriamilaitso Andriamarozara</Name>
+<Kuerzel>AA</Kuerzel>
 <Anmeldename>aandri</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Anette Schömig</Vor-_x0020_Nachname>
-<MA-Kürzel>ASch</MA-Kürzel>
+<Name>Anette Schömig</Name>
+<Kuerzel>ASch</Kuerzel>
 <Anmeldename>aschoemig</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Angelika Dietl</Vor-_x0020_Nachname>
-<MA-Kürzel>AD</MA-Kürzel>
+<Name>Angelika Dietl</Name>
+<Kuerzel>AD</Kuerzel>
 <Anmeldename>adietl</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Ani Elemi</Vor-_x0020_Nachname>
-<MA-Kürzel>AE</MA-Kürzel>
+<Name>Ani Elemi</Name>
+<Kuerzel>AE</Kuerzel>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Anica Stojkovic</Vor-_x0020_Nachname>
-<MA-Kürzel>AS</MA-Kürzel>
+<Name>Anica Stojkovic</Name>
+<Kuerzel>AS</Kuerzel>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Aniket Yeragi</Vor-_x0020_Nachname>
-<MA-Kürzel>AY</MA-Kürzel>
+<Name>Aniket Yeragi</Name>
+<Kuerzel>AY</Kuerzel>
 <Anmeldename>aniket.yeragi</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Anna Thieme</Vor-_x0020_Nachname>
-<MA-Kürzel>AT</MA-Kürzel>
+<Name>Anna Thieme</Name>
+<Kuerzel>AT</Kuerzel>
 <Anmeldename>athieme</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Anthony Lewis</Vor-_x0020_Nachname>
-<MA-Kürzel>AL</MA-Kürzel>
+<Name>Anthony Lewis</Name>
+<Kuerzel>AL</Kuerzel>
 <Anmeldename>alewis</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Arash Kermani Kolankeh</Vor-_x0020_Nachname>
-<MA-Kürzel>AKK</MA-Kürzel>
+<Name>Arash Kermani Kolankeh</Name>
+<Kuerzel>AKK</Kuerzel>
 <Anmeldename>arash.kermani</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Arash Vafadari</Vor-_x0020_Nachname>
-<MA-Kürzel>AV</MA-Kürzel>
+<Name>Arash Vafadari</Name>
+<Kuerzel>AV</Kuerzel>
 <Anmeldename>afafadari</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Arbeitsplatz 07/01</Vor-_x0020_Nachname>
+<Name>Ashish Thampi</Name>
+<Kuerzel>AT</Kuerzel>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Arbeitsplatz 07/02</Vor-_x0020_Nachname>
-</TAB_R_Mitarbeiter_für_Ausgabe>
-<TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Arbeitsplatz 07/03</Vor-_x0020_Nachname>
-</TAB_R_Mitarbeiter_für_Ausgabe>
-<TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Arbeitsplatz 07/04</Vor-_x0020_Nachname>
-</TAB_R_Mitarbeiter_für_Ausgabe>
-<TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Arbeitsplatz 07/05</Vor-_x0020_Nachname>
-</TAB_R_Mitarbeiter_für_Ausgabe>
-<TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Arbeitsplatz 07/06</Vor-_x0020_Nachname>
-</TAB_R_Mitarbeiter_für_Ausgabe>
-<TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Arbeitsplatz 07/07</Vor-_x0020_Nachname>
-</TAB_R_Mitarbeiter_für_Ausgabe>
-<TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Arbeitsplatz 07/08</Vor-_x0020_Nachname>
-</TAB_R_Mitarbeiter_für_Ausgabe>
-<TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Arbeitsplatz 08/01</Vor-_x0020_Nachname>
-</TAB_R_Mitarbeiter_für_Ausgabe>
-<TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Arbeitsplatz 08/02</Vor-_x0020_Nachname>
-</TAB_R_Mitarbeiter_für_Ausgabe>
-<TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Arbeitsplatz 08/03</Vor-_x0020_Nachname>
-</TAB_R_Mitarbeiter_für_Ausgabe>
-<TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Arbeitsplatz 08/04</Vor-_x0020_Nachname>
-</TAB_R_Mitarbeiter_für_Ausgabe>
-<TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Arbeitsplatz 08/05</Vor-_x0020_Nachname>
-</TAB_R_Mitarbeiter_für_Ausgabe>
-<TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Arbeitsplatz 08/06</Vor-_x0020_Nachname>
-</TAB_R_Mitarbeiter_für_Ausgabe>
-<TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Arbeitsplatz 08/07</Vor-_x0020_Nachname>
-</TAB_R_Mitarbeiter_für_Ausgabe>
-<TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Arbeitsplatz 08/08</Vor-_x0020_Nachname>
-</TAB_R_Mitarbeiter_für_Ausgabe>
-<TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Arbeitsplatz 09/01</Vor-_x0020_Nachname>
-</TAB_R_Mitarbeiter_für_Ausgabe>
-<TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Arbeitsplatz 09/02</Vor-_x0020_Nachname>
-</TAB_R_Mitarbeiter_für_Ausgabe>
-<TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Arbeitsplatz 09/03</Vor-_x0020_Nachname>
-</TAB_R_Mitarbeiter_für_Ausgabe>
-<TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Arbeitsplatz 09/04</Vor-_x0020_Nachname>
-</TAB_R_Mitarbeiter_für_Ausgabe>
-<TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Arbeitsplatz 09/05</Vor-_x0020_Nachname>
-</TAB_R_Mitarbeiter_für_Ausgabe>
-<TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Arbeitsplatz 09/06</Vor-_x0020_Nachname>
-</TAB_R_Mitarbeiter_für_Ausgabe>
-<TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Arbeitsplatz 09/06a</Vor-_x0020_Nachname>
-</TAB_R_Mitarbeiter_für_Ausgabe>
-<TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Arbeitsplatz 09/07</Vor-_x0020_Nachname>
-</TAB_R_Mitarbeiter_für_Ausgabe>
-<TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Arbeitsplatz 09/07a</Vor-_x0020_Nachname>
-</TAB_R_Mitarbeiter_für_Ausgabe>
-<TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Arbeitsplatz 09/08</Vor-_x0020_Nachname>
-</TAB_R_Mitarbeiter_für_Ausgabe>
-<TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Arbeitsplatz 18/01</Vor-_x0020_Nachname>
-</TAB_R_Mitarbeiter_für_Ausgabe>
-<TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Arbeitsplatz 18/02</Vor-_x0020_Nachname>
-</TAB_R_Mitarbeiter_für_Ausgabe>
-<TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Arbeitsplatz 18/03</Vor-_x0020_Nachname>
-</TAB_R_Mitarbeiter_für_Ausgabe>
-<TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Arbeitsplatz 18/04</Vor-_x0020_Nachname>
-</TAB_R_Mitarbeiter_für_Ausgabe>
-<TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Arbeitsplatz 18/05</Vor-_x0020_Nachname>
-</TAB_R_Mitarbeiter_für_Ausgabe>
-<TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Arbeitsplatz HR/01</Vor-_x0020_Nachname>
-</TAB_R_Mitarbeiter_für_Ausgabe>
-<TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Arbeitsplatz PLAN/01</Vor-_x0020_Nachname>
-</TAB_R_Mitarbeiter_für_Ausgabe>
-<TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Arbeitsplatz PLAN/02</Vor-_x0020_Nachname>
-</TAB_R_Mitarbeiter_für_Ausgabe>
-<TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Arbeitsplatz PLAN/03</Vor-_x0020_Nachname>
-</TAB_R_Mitarbeiter_für_Ausgabe>
-<TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Arbeitsplatz PLAN/04</Vor-_x0020_Nachname>
-</TAB_R_Mitarbeiter_für_Ausgabe>
-<TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Arbeitsplatz PLAN/05</Vor-_x0020_Nachname>
-</TAB_R_Mitarbeiter_für_Ausgabe>
-<TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Arbeitsplatz PLAN/06</Vor-_x0020_Nachname>
-</TAB_R_Mitarbeiter_für_Ausgabe>
-<TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Arbeitsplatz PLAN/07</Vor-_x0020_Nachname>
-</TAB_R_Mitarbeiter_für_Ausgabe>
-<TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Arbeitsplatz PLAN/08</Vor-_x0020_Nachname>
-</TAB_R_Mitarbeiter_für_Ausgabe>
-<TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Arbeitsplatz PLAN2/01</Vor-_x0020_Nachname>
-</TAB_R_Mitarbeiter_für_Ausgabe>
-<TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Arbeitsplatz PLAN3/01</Vor-_x0020_Nachname>
-</TAB_R_Mitarbeiter_für_Ausgabe>
-<TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Arbeitsplatz PLAN3/02</Vor-_x0020_Nachname>
-</TAB_R_Mitarbeiter_für_Ausgabe>
-<TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Arbeitsplatz PLAN3/03</Vor-_x0020_Nachname>
-</TAB_R_Mitarbeiter_für_Ausgabe>
-<TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Arbeitsplatz R03/01</Vor-_x0020_Nachname>
-</TAB_R_Mitarbeiter_für_Ausgabe>
-<TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Arbeitsplatz R04/01</Vor-_x0020_Nachname>
-</TAB_R_Mitarbeiter_für_Ausgabe>
-<TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Arbeitsplatz R05/01</Vor-_x0020_Nachname>
-</TAB_R_Mitarbeiter_für_Ausgabe>
-<TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Arbeitsplatz R05/02</Vor-_x0020_Nachname>
-</TAB_R_Mitarbeiter_für_Ausgabe>
-<TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Arbeitsplatz R05/03</Vor-_x0020_Nachname>
-</TAB_R_Mitarbeiter_für_Ausgabe>
-<TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Arbeitsplatz R05/04</Vor-_x0020_Nachname>
-</TAB_R_Mitarbeiter_für_Ausgabe>
-<TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Arbeitsplatz R06/01</Vor-_x0020_Nachname>
-</TAB_R_Mitarbeiter_für_Ausgabe>
-<TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Arbeitsplatz R06/02</Vor-_x0020_Nachname>
-</TAB_R_Mitarbeiter_für_Ausgabe>
-<TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Arbeitsplatz R06/03</Vor-_x0020_Nachname>
-</TAB_R_Mitarbeiter_für_Ausgabe>
-<TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Ashish Thampi</Vor-_x0020_Nachname>
-<MA-Kürzel>AT</MA-Kürzel>
-</TAB_R_Mitarbeiter_für_Ausgabe>
-<TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Axel Fix</Vor-_x0020_Nachname>
-<MA-Kürzel>AF</MA-Kürzel>
+<Name>Axel Fix</Name>
+<Kuerzel>AF</Kuerzel>
 <Anmeldename>afix</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Axel Stage</Vor-_x0020_Nachname>
-<MA-Kürzel>AS</MA-Kürzel>
+<Name>Axel Stage</Name>
+<Kuerzel>AS</Kuerzel>
 <Anmeldename>astage</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Aylin Zernick</Vor-_x0020_Nachname>
-<MA-Kürzel>AZ</MA-Kürzel>
+<Name>Aylin Zernick</Name>
+<Kuerzel>AZ</Kuerzel>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Bahareh Shahmoradi</Vor-_x0020_Nachname>
-<MA-Kürzel>BS</MA-Kürzel>
+<Name>Bahareh Shahmoradi</Name>
+<Kuerzel>BS</Kuerzel>
 <Anmeldename>bshahmoradi</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Beate Reier</Vor-_x0020_Nachname>
-<MA-Kürzel>BR</MA-Kürzel>
+<Name>Beate Reier</Name>
+<Kuerzel>BR</Kuerzel>
 <Anmeldename>beate.reier</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Bei Plan</Vor-_x0020_Nachname>
+<Name>Bei Plan</Name>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Bianka Sandner</Vor-_x0020_Nachname>
-<MA-Kürzel>BS</MA-Kürzel>
+<Name>Bianka Sandner</Name>
+<Kuerzel>BS</Kuerzel>
 <Anmeldename>bsandner</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Birka Mundt</Vor-_x0020_Nachname>
-<MA-Kürzel>BM</MA-Kürzel>
+<Name>Birka Mundt</Name>
+<Kuerzel>BM</Kuerzel>
 <Anmeldename>bmundt</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Bogdan Nicoara</Vor-_x0020_Nachname>
-<MA-Kürzel>BN</MA-Kürzel>
+<Name>Bogdan Nicoara</Name>
+<Kuerzel>BN</Kuerzel>
 <Anmeldename>bnicoara</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Bogdan Veliscu</Vor-_x0020_Nachname>
-<MA-Kürzel>bv</MA-Kürzel>
+<Name>Bogdan Veliscu</Name>
+<Kuerzel>bv</Kuerzel>
 <Anmeldename>bvelisca</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Bojan Vulic</Vor-_x0020_Nachname>
-<MA-Kürzel>BV</MA-Kürzel>
+<Name>Bojan Vulic</Name>
+<Kuerzel>BV</Kuerzel>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Borko Bogdanovic</Vor-_x0020_Nachname>
-<MA-Kürzel>BB</MA-Kürzel>
+<Name>Borko Bogdanovic</Name>
+<Kuerzel>BB</Kuerzel>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Branislav Lazarevic</Vor-_x0020_Nachname>
+<Name>Branislav Lazarevic</Name>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Bruno Palomares</Vor-_x0020_Nachname>
-<MA-Kürzel>BP</MA-Kürzel>
+<Name>Bruno Palomares</Name>
+<Kuerzel>BP</Kuerzel>
 <Anmeldename>bpalomares</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Caio Raveli</Vor-_x0020_Nachname>
-<MA-Kürzel>CR</MA-Kürzel>
+<Name>Caio Raveli</Name>
+<Kuerzel>CR</Kuerzel>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Carlos Trocado</Vor-_x0020_Nachname>
-<MA-Kürzel>CT</MA-Kürzel>
+<Name>Carlos Trocado</Name>
+<Kuerzel>CT</Kuerzel>
 <Anmeldename>ctrocado</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Carmen Schröpfer</Vor-_x0020_Nachname>
-<MA-Kürzel>CS</MA-Kürzel>
+<Name>Carmen Schröpfer</Name>
+<Kuerzel>CS</Kuerzel>
 <Anmeldename>cschroepfer</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Carola Werther</Vor-_x0020_Nachname>
-<MA-Kürzel>CW</MA-Kürzel>
+<Name>Carola Werther</Name>
+<Kuerzel>CW</Kuerzel>
 <Anmeldename>cwerther</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Carsten Dreier</Vor-_x0020_Nachname>
-<MA-Kürzel>cdr</MA-Kürzel>
+<Name>Carsten Dreier</Name>
+<Kuerzel>cdr</Kuerzel>
 <Anmeldename>cdreier</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Cenk Koyuncuoglu</Vor-_x0020_Nachname>
-<MA-Kürzel>CK</MA-Kürzel>
+<Name>Cenk Koyuncuoglu</Name>
+<Kuerzel>CK</Kuerzel>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>christelle Mbiandzi Nkoengoua</Vor-_x0020_Nachname>
+<Name>christelle Mbiandzi Nkoengoua</Name>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Christian Bergmann</Vor-_x0020_Nachname>
-<MA-Kürzel>CBe</MA-Kürzel>
+<Name>Christian Bergmann</Name>
+<Kuerzel>CBe</Kuerzel>
 <Anmeldename>cbergmann</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Christian Liebisch</Vor-_x0020_Nachname>
-<MA-Kürzel>CL</MA-Kürzel>
+<Name>Christian Liebisch</Name>
+<Kuerzel>CL</Kuerzel>
 <Anmeldename>cliebisch</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Christian Rings</Vor-_x0020_Nachname>
-<MA-Kürzel>CR</MA-Kürzel>
+<Name>Christian Rings</Name>
+<Kuerzel>CR</Kuerzel>
 <Anmeldename>crings</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Christine Boehnke</Vor-_x0020_Nachname>
-<MA-Kürzel>CB</MA-Kürzel>
+<Name>Christine Boehnke</Name>
+<Kuerzel>CB</Kuerzel>
 <Anmeldename>cboehnke</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Christoph Hasler</Vor-_x0020_Nachname>
-<MA-Kürzel>CH</MA-Kürzel>
+<Name>Christoph Hasler</Name>
+<Kuerzel>CH</Kuerzel>
 <Anmeldename>chasler</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Christoph Meyer</Vor-_x0020_Nachname>
-<MA-Kürzel>CM</MA-Kürzel>
+<Name>Christoph Meyer</Name>
+<Kuerzel>CM</Kuerzel>
 <Anmeldename>cmeyer</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Christoph Ulmer</Vor-_x0020_Nachname>
-<MA-Kürzel>CU</MA-Kürzel>
+<Name>Christoph Ulmer</Name>
+<Kuerzel>CU</Kuerzel>
 <Anmeldename>culmer</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Christopher Henseleit</Vor-_x0020_Nachname>
+<Name>Christopher Henseleit</Name>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Christopher Sant</Vor-_x0020_Nachname>
-<MA-Kürzel>CSa</MA-Kürzel>
+<Name>Christopher Sant</Name>
+<Kuerzel>CSa</Kuerzel>
 <Anmeldename>csant</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Cindy Pieta</Vor-_x0020_Nachname>
+<Name>Cindy Pieta</Name>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Cino Aran</Vor-_x0020_Nachname>
-<MA-Kürzel>CA</MA-Kürzel>
+<Name>Cino Aran</Name>
+<Kuerzel>CA</Kuerzel>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Conrad Halle</Vor-_x0020_Nachname>
-<MA-Kürzel>CH</MA-Kürzel>
+<Name>Conrad Halle</Name>
+<Kuerzel>CH</Kuerzel>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Constantin Gheorghe</Vor-_x0020_Nachname>
+<Name>Constantin Gheorghe</Name>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Constantin-Andrei Mirica</Vor-_x0020_Nachname>
-<MA-Kürzel>CAM</MA-Kürzel>
+<Name>Constantin-Andrei Mirica</Name>
+<Kuerzel>CAM</Kuerzel>
 <Anmeldename>cmirica</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Cosmin Desliu</Vor-_x0020_Nachname>
-<MA-Kürzel>CD</MA-Kürzel>
+<Name>Cosmin Desliu</Name>
+<Kuerzel>CD</Kuerzel>
 <Anmeldename>cdesliu</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Dagmar Kürbis</Vor-_x0020_Nachname>
-<MA-Kürzel>DK</MA-Kürzel>
+<Name>Dagmar Kürbis</Name>
+<Kuerzel>DK</Kuerzel>
 <Anmeldename>dkuerbis</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Damian Tendera</Vor-_x0020_Nachname>
-<MA-Kürzel>DT</MA-Kürzel>
+<Name>Dalibor Loncar</Name>
+</TAB_R_Mitarbeiter_für_Ausgabe>
+<TAB_R_Mitarbeiter_für_Ausgabe>
+<Name>Damian Tendera</Name>
+<Kuerzel>DT</Kuerzel>
 <Anmeldename>dtendera</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Dan Havrilet</Vor-_x0020_Nachname>
-<MA-Kürzel>DH</MA-Kürzel>
+<Name>Dan Havrilet</Name>
+<Kuerzel>DH</Kuerzel>
 <Anmeldename>dhavrilet</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>dan Serbescu</Vor-_x0020_Nachname>
+<Name>dan Serbescu</Name>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Daniel Behrens</Vor-_x0020_Nachname>
+<Name>Daniel Behrens</Name>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Daniel Prinz</Vor-_x0020_Nachname>
-<MA-Kürzel>DP</MA-Kürzel>
+<Name>Daniel Prinz</Name>
+<Kuerzel>DP</Kuerzel>
 <Anmeldename>dprinz</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Daniel Vallbracht</Vor-_x0020_Nachname>
-<MA-Kürzel>DV</MA-Kürzel>
+<Name>Daniel Vallbracht</Name>
+<Kuerzel>DV</Kuerzel>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>David Hundeborn</Vor-_x0020_Nachname>
-<MA-Kürzel>DH</MA-Kürzel>
+<Name>David Hundeborn</Name>
+<Kuerzel>DH</Kuerzel>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Dejan Todorovic</Vor-_x0020_Nachname>
-<MA-Kürzel>DTo</MA-Kürzel>
+<Name>Dejan Todorovic</Name>
+<Kuerzel>DTo</Kuerzel>
 <Anmeldename>dtodorovic</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Detlef Zernick</Vor-_x0020_Nachname>
-<MA-Kürzel>DZ</MA-Kürzel>
+<Name>Detlef Zernick</Name>
+<Kuerzel>DZ</Kuerzel>
 <Anmeldename>dzernick</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Dieter Kahl</Vor-_x0020_Nachname>
-<MA-Kürzel>DKa</MA-Kürzel>
+<Name>Dieter Kahl</Name>
+<Kuerzel>DKa</Kuerzel>
 <Anmeldename>dkahl</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Dieter Wolk</Vor-_x0020_Nachname>
-<MA-Kürzel>dw</MA-Kürzel>
+<Name>Dieter Terlau</Name>
+</TAB_R_Mitarbeiter_für_Ausgabe>
+<TAB_R_Mitarbeiter_für_Ausgabe>
+<Name>Dieter Wolk</Name>
+<Kuerzel>dw</Kuerzel>
 <Anmeldename>dwolk</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Dietmar Schwarzer</Vor-_x0020_Nachname>
-<MA-Kürzel>DS</MA-Kürzel>
+<Name>Dietmar Schwarzer</Name>
+<Kuerzel>DS</Kuerzel>
 <Anmeldename>dschwarzer</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Dirk Luther</Vor-_x0020_Nachname>
-<MA-Kürzel>DL</MA-Kürzel>
+<Name>Dirk Luther</Name>
+<Kuerzel>DL</Kuerzel>
 <Anmeldename>dluther</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Dirk Nilius</Vor-_x0020_Nachname>
+<Name>Dirk Nilius</Name>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Dirk Tessmer</Vor-_x0020_Nachname>
+<Name>Dirk Tessmer</Name>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Djordje Balsic</Vor-_x0020_Nachname>
-<MA-Kürzel>DB</MA-Kürzel>
+<Name>Djordje Balsic</Name>
+<Kuerzel>DB</Kuerzel>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Djordje Stojicevic</Vor-_x0020_Nachname>
-<MA-Kürzel>DS</MA-Kürzel>
+<Name>Djordje Stojicevic</Name>
+<Kuerzel>DS</Kuerzel>
 <Anmeldename>Djordje.Stojicevic</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Edin Bucan</Vor-_x0020_Nachname>
-<MA-Kürzel>EB</MA-Kürzel>
+<Name>Edin Bucan</Name>
+<Kuerzel>EB</Kuerzel>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Elemi Ani</Vor-_x0020_Nachname>
+<Name>Elemi Ani</Name>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Elwira Ring</Vor-_x0020_Nachname>
+<Name>Elwira Ring</Name>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Enrico Köppe</Vor-_x0020_Nachname>
-<MA-Kürzel>DrEK</MA-Kürzel>
+<Name>Enrico Köppe</Name>
+<Kuerzel>DrEK</Kuerzel>
 <Anmeldename>enrico.koeppe</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Ester Mengual Pérez</Vor-_x0020_Nachname>
-<MA-Kürzel>EM</MA-Kürzel>
+<Name>Ester Mengual Pérez</Name>
+<Kuerzel>EM</Kuerzel>
 <Anmeldename>emengual</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Eva Stolz</Vor-_x0020_Nachname>
-<MA-Kürzel>ES</MA-Kürzel>
+<Name>Eva Stolz</Name>
+<Kuerzel>ES</Kuerzel>
 <Anmeldename>estolz</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Ezechiel Noumi</Vor-_x0020_Nachname>
-<MA-Kürzel>EN</MA-Kürzel>
+<Name>Ezechiel Noumi</Name>
+<Kuerzel>EN</Kuerzel>
 <Anmeldename>enoumi</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Fabrizio Springer</Vor-_x0020_Nachname>
-<MA-Kürzel>FS</MA-Kürzel>
+<Name>Fabrizio Springer</Name>
+<Kuerzel>FS</Kuerzel>
 <Anmeldename>fspringer</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Ferdi Ceylan</Vor-_x0020_Nachname>
-<MA-Kürzel>FCe</MA-Kürzel>
+<Name>Ferdi Ceylan</Name>
+<Kuerzel>FCe</Kuerzel>
 <Anmeldename>fceylan</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Filip FK. Kotrba</Vor-_x0020_Nachname>
-<MA-Kürzel>FK</MA-Kürzel>
+<Name>Filip FK. Kotrba</Name>
+<Kuerzel>FK</Kuerzel>
 <Anmeldename>fkotrba</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Florian Behrens</Vor-_x0020_Nachname>
+<Name>Florian Behrens</Name>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Florian Carl</Vor-_x0020_Nachname>
-<MA-Kürzel>FC</MA-Kürzel>
+<Name>Florian Carl</Name>
+<Kuerzel>FC</Kuerzel>
 <Anmeldename>fcarl</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Frank Gruhlke</Vor-_x0020_Nachname>
-<MA-Kürzel>FG</MA-Kürzel>
+<Name>Frank Gruhlke</Name>
+<Kuerzel>FG</Kuerzel>
 <Anmeldename>fgruhlke</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Frank Grürmann</Vor-_x0020_Nachname>
-<MA-Kürzel>FrGr</MA-Kürzel>
+<Name>Frank Grürmann</Name>
+<Kuerzel>FrGr</Kuerzel>
 <Anmeldename>fgrürmann</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Frank Sievering</Vor-_x0020_Nachname>
+<Name>Frank Sievering</Name>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Frank Tesch</Vor-_x0020_Nachname>
-<MA-Kürzel>FT</MA-Kürzel>
+<Name>Frank Tesch</Name>
+<Kuerzel>FT</Kuerzel>
 <Anmeldename>ftesch</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Franklin Feudjo</Vor-_x0020_Nachname>
-<MA-Kürzel>FF</MA-Kürzel>
+<Name>Franklin Feudjo</Name>
+<Kuerzel>FF</Kuerzel>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Frans van der Laan</Vor-_x0020_Nachname>
-<MA-Kürzel>F</MA-Kürzel>
+<Name>Frans van der Laan</Name>
+<Kuerzel>F</Kuerzel>
 <Anmeldename>fvanderlaan</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Gabriele Rohrlach</Vor-_x0020_Nachname>
-<MA-Kürzel>FvdL</MA-Kürzel>
+<Name>Gabriele Rohrlach</Name>
+<Kuerzel>FvdL</Kuerzel>
 <Anmeldename>grohrlach</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Georg Westernacher</Vor-_x0020_Nachname>
-<MA-Kürzel>GW</MA-Kürzel>
+<Name>Georg Westernacher</Name>
+<Kuerzel>GW</Kuerzel>
 <Anmeldename>gwesternacher</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>George Mailat</Vor-_x0020_Nachname>
-<MA-Kürzel>GM</MA-Kürzel>
+<Name>George Mailat</Name>
+<Kuerzel>GM</Kuerzel>
 <Anmeldename>gmailat</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Gerry Worthy</Vor-_x0020_Nachname>
-<MA-Kürzel>GAW</MA-Kürzel>
+<Name>Gerry Worthy</Name>
+<Kuerzel>GAW</Kuerzel>
 <Anmeldename>gworthy</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Ghassen Ben Hadj Salah</Vor-_x0020_Nachname>
+<Name>Ghassen Ben Hadj Salah</Name>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Gille Baatz</Vor-_x0020_Nachname>
-<MA-Kürzel>GB</MA-Kürzel>
+<Name>Gille Baatz</Name>
+<Kuerzel>GB</Kuerzel>
 <Anmeldename>gbaatz</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Gordana Stojkovic</Vor-_x0020_Nachname>
+<Name>Gordana Stojkovic</Name>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Gorgin Torabi</Vor-_x0020_Nachname>
-<MA-Kürzel>GT</MA-Kürzel>
+<Name>Gorgin Torabi</Name>
+<Kuerzel>GT</Kuerzel>
 <Anmeldename>gorgin.torabi</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Hadi Ismanto</Vor-_x0020_Nachname>
-<MA-Kürzel>HI</MA-Kürzel>
+<Name>Hadi Ismanto</Name>
+<Kuerzel>HI</Kuerzel>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Hans-Joachim Ifland</Vor-_x0020_Nachname>
-<MA-Kürzel>HJI</MA-Kürzel>
+<Name>Hans-Joachim Ifland</Name>
+<Kuerzel>HJI</Kuerzel>
 <Anmeldename>hifland</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Harald Flemming</Vor-_x0020_Nachname>
+<Name>Harald Flemming</Name>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Henrik Borchert</Vor-_x0020_Nachname>
-<MA-Kürzel>HB</MA-Kürzel>
+<Name>Henrik Borchert</Name>
+<Kuerzel>HB</Kuerzel>
 <Anmeldename>hborchert</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Hewa Hama-Sharif</Vor-_x0020_Nachname>
+<Name>Hewa Hama-Sharif</Name>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Holger Kitschke</Vor-_x0020_Nachname>
-<MA-Kürzel>HK</MA-Kürzel>
+<Name>Holger Kitschke</Name>
+<Kuerzel>HK</Kuerzel>
 <Anmeldename>hkitschke</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Horst Böhm</Vor-_x0020_Nachname>
+<Name>Horst Böhm</Name>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Hristo Lakov</Vor-_x0020_Nachname>
-<MA-Kürzel>HL</MA-Kürzel>
+<Name>Hristo Lakov</Name>
+<Kuerzel>HL</Kuerzel>
 <Anmeldename>hlakov</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Hrvoje Lokmer</Vor-_x0020_Nachname>
+<Name>Hrvoje Lokmer</Name>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Huahua Maier</Vor-_x0020_Nachname>
-<MA-Kürzel>HM</MA-Kürzel>
+<Name>Huahua Maier</Name>
+<Kuerzel>HM</Kuerzel>
 <Anmeldename>hmaier</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Igor Anic</Vor-_x0020_Nachname>
+<Name>Igor Anic</Name>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>igor Grinnik</Vor-_x0020_Nachname>
+<Name>igor Grinnik</Name>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Ilario Salatino</Vor-_x0020_Nachname>
+<Name>Ilario Salatino</Name>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Iliya Iliev</Vor-_x0020_Nachname>
-<MA-Kürzel>II</MA-Kürzel>
+<Name>Iliya Iliev</Name>
+<Kuerzel>II</Kuerzel>
 <Anmeldename>iiliev</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Ines Mikoleit</Vor-_x0020_Nachname>
-<MA-Kürzel>IM</MA-Kürzel>
+<Name>Ines Mikoleit</Name>
+<Kuerzel>IM</Kuerzel>
 <Anmeldename>imikoleit</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Ingo Münch</Vor-_x0020_Nachname>
-<MA-Kürzel>IM</MA-Kürzel>
+<Name>Ingo Münch</Name>
+<Kuerzel>IM</Kuerzel>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Ingo Teufel</Vor-_x0020_Nachname>
-<MA-Kürzel>IT</MA-Kürzel>
+<Name>Ingo Teufel</Name>
+<Kuerzel>IT</Kuerzel>
 <Anmeldename>iteufel</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Irene Waringa Nyaga</Vor-_x0020_Nachname>
-<MA-Kürzel>IWN</MA-Kürzel>
+<Name>Irene Waringa Nyaga</Name>
+<Kuerzel>IWN</Kuerzel>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Israel Rodrigues</Vor-_x0020_Nachname>
-<MA-Kürzel>IR</MA-Kürzel>
+<Name>Israel Rodrigues</Name>
+<Kuerzel>IR</Kuerzel>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Iulian Ciobotaru-Hriscu</Vor-_x0020_Nachname>
-<MA-Kürzel>ICR</MA-Kürzel>
+<Name>Iulian Ciobotaru-Hriscu</Name>
+<Kuerzel>ICR</Kuerzel>
 <Anmeldename>iciobotaruhriscu</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Ivan Beljic</Vor-_x0020_Nachname>
+<Name>Ivan Beljic</Name>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Ivan Mador</Vor-_x0020_Nachname>
-<MA-Kürzel>IMa</MA-Kürzel>
+<Name>Ivan Mador</Name>
+<Kuerzel>IMa</Kuerzel>
 <Anmeldename>Imador</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Ivan Plecic</Vor-_x0020_Nachname>
-<MA-Kürzel>IP</MA-Kürzel>
+<Name>Ivan Plecic</Name>
+<Kuerzel>IP</Kuerzel>
 <Anmeldename>iplecic</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Ivan Vanek</Vor-_x0020_Nachname>
-<MA-Kürzel>IV</MA-Kürzel>
+<Name>Ivan Vanek</Name>
+<Kuerzel>IV</Kuerzel>
 <Anmeldename>ivanek</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Ivana Markovic</Vor-_x0020_Nachname>
-<MA-Kürzel>im</MA-Kürzel>
+<Name>Ivana Markovic</Name>
+<Kuerzel>im</Kuerzel>
 <Anmeldename>imarkovic</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Ivelin Ivanov Dimov</Vor-_x0020_Nachname>
-<MA-Kürzel>IID</MA-Kürzel>
+<Name>Ivelin Ivanov Dimov</Name>
+<Kuerzel>IID</Kuerzel>
 <Anmeldename>bla</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Jacob Bieniossek</Vor-_x0020_Nachname>
-<MA-Kürzel>JB</MA-Kürzel>
+<Name>Jacob Bieniossek</Name>
+<Kuerzel>JB</Kuerzel>
 <Anmeldename>jbieniossek</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Jan Gabler</Vor-_x0020_Nachname>
-<MA-Kürzel>JG</MA-Kürzel>
+<Name>Jan Gabler</Name>
+<Kuerzel>JG</Kuerzel>
 <Anmeldename>jgabler</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Jan Kongehl</Vor-_x0020_Nachname>
-<MA-Kürzel>JK</MA-Kürzel>
+<Name>Jan Kongehl</Name>
+<Kuerzel>JK</Kuerzel>
 <Anmeldename>jkongehl</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Jan Motycka</Vor-_x0020_Nachname>
-<MA-Kürzel>JMo</MA-Kürzel>
+<Name>Jan Motycka</Name>
+<Kuerzel>JMo</Kuerzel>
 <Anmeldename>jmotycka</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Jan Sokoliss</Vor-_x0020_Nachname>
-<MA-Kürzel>JS</MA-Kürzel>
+<Name>Jan Sokoliss</Name>
+<Kuerzel>JS</Kuerzel>
 <Anmeldename>jsokoliss</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Jaroslaw Fuksa</Vor-_x0020_Nachname>
-<MA-Kürzel>JF</MA-Kürzel>
+<Name>Jaroslaw Fuksa</Name>
+<Kuerzel>JF</Kuerzel>
 <Anmeldename>jfuksa</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Javeria Rasheed</Vor-_x0020_Nachname>
-<MA-Kürzel>JR</MA-Kürzel>
+<Name>Javeria Rasheed</Name>
+<Kuerzel>JR</Kuerzel>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Javier  Alcaide</Vor-_x0020_Nachname>
-<MA-Kürzel>JA</MA-Kürzel>
+<Name>Javier  Alcaide</Name>
+<Kuerzel>JA</Kuerzel>
 <Anmeldename>jalcaide</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Jean-Pierre Gacon</Vor-_x0020_Nachname>
-<MA-Kürzel>JPG</MA-Kürzel>
+<Name>Jean-Pierre Gacon</Name>
+<Kuerzel>JPG</Kuerzel>
 <Anmeldename>jgacon</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Jelisaveta Vucetic</Vor-_x0020_Nachname>
-<MA-Kürzel>jv</MA-Kürzel>
+<Name>Jelisaveta Vucetic</Name>
+<Kuerzel>jv</Kuerzel>
 <Anmeldename>jvucetic</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Jens Berger</Vor-_x0020_Nachname>
+<Name>Jens Berger</Name>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Jens Meyer</Vor-_x0020_Nachname>
-<MA-Kürzel>JM</MA-Kürzel>
+<Name>Jens Meyer</Name>
+<Kuerzel>JM</Kuerzel>
 <Anmeldename>jmeyer</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Jens Neumann</Vor-_x0020_Nachname>
-<MA-Kürzel>JN</MA-Kürzel>
+<Name>Jens Neumann</Name>
+<Kuerzel>JN</Kuerzel>
 <Anmeldename>jneumann</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Jens Riesebeck</Vor-_x0020_Nachname>
-<MA-Kürzel>JR</MA-Kürzel>
+<Name>Jens Riesebeck</Name>
+<Kuerzel>JR</Kuerzel>
 <Anmeldename>jriesebeck</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Jens-Uwe Fischer</Vor-_x0020_Nachname>
+<Name>Jens-Uwe Fischer</Name>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Jeremias Doetterl</Vor-_x0020_Nachname>
+<Name>Jeremias Doetterl</Name>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Jeremy Lässing</Vor-_x0020_Nachname>
+<Name>Jeremy Lässing</Name>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Johannes Jeß</Vor-_x0020_Nachname>
-<MA-Kürzel>jj</MA-Kürzel>
+<Name>Johannes Jeß</Name>
+<Kuerzel>jj</Kuerzel>
 <Anmeldename>jjess</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Jörg Kinnemann</Vor-_x0020_Nachname>
-<MA-Kürzel>JKi</MA-Kürzel>
+<Name>Jörg Kinnemann</Name>
+<Kuerzel>JKi</Kuerzel>
 <Anmeldename>jkinnemann</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Jörg Majewski</Vor-_x0020_Nachname>
-<MA-Kürzel>JM</MA-Kürzel>
+<Name>Jörg Majewski</Name>
+<Kuerzel>JM</Kuerzel>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Jörn Klimpel</Vor-_x0020_Nachname>
-<MA-Kürzel>JK</MA-Kürzel>
+<Name>Jörn Klimpel</Name>
+<Kuerzel>JK</Kuerzel>
 <Anmeldename>jklimpel</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>José Trindade</Vor-_x0020_Nachname>
-<MA-Kürzel>JT</MA-Kürzel>
+<Name>José Trindade</Name>
+<Kuerzel>JT</Kuerzel>
 <Anmeldename>jtrindade</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Josip Cindric</Vor-_x0020_Nachname>
-<MA-Kürzel>jc</MA-Kürzel>
+<Name>Josip Cindric</Name>
+<Kuerzel>jc</Kuerzel>
 <Anmeldename>jcindric</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Jovan Loncar</Vor-_x0020_Nachname>
+<Name>Jovan Loncar</Name>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Jovan Ristic</Vor-_x0020_Nachname>
+<Name>Jovan Ristic</Name>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Jozef Hudak</Vor-_x0020_Nachname>
-<MA-Kürzel>JH</MA-Kürzel>
+<Name>Jozef Hudak</Name>
+<Kuerzel>JH</Kuerzel>
 <Anmeldename>jhudak</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Jozef Maksim</Vor-_x0020_Nachname>
-<MA-Kürzel>JMa</MA-Kürzel>
+<Name>Jozef Maksim</Name>
+<Kuerzel>JMa</Kuerzel>
 <Anmeldename>jmaksim</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Julian Kleber</Vor-_x0020_Nachname>
+<Name>Julian Kleber</Name>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Julian Schmidt</Vor-_x0020_Nachname>
-<MA-Kürzel>js</MA-Kürzel>
+<Name>Julian Schmidt</Name>
+<Kuerzel>js</Kuerzel>
 <Anmeldename>julian.schmidt</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Jürgen Köttnitz</Vor-_x0020_Nachname>
-<MA-Kürzel>JKoe</MA-Kürzel>
+<Name>Jürgen Köttnitz</Name>
+<Kuerzel>JKoe</Kuerzel>
 <Anmeldename>jkoettnitz</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Kari Sointula</Vor-_x0020_Nachname>
-<MA-Kürzel>KS</MA-Kürzel>
+<Name>Kari Sointula</Name>
+<Kuerzel>KS</Kuerzel>
 <Anmeldename>ksointula</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Karin Metzner</Vor-_x0020_Nachname>
+<Name>Karin Metzner</Name>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Karsten Mühle</Vor-_x0020_Nachname>
-<MA-Kürzel>KM</MA-Kürzel>
+<Name>Karsten Mühle</Name>
+<Kuerzel>KM</Kuerzel>
 <Anmeldename>kmuehle</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Karsten Wackenhut</Vor-_x0020_Nachname>
-<MA-Kürzel>KW</MA-Kürzel>
+<Name>Karsten Wackenhut</Name>
+<Kuerzel>KW</Kuerzel>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Kartikeswar Koppula</Vor-_x0020_Nachname>
-<MA-Kürzel>KK</MA-Kürzel>
+<Name>Kartikeswar Koppula</Name>
+<Kuerzel>KK</Kuerzel>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Kathrin Ankert</Vor-_x0020_Nachname>
-<MA-Kürzel>KA</MA-Kürzel>
+<Name>Kathrin Ankert</Name>
+<Kuerzel>KA</Kuerzel>
 <Anmeldename>kankert</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Kerstin Risske</Vor-_x0020_Nachname>
-<MA-Kürzel>KR</MA-Kürzel>
+<Name>Kerstin Risske</Name>
+<Kuerzel>KR</Kuerzel>
 <Anmeldename>krisske</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Kerstin Wendt</Vor-_x0020_Nachname>
-<MA-Kürzel>KW</MA-Kürzel>
+<Name>Kerstin Wendt</Name>
+<Kuerzel>KW</Kuerzel>
 <Anmeldename>kwendt</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Kirsten Knuth</Vor-_x0020_Nachname>
-<MA-Kürzel>KK</MA-Kürzel>
+<Name>Kirsten Knuth</Name>
+<Kuerzel>KK</Kuerzel>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Klaus Rößler</Vor-_x0020_Nachname>
-<MA-Kürzel>KR</MA-Kürzel>
+<Name>Klaus Rößler</Name>
+<Kuerzel>KR</Kuerzel>
 <Anmeldename>kroessler</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Kostas Achilas</Vor-_x0020_Nachname>
-<MA-Kürzel>KA</MA-Kürzel>
+<Name>Kostas Achilas</Name>
+<Kuerzel>KA</Kuerzel>
 <Anmeldename>kachilas</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Kristin Geiseler</Vor-_x0020_Nachname>
+<Name>Kristin Geiseler</Name>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Kristina Vladic</Vor-_x0020_Nachname>
-<MA-Kürzel>KV</MA-Kürzel>
+<Name>Kristina Vladic</Name>
+<Kuerzel>KV</Kuerzel>
 <Anmeldename>kvladic</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Lars Hoppach</Vor-_x0020_Nachname>
-<MA-Kürzel>LH</MA-Kürzel>
+<Name>Lars Hoppach</Name>
+<Kuerzel>LH</Kuerzel>
 <Anmeldename>lhoppach</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Laurin Horst</Vor-_x0020_Nachname>
-<MA-Kürzel>LH</MA-Kürzel>
+<Name>Laurin Horst</Name>
+<Kuerzel>LH</Kuerzel>
 <Anmeldename>lhorst</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Leticia Padilla</Vor-_x0020_Nachname>
-<MA-Kürzel>LP</MA-Kürzel>
+<Name>Leticia Padilla</Name>
+<Kuerzel>LP</Kuerzel>
 <Anmeldename>lpadilla</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Libor Toman</Vor-_x0020_Nachname>
-<MA-Kürzel>LT</MA-Kürzel>
+<Name>Libor Toman</Name>
+<Kuerzel>LT</Kuerzel>
 <Anmeldename>ltoman</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Lorenz Wackenhut</Vor-_x0020_Nachname>
+<Name>Lorenz Wackenhut</Name>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Lothar Glück</Vor-_x0020_Nachname>
-<MA-Kürzel>LG</MA-Kürzel>
+<Name>Lothar Glück</Name>
+<Kuerzel>LG</Kuerzel>
 <Anmeldename>lglueck</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Luis Eduardo Rodriguez Apolinar</Vor-_x0020_Nachname>
-<MA-Kürzel>LR</MA-Kürzel>
+<Name>Luis Eduardo Rodriguez Apolinar</Name>
+<Kuerzel>LR</Kuerzel>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Luisa Aslanidis</Vor-_x0020_Nachname>
-<MA-Kürzel>LA</MA-Kürzel>
+<Name>Luisa Aslanidis</Name>
+<Kuerzel>LA</Kuerzel>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Luisa Sieveking</Vor-_x0020_Nachname>
+<Name>Luisa Sieveking</Name>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Lukas Konrad</Vor-_x0020_Nachname>
-<MA-Kürzel>LK</MA-Kürzel>
+<Name>Lukas Konrad</Name>
+<Kuerzel>LK</Kuerzel>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Lydia Klein</Vor-_x0020_Nachname>
-<MA-Kürzel>LK</MA-Kürzel>
+<Name>Lydia Klein</Name>
+<Kuerzel>LK</Kuerzel>
 <Anmeldename>lklein</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Lydia Napieraj</Vor-_x0020_Nachname>
-<MA-Kürzel>LN</MA-Kürzel>
+<Name>Lydia Napieraj</Name>
+<Kuerzel>LN</Kuerzel>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Maira Galindo Rusitschka</Vor-_x0020_Nachname>
-<MA-Kürzel>MGR</MA-Kürzel>
+<Name>Maira Galindo Rusitschka</Name>
+<Kuerzel>MGR</Kuerzel>
 <Anmeldename>maira.galindo-rusitschka</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Maja Jeremic</Vor-_x0020_Nachname>
+<Name>Maja Jeremic</Name>
 <Anmeldename>mjeremic</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Manfred Rasch</Vor-_x0020_Nachname>
-<MA-Kürzel>MR</MA-Kürzel>
+<Name>Manfred Rasch</Name>
+<Kuerzel>MR</Kuerzel>
 <Anmeldename>mrasch</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Marco Kittel</Vor-_x0020_Nachname>
-<MA-Kürzel>MKi</MA-Kürzel>
+<Name>Marco Kittel</Name>
+<Kuerzel>MKi</Kuerzel>
 <Anmeldename>mkittel</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Marco Körner</Vor-_x0020_Nachname>
+<Name>Marco Körner</Name>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Marcus Edel</Vor-_x0020_Nachname>
-<MA-Kürzel>ME</MA-Kürzel>
+<Name>Marcus Edel</Name>
+<Kuerzel>ME</Kuerzel>
 <Anmeldename>marcus.edel</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Marcus Könitz</Vor-_x0020_Nachname>
-<MA-Kürzel>MKö</MA-Kürzel>
+<Name>Marcus Könitz</Name>
+<Kuerzel>MKö</Kuerzel>
 <Anmeldename>mkoenitz</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Margarete Dippel</Vor-_x0020_Nachname>
-<MA-Kürzel>MD</MA-Kürzel>
+<Name>Margarete Dippel</Name>
+<Kuerzel>MD</Kuerzel>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Marija Tamburic</Vor-_x0020_Nachname>
+<Name>Marija Tamburic</Name>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Mario Knuth</Vor-_x0020_Nachname>
-<MA-Kürzel>MKn</MA-Kürzel>
+<Name>Mario Knuth</Name>
+<Kuerzel>MKn</Kuerzel>
 <Anmeldename>mknuth</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Mario Pejak</Vor-_x0020_Nachname>
-<MA-Kürzel>MPe</MA-Kürzel>
+<Name>Mario Pejak</Name>
+<Kuerzel>MPe</Kuerzel>
 <Anmeldename>mpejak</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Marko Krajinovic</Vor-_x0020_Nachname>
+<Name>Marko Krajinovic</Name>
 <Anmeldename>MK</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Markus Gloy</Vor-_x0020_Nachname>
-<MA-Kürzel>MG</MA-Kürzel>
+<Name>Markus Gloy</Name>
+<Kuerzel>MG</Kuerzel>
 <Anmeldename>mgloy</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Marlon Viloria</Vor-_x0020_Nachname>
-<MA-Kürzel>MV</MA-Kürzel>
+<Name>Marlon Viloria</Name>
+<Kuerzel>MV</Kuerzel>
 <Anmeldename>mviloria</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Marten Eriksson</Vor-_x0020_Nachname>
+<Name>Marten Eriksson</Name>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Martin Raucina</Vor-_x0020_Nachname>
-<MA-Kürzel>MRa</MA-Kürzel>
+<Name>Martin Raucina</Name>
+<Kuerzel>MRa</Kuerzel>
 <Anmeldename>mraucina</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Martin Rietig</Vor-_x0020_Nachname>
-<MA-Kürzel>MRi</MA-Kürzel>
+<Name>Martin Rietig</Name>
+<Kuerzel>MRi</Kuerzel>
 <Anmeldename>mrietig</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Martina Neumann</Vor-_x0020_Nachname>
-<MA-Kürzel>MN</MA-Kürzel>
+<Name>Martina Neumann</Name>
+<Kuerzel>MN</Kuerzel>
 <Anmeldename>mneumann</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Matthias Krüger</Vor-_x0020_Nachname>
-<MA-Kürzel>MK</MA-Kürzel>
+<Name>Matthias Krüger</Name>
+<Kuerzel>MK</Kuerzel>
 <Anmeldename>mkrueger</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Matthias Müller</Vor-_x0020_Nachname>
+<Name>Matthias Müller</Name>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Maxim Kronberg</Vor-_x0020_Nachname>
+<Name>Maxim Kronberg</Name>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Megha Rana</Vor-_x0020_Nachname>
-<MA-Kürzel>MR</MA-Kürzel>
+<Name>Megha Rana</Name>
+<Kuerzel>MR</Kuerzel>
 <Anmeldename>megha.rana</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Mehmet Iltizer</Vor-_x0020_Nachname>
-<MA-Kürzel>MeI</MA-Kürzel>
+<Name>Mehmet Iltizer</Name>
+<Kuerzel>MeI</Kuerzel>
 <Anmeldename>miltizer</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Michael Bitterlich</Vor-_x0020_Nachname>
-<MA-Kürzel>MB</MA-Kürzel>
+<Name>Michael Bitterlich</Name>
+<Kuerzel>MB</Kuerzel>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Michael Frey</Vor-_x0020_Nachname>
-<MA-Kürzel>MFr</MA-Kürzel>
+<Name>Michael Frey</Name>
+<Kuerzel>MFr</Kuerzel>
 <Anmeldename>mfrey</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Michael Hellmig</Vor-_x0020_Nachname>
-<MA-Kürzel>MH</MA-Kürzel>
+<Name>Michael Hellmig</Name>
+<Kuerzel>MH</Kuerzel>
 <Anmeldename>mhellmig</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Michael Illgen</Vor-_x0020_Nachname>
-<MA-Kürzel>MiI</MA-Kürzel>
+<Name>Michael Illgen</Name>
+<Kuerzel>MiI</Kuerzel>
 <Anmeldename>millgen</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Michael Jürges</Vor-_x0020_Nachname>
-<MA-Kürzel>MJ</MA-Kürzel>
+<Name>Michael Jürges</Name>
+<Kuerzel>MJ</Kuerzel>
 <Anmeldename>mjuerges</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Michael Single</Vor-_x0020_Nachname>
-<MA-Kürzel>MS</MA-Kürzel>
+<Name>Michael Single</Name>
+<Kuerzel>MS</Kuerzel>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Michael Stichnothe</Vor-_x0020_Nachname>
-<MA-Kürzel>MS</MA-Kürzel>
+<Name>Michael Stichnothe</Name>
+<Kuerzel>MS</Kuerzel>
 <Anmeldename>mstichnothe</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Michael Wünnenberg</Vor-_x0020_Nachname>
+<Name>Michael Wünnenberg</Name>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Michael Zesche</Vor-_x0020_Nachname>
-<MA-Kürzel>MZ</MA-Kürzel>
+<Name>Michael Zesche</Name>
+<Kuerzel>MZ</Kuerzel>
 <Anmeldename>mzesche</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Mihailo Celebic</Vor-_x0020_Nachname>
+<Name>Mihailo Celebic</Name>
 <Anmeldename>mcelebic</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Mike Pausin</Vor-_x0020_Nachname>
-<MA-Kürzel>MP</MA-Kürzel>
+<Name>Mike Pausin</Name>
+<Kuerzel>MP</Kuerzel>
 <Anmeldename>mpausin</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Milena Dasic</Vor-_x0020_Nachname>
+<Name>Mikhail Troupyanskiy</Name>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Milena Dragozova</Vor-_x0020_Nachname>
-<MA-Kürzel>MD</MA-Kürzel>
+<Name>Milena Dasic</Name>
+</TAB_R_Mitarbeiter_für_Ausgabe>
+<TAB_R_Mitarbeiter_für_Ausgabe>
+<Name>Milena Dragozova</Name>
+<Kuerzel>MD</Kuerzel>
 <Anmeldename>mdragozova</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Milena Tosic</Vor-_x0020_Nachname>
-<MA-Kürzel>MT</MA-Kürzel>
+<Name>Milena Tosic</Name>
+<Kuerzel>MT</Kuerzel>
 <Anmeldename>mtosic</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Milica Mihajlovic</Vor-_x0020_Nachname>
+<Name>Milica Mihajlovic</Name>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Miljan Cavic</Vor-_x0020_Nachname>
-<MA-Kürzel>MC</MA-Kürzel>
+<Name>Miljan Cavic</Name>
+<Kuerzel>MC</Kuerzel>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Mina Karami</Vor-_x0020_Nachname>
+<Name>Mina Karami</Name>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Mirko Wojeikowski</Vor-_x0020_Nachname>
-<MA-Kürzel>MW</MA-Kürzel>
+<Name>Mirko Wojeikowski</Name>
+<Kuerzel>MW</Kuerzel>
 <Anmeldename>mwojeikowski</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Miroslav Videnov</Vor-_x0020_Nachname>
-<MA-Kürzel>MV</MA-Kürzel>
+<Name>Miroslav Videnov</Name>
+<Kuerzel>MV</Kuerzel>
 <Anmeldename>mvidenov</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Mladen Ilic</Vor-_x0020_Nachname>
-<MA-Kürzel>MI</MA-Kürzel>
+<Name>Mladen Ilic</Name>
+<Kuerzel>MI</Kuerzel>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Mohamed Taha</Vor-_x0020_Nachname>
-<MA-Kürzel>MY</MA-Kürzel>
+<Name>Mohamed Taha</Name>
+<Kuerzel>MY</Kuerzel>
 <Anmeldename>mohamed.taha</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Mohammed alJaser</Vor-_x0020_Nachname>
+<Name>Mohammed alJaser</Name>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Mohammed Bilal</Vor-_x0020_Nachname>
+<Name>Mohammed Bilal</Name>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Mohammet Dogan</Vor-_x0020_Nachname>
-<MA-Kürzel>md</MA-Kürzel>
+<Name>Mohammet Dogan</Name>
+<Kuerzel>md</Kuerzel>
 <Anmeldename>mdogan</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Mohamoud Farah</Vor-_x0020_Nachname>
-<MA-Kürzel>MFa</MA-Kürzel>
+<Name>Mohamoud Farah</Name>
+<Kuerzel>MFa</Kuerzel>
 <Anmeldename>mfarah</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>mustermann</Vor-_x0020_Nachname>
-<MA-Kürzel>mu</MA-Kürzel>
+<Name>mustermann</Name>
+<Kuerzel>mu</Kuerzel>
 <Anmeldename>mumu</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Neam Almasri</Vor-_x0020_Nachname>
-<MA-Kürzel>NA</MA-Kürzel>
+<Name>Neam Almasri</Name>
+<Kuerzel>NA</Kuerzel>
 <Anmeldename>nalmasri</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Nedzad Cohodarevic</Vor-_x0020_Nachname>
-<MA-Kürzel>NC</MA-Kürzel>
+<Name>Nedzad Cohodarevic</Name>
+<Kuerzel>NC</Kuerzel>
 <Anmeldename>ncohodarevic</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Nemanja Gak</Vor-_x0020_Nachname>
+<Name>Nemanja Gak</Name>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Nemanja Randjelovic</Vor-_x0020_Nachname>
+<Name>Nemanja Randjelovic</Name>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Nenad Pejcic</Vor-_x0020_Nachname>
-<MA-Kürzel>NP</MA-Kürzel>
+<Name>Nenad Pejcic</Name>
+<Kuerzel>NP</Kuerzel>
 <Anmeldename>npejcic</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Nicole Himmelweit</Vor-_x0020_Nachname>
-<MA-Kürzel>NH</MA-Kürzel>
+<Name>Nicole Himmelweit</Name>
+<Kuerzel>NH</Kuerzel>
 <Anmeldename>nhimmelweit</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Nihat Yesil</Vor-_x0020_Nachname>
-<MA-Kürzel>NY</MA-Kürzel>
+<Name>Nihat Yesil</Name>
+<Kuerzel>NY</Kuerzel>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Nikola Milosevic</Vor-_x0020_Nachname>
-<MA-Kürzel>NM</MA-Kürzel>
+<Name>Nikola Milosevic</Name>
+<Kuerzel>NM</Kuerzel>
 <Anmeldename>nmilosevic</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Nikola Petrovic</Vor-_x0020_Nachname>
-<MA-Kürzel>NP</MA-Kürzel>
+<Name>Nikola Petrovic</Name>
+<Kuerzel>NP</Kuerzel>
 <Anmeldename>npetrovic</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Nikola Stajin</Vor-_x0020_Nachname>
+<Name>Nikola Stajin</Name>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Nikolay Harizanov</Vor-_x0020_Nachname>
-<MA-Kürzel>NiHa</MA-Kürzel>
+<Name>Nikolay Harizanov</Name>
+<Kuerzel>NiHa</Kuerzel>
 <Anmeldename>nharizanov</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Nishant Nigam</Vor-_x0020_Nachname>
-<MA-Kürzel>NN</MA-Kürzel>
+<Name>Nishant Nigam</Name>
+<Kuerzel>NN</Kuerzel>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Norbert Rajewski</Vor-_x0020_Nachname>
-<MA-Kürzel>NR</MA-Kürzel>
+<Name>Norbert Rajewski</Name>
+<Kuerzel>NR</Kuerzel>
 <Anmeldename>nrajewski</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Nuhad Shaabani</Vor-_x0020_Nachname>
-<MA-Kürzel>NS</MA-Kürzel>
+<Name>Nuhad Shaabani</Name>
+<Kuerzel>NS</Kuerzel>
 <Anmeldename>nuhad.shaabani</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Obaid Ullah</Vor-_x0020_Nachname>
+<Name>Obaid Ullah</Name>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Olaf Brandt</Vor-_x0020_Nachname>
-<MA-Kürzel>ob</MA-Kürzel>
+<Name>Olaf Brandt</Name>
+<Kuerzel>ob</Kuerzel>
 <Anmeldename>obrandt</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Oliver Braz</Vor-_x0020_Nachname>
-<MA-Kürzel>OB</MA-Kürzel>
+<Name>Oliver Braz</Name>
+<Kuerzel>OB</Kuerzel>
 <Anmeldename>obraz</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Oliver Redlich</Vor-_x0020_Nachname>
-<MA-Kürzel>OR</MA-Kürzel>
+<Name>Oliver Hufnagel</Name>
+</TAB_R_Mitarbeiter_für_Ausgabe>
+<TAB_R_Mitarbeiter_für_Ausgabe>
+<Name>Oliver Redlich</Name>
+<Kuerzel>OR</Kuerzel>
 <Anmeldename>oredlich</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Ondrej Vanek</Vor-_x0020_Nachname>
-<MA-Kürzel>OV</MA-Kürzel>
+<Name>Ondrej Vanek</Name>
+<Kuerzel>OV</Kuerzel>
 <Anmeldename>ovanek</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Patric Bosch</Vor-_x0020_Nachname>
+<Name>Patric Bosch</Name>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Patrick Theurer</Vor-_x0020_Nachname>
+<Name>Patrick Theurer</Name>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Patrik Wallin</Vor-_x0020_Nachname>
-<MA-Kürzel>PW</MA-Kürzel>
+<Name>Patrik Wallin</Name>
+<Kuerzel>PW</Kuerzel>
 <Anmeldename>pwallin</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Patrycja Bielaszewska</Vor-_x0020_Nachname>
+<Name>Patrycja Bielaszewska</Name>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Paul Chevelev</Vor-_x0020_Nachname>
-<MA-Kürzel>PC</MA-Kürzel>
+<Name>Paul Chevelev</Name>
+<Kuerzel>PC</Kuerzel>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Paul Herold</Vor-_x0020_Nachname>
-<MA-Kürzel>PH</MA-Kürzel>
+<Name>Paul Herold</Name>
+<Kuerzel>PH</Kuerzel>
 <Anmeldename>paul.herold</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Paul Schreiner</Vor-_x0020_Nachname>
-<MA-Kürzel>PS</MA-Kürzel>
+<Name>Paul Schreiner</Name>
+<Kuerzel>PS</Kuerzel>
 <Anmeldename>pschreiner</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Paulo Arbelaez</Vor-_x0020_Nachname>
-<MA-Kürzel>PA</MA-Kürzel>
+<Name>Paulo Arbelaez</Name>
+<Kuerzel>PA</Kuerzel>
 <Anmeldename>parbelaez</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Peter Hahndorf</Vor-_x0020_Nachname>
-<MA-Kürzel>PH</MA-Kürzel>
+<Name>Peter Hahndorf</Name>
+<Kuerzel>PH</Kuerzel>
 <Anmeldename>phahndorf</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Peter Hahne</Vor-_x0020_Nachname>
-<MA-Kürzel>PHa</MA-Kürzel>
+<Name>Peter Hahne</Name>
+<Kuerzel>PHa</Kuerzel>
 <Anmeldename>phahne</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Peter Klein</Vor-_x0020_Nachname>
-<MA-Kürzel>PK</MA-Kürzel>
+<Name>Peter Klein</Name>
+<Kuerzel>PK</Kuerzel>
 <Anmeldename>pklein</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Peter Schebesta</Vor-_x0020_Nachname>
-<MA-Kürzel>PS</MA-Kürzel>
+<Name>Peter Schebesta</Name>
+<Kuerzel>PS</Kuerzel>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Peter Schubert</Vor-_x0020_Nachname>
-<MA-Kürzel>PS</MA-Kürzel>
+<Name>Peter Schubert</Name>
+<Kuerzel>PS</Kuerzel>
 <Anmeldename>pschubert</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Philip Mense</Vor-_x0020_Nachname>
-<MA-Kürzel>PM</MA-Kürzel>
+<Name>Philip Mense</Name>
+<Kuerzel>PM</Kuerzel>
 <Anmeldename>pmense</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Philipp Christ</Vor-_x0020_Nachname>
+<Name>Philipp Christ</Name>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Philipp Fabisch</Vor-_x0020_Nachname>
-<MA-Kürzel>PF</MA-Kürzel>
+<Name>Philipp Fabisch</Name>
+<Kuerzel>PF</Kuerzel>
 <Anmeldename>pfabisch</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Philipp Schach</Vor-_x0020_Nachname>
+<Name>Philipp Schach</Name>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Radovan Javorka</Vor-_x0020_Nachname>
-<MA-Kürzel>RJ</MA-Kürzel>
+<Name>Radovan Javorka</Name>
+<Kuerzel>RJ</Kuerzel>
 <Anmeldename>rjavorka</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Raik Kummerow</Vor-_x0020_Nachname>
-<MA-Kürzel>RKu</MA-Kürzel>
+<Name>Raik Kummerow</Name>
+<Kuerzel>RKu</Kuerzel>
 <Anmeldename>rkummerow</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Rainer Dandyk</Vor-_x0020_Nachname>
-<MA-Kürzel>RA</MA-Kürzel>
+<Name>Rainer Dandyk</Name>
+<Kuerzel>RA</Kuerzel>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Rainer Frank</Vor-_x0020_Nachname>
-<MA-Kürzel>RF</MA-Kürzel>
+<Name>Rainer Frank</Name>
+<Kuerzel>RF</Kuerzel>
 <Anmeldename>rfrank</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Ralf Dietl</Vor-_x0020_Nachname>
-<MA-Kürzel>RD</MA-Kürzel>
+<Name>Ralf Dietl</Name>
+<Kuerzel>RD</Kuerzel>
 <Anmeldename>rdietl</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Ralf Klingenberg</Vor-_x0020_Nachname>
-<MA-Kürzel>RK</MA-Kürzel>
+<Name>Ralf Klingenberg</Name>
+<Kuerzel>RK</Kuerzel>
 <Anmeldename>rklingenberg</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Ralph Kulas</Vor-_x0020_Nachname>
-<MA-Kürzel>RKu</MA-Kürzel>
+<Name>Ralph Kulas</Name>
+<Kuerzel>RKu</Kuerzel>
 <Anmeldename>rkulas</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Razvan Sisca</Vor-_x0020_Nachname>
-<MA-Kürzel>RSi</MA-Kürzel>
+<Name>Razvan Sisca</Name>
+<Kuerzel>RSi</Kuerzel>
 <Anmeldename>rsisca</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Razvan Siscu</Vor-_x0020_Nachname>
-<MA-Kürzel>RZ</MA-Kürzel>
+<Name>Razvan Siscu</Name>
+<Kuerzel>RZ</Kuerzel>
 <Anmeldename>rsiscu</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Rea Ezgeta</Vor-_x0020_Nachname>
-<MA-Kürzel>RE</MA-Kürzel>
+<Name>Rea Ezgeta</Name>
+<Kuerzel>RE</Kuerzel>
 <Anmeldename>rezgeta</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Reinhard Siewert</Vor-_x0020_Nachname>
-<MA-Kürzel>RS</MA-Kürzel>
+<Name>Reinhard Siewert</Name>
+<Kuerzel>RS</Kuerzel>
 <Anmeldename>rsiewert</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Renaldo Siwek</Vor-_x0020_Nachname>
-<MA-Kürzel>RS</MA-Kürzel>
+<Name>Renaldo Siwek</Name>
+<Kuerzel>RS</Kuerzel>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Richard Nemeth</Vor-_x0020_Nachname>
+<Name>Richard Nemeth</Name>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Richard Pastor</Vor-_x0020_Nachname>
+<Name>Richard Pastor</Name>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Richard Schiemenz</Vor-_x0020_Nachname>
-<MA-Kürzel>RS</MA-Kürzel>
+<Name>Richard Schiemenz</Name>
+<Kuerzel>RS</Kuerzel>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Roland Tallosi</Vor-_x0020_Nachname>
-<MA-Kürzel>RT</MA-Kürzel>
+<Name>Roland Tallosi</Name>
+<Kuerzel>RT</Kuerzel>
 <Anmeldename>rtallosi</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Rolf Haimerl</Vor-_x0020_Nachname>
-<MA-Kürzel>RH</MA-Kürzel>
+<Name>Rolf Haimerl</Name>
+<Kuerzel>RH</Kuerzel>
 <Anmeldename>rhaimerl</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Rüdiger Wolter</Vor-_x0020_Nachname>
-<MA-Kürzel>RW</MA-Kürzel>
+<Name>Rüdiger Wolter</Name>
+<Kuerzel>RW</Kuerzel>
 <Anmeldename>rwolter</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Rudolf Püschel</Vor-_x0020_Nachname>
-<MA-Kürzel>RP</MA-Kürzel>
+<Name>Rudolf Püschel</Name>
+<Kuerzel>RP</Kuerzel>
 <Anmeldename>rpueschel</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Rudolf Rekk</Vor-_x0020_Nachname>
+<Name>Rudolf Rekk</Name>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Ryhor Ptashynski</Vor-_x0020_Nachname>
-<MA-Kürzel>RP</MA-Kürzel>
+<Name>Ryhor Ptashynski</Name>
+<Kuerzel>RP</Kuerzel>
 <Anmeldename>rptashynski</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Saisreekanth Yellisetty</Vor-_x0020_Nachname>
-<MA-Kürzel>SY</MA-Kürzel>
+<Name>Saisreekanth Yellisetty</Name>
+<Kuerzel>SY</Kuerzel>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Sandra Nasr</Vor-_x0020_Nachname>
+<Name>Sandra Nasr</Name>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Sanja Bjekovic</Vor-_x0020_Nachname>
-<MA-Kürzel>SB</MA-Kürzel>
+<Name>Sanja Bjekovic</Name>
+<Kuerzel>SB</Kuerzel>
 <Anmeldename>sbjekovic</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Sanjeev Shankar</Vor-_x0020_Nachname>
+<Name>Sanjeev Shankar</Name>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Sascha Bluhm</Vor-_x0020_Nachname>
-<MA-Kürzel>SBl</MA-Kürzel>
+<Name>Sascha Bluhm</Name>
+<Kuerzel>SBl</Kuerzel>
 <Anmeldename>sbluhm</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Sascha John</Vor-_x0020_Nachname>
-<MA-Kürzel>SJ</MA-Kürzel>
+<Name>Sascha John</Name>
+<Kuerzel>SJ</Kuerzel>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Sebastian Mann</Vor-_x0020_Nachname>
-<MA-Kürzel>SeM</MA-Kürzel>
+<Name>Sebastian Mann</Name>
+<Kuerzel>SeM</Kuerzel>
 <Anmeldename>smann</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Simon Knott</Vor-_x0020_Nachname>
-<MA-Kürzel>SK</MA-Kürzel>
+<Name>Simon Knott</Name>
+<Kuerzel>SK</Kuerzel>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Simone Heinemann</Vor-_x0020_Nachname>
-<MA-Kürzel>SH</MA-Kürzel>
+<Name>Simone Heinemann</Name>
+<Kuerzel>SH</Kuerzel>
 <Anmeldename>sheinemann</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Simone Heuer</Vor-_x0020_Nachname>
-<MA-Kürzel>SHe</MA-Kürzel>
+<Name>Simone Heuer</Name>
+<Kuerzel>SHe</Kuerzel>
 <Anmeldename>sheuer</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Sirko Tietz</Vor-_x0020_Nachname>
+<Name>Sirko Tietz</Name>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Slaven Tomasevic</Vor-_x0020_Nachname>
+<Name>Slaven Tomasevic</Name>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Srinivasulu Challa</Vor-_x0020_Nachname>
+<Name>Srinivasulu Challa</Name>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Stefan Bachmann</Vor-_x0020_Nachname>
-<MA-Kürzel>SBa</MA-Kürzel>
+<Name>Stefan Bachmann</Name>
+<Kuerzel>SBa</Kuerzel>
 <Anmeldename>sbachmann</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Stefan Gis</Vor-_x0020_Nachname>
-<MA-Kürzel>SG</MA-Kürzel>
+<Name>Stefan Gis</Name>
+<Kuerzel>SG</Kuerzel>
 <Anmeldename>sgis</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Stefan Maier</Vor-_x0020_Nachname>
-<MA-Kürzel>StM</MA-Kürzel>
+<Name>Stefan Maier</Name>
+<Kuerzel>StM</Kuerzel>
 <Anmeldename>smaier</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Stefan Richter</Vor-_x0020_Nachname>
+<Name>Stefan Richter</Name>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Stefcho Iloski</Vor-_x0020_Nachname>
+<Name>Stefcho Iloski</Name>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Steffen Schewe</Vor-_x0020_Nachname>
-<MA-Kürzel>StS</MA-Kürzel>
+<Name>Steffen Schewe</Name>
+<Kuerzel>StS</Kuerzel>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Sten Rüdiger</Vor-_x0020_Nachname>
+<Name>Sten Rüdiger</Name>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Steven Schulz</Vor-_x0020_Nachname>
+<Name>Steven Schulz</Name>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Stine Wiecha</Vor-_x0020_Nachname>
-<MA-Kürzel>SW</MA-Kürzel>
+<Name>Stine Wiecha</Name>
+<Kuerzel>SW</Kuerzel>
 <Anmeldename>swiecha</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Susann Urbanek</Vor-_x0020_Nachname>
-<MA-Kürzel>SU</MA-Kürzel>
+<Name>Susann Urbanek</Name>
+<Kuerzel>SU</Kuerzel>
 <Anmeldename>surbanek</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Sven Fischer</Vor-_x0020_Nachname>
-<MA-Kürzel>SF</MA-Kürzel>
+<Name>Sven Fischer</Name>
+<Kuerzel>SF</Kuerzel>
 <Anmeldename>sfischer</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Tabitha Becker</Vor-_x0020_Nachname>
-<MA-Kürzel>TB</MA-Kürzel>
+<Name>Tabitha Becker</Name>
+<Kuerzel>TB</Kuerzel>
 <Anmeldename>tbecker</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Taiba Hodzic</Vor-_x0020_Nachname>
-<MA-Kürzel>TH</MA-Kürzel>
+<Name>Taiba Hodzic</Name>
+<Kuerzel>TH</Kuerzel>
 <Anmeldename>thodzic</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Tamara Haimerl</Vor-_x0020_Nachname>
-<MA-Kürzel>TaMa</MA-Kürzel>
+<Name>Tamara Haimerl</Name>
+<Kuerzel>TaMa</Kuerzel>
 <Anmeldename>thaimerl</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Tamara Savic</Vor-_x0020_Nachname>
+<Name>Tamara Savic</Name>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Tarik Ibrahimovic</Vor-_x0020_Nachname>
-<MA-Kürzel>TI</MA-Kürzel>
+<Name>Tarik Ibrahimovic</Name>
+<Kuerzel>TI</Kuerzel>
 <Anmeldename>tibrahimovic</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Tatjana Savkovic</Vor-_x0020_Nachname>
+<Name>Tatjana Savkovic</Name>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Thai Tai Tran</Vor-_x0020_Nachname>
+<Name>Thai Tai Tran</Name>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Thanin Vongekornvudhi</Vor-_x0020_Nachname>
-<MA-Kürzel>TV</MA-Kürzel>
+<Name>Thanin Vongekornvudhi</Name>
+<Kuerzel>TV</Kuerzel>
 <Anmeldename>tvongekornvudhi</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Thiemo Rings</Vor-_x0020_Nachname>
-<MA-Kürzel>TR</MA-Kürzel>
+<Name>Thiemo Rings</Name>
+<Kuerzel>TR</Kuerzel>
 <Anmeldename>trings</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Thomas Baule</Vor-_x0020_Nachname>
-<MA-Kürzel>tb</MA-Kürzel>
+<Name>Thomas Baule</Name>
+<Kuerzel>tb</Kuerzel>
 <Anmeldename>tbaule</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Thomas Glatz</Vor-_x0020_Nachname>
-<MA-Kürzel>TG</MA-Kürzel>
+<Name>Thomas Glatz</Name>
+<Kuerzel>TG</Kuerzel>
 <Anmeldename>tglatz</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Thomas Koch</Vor-_x0020_Nachname>
-<MA-Kürzel>TKo</MA-Kürzel>
+<Name>Thomas Koch</Name>
+<Kuerzel>TKo</Kuerzel>
 <Anmeldename>tkoch</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Thomas Schlörike</Vor-_x0020_Nachname>
-<MA-Kürzel>TS</MA-Kürzel>
+<Name>Thomas Schlörike</Name>
+<Kuerzel>TS</Kuerzel>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Thomas Soltwedel</Vor-_x0020_Nachname>
-<MA-Kürzel>TS</MA-Kürzel>
+<Name>Thomas Soltwedel</Name>
+<Kuerzel>TS</Kuerzel>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Thomas Tverdenko</Vor-_x0020_Nachname>
-<MA-Kürzel>TT</MA-Kürzel>
+<Name>Thomas Tverdenko</Name>
+<Kuerzel>TT</Kuerzel>
 <Anmeldename>ttverdenko</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Thomas Volmer</Vor-_x0020_Nachname>
-<MA-Kürzel>TV</MA-Kürzel>
+<Name>Thomas Volmer</Name>
+<Kuerzel>TV</Kuerzel>
 <Anmeldename>tvolmer</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Thomas Wellbrock</Vor-_x0020_Nachname>
-<MA-Kürzel>TW</MA-Kürzel>
+<Name>Thomas Wellbrock</Name>
+<Kuerzel>TW</Kuerzel>
 <Anmeldename>twellbrock</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Thore Bödecker</Vor-_x0020_Nachname>
-<MA-Kürzel>TBo</MA-Kürzel>
+<Name>Thore Bödecker</Name>
+<Kuerzel>TBo</Kuerzel>
 <Anmeldename>tboedecker</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Thorsten Sievers</Vor-_x0020_Nachname>
-<MA-Kürzel>TS</MA-Kürzel>
+<Name>Thorsten Sievers</Name>
+<Kuerzel>TS</Kuerzel>
 <Anmeldename>tsievers</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Tien Thinh Pham</Vor-_x0020_Nachname>
-<MA-Kürzel>TTP</MA-Kürzel>
+<Name>Tien Thinh Pham</Name>
+<Kuerzel>TTP</Kuerzel>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Tijana Svilar</Vor-_x0020_Nachname>
+<Name>Tijana Svilar</Name>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Timo Britsch</Vor-_x0020_Nachname>
-<MA-Kürzel>TB</MA-Kürzel>
+<Name>Tim Schweitzer</Name>
+</TAB_R_Mitarbeiter_für_Ausgabe>
+<TAB_R_Mitarbeiter_für_Ausgabe>
+<Name>Timo Britsch</Name>
+<Kuerzel>TB</Kuerzel>
 <Anmeldename>tbritsch</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Tomas Kratochvil</Vor-_x0020_Nachname>
-<MA-Kürzel>TK</MA-Kürzel>
+<Name>Tomas Kratochvil</Name>
+<Kuerzel>TK</Kuerzel>
 <Anmeldename>tkratochvil</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Tomislav Miksa</Vor-_x0020_Nachname>
-<MA-Kürzel>TM</MA-Kürzel>
+<Name>Tomislav Miksa</Name>
+<Kuerzel>TM</Kuerzel>
 <Anmeldename>tmiksa</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Torsten Holz</Vor-_x0020_Nachname>
-<MA-Kürzel>TH</MA-Kürzel>
+<Name>Torsten Holz</Name>
+<Kuerzel>TH</Kuerzel>
 <Anmeldename>tholz</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Toshiharu 	Kobatake</Vor-_x0020_Nachname>
-<MA-Kürzel>Koba</MA-Kürzel>
+<Name>Toshiharu 	Kobatake</Name>
+<Kuerzel>Koba</Kuerzel>
 <Anmeldename>tkobatake</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Ulf Kubitza</Vor-_x0020_Nachname>
-<MA-Kürzel>UK</MA-Kürzel>
+<Name>Ulf Kubitza</Name>
+<Kuerzel>UK</Kuerzel>
 <Anmeldename>ukubitza</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Uta Moebius</Vor-_x0020_Nachname>
-<MA-Kürzel>UM</MA-Kürzel>
+<Name>Uta Moebius</Name>
+<Kuerzel>UM</Kuerzel>
 <Anmeldename>umoebius</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Veselin Markov</Vor-_x0020_Nachname>
-<MA-Kürzel>VM</MA-Kürzel>
+<Name>Veselin Markov</Name>
+<Kuerzel>VM</Kuerzel>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Vladimir Ondrik</Vor-_x0020_Nachname>
-<MA-Kürzel>VO</MA-Kürzel>
+<Name>Vladimir Ondrik</Name>
+<Kuerzel>VO</Kuerzel>
 <Anmeldename>vondrik</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Vukasin Obradovic</Vor-_x0020_Nachname>
-<MA-Kürzel>VO</MA-Kürzel>
+<Name>Vukasin Obradovic</Name>
+<Kuerzel>VO</Kuerzel>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>werner biere</Vor-_x0020_Nachname>
-<MA-Kürzel>wb</MA-Kürzel>
+<Name>werner biere</Name>
+<Kuerzel>wb</Kuerzel>
 <Anmeldename>wbiere</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Wilfried Förster</Vor-_x0020_Nachname>
-<MA-Kürzel>WF</MA-Kürzel>
+<Name>Wilfried Förster</Name>
+<Kuerzel>WF</Kuerzel>
 <Anmeldename>wfoerster</Anmeldename>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Wolfgang Balzer</Vor-_x0020_Nachname>
+<Name>Wolfgang Balzer</Name>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 <TAB_R_Mitarbeiter_für_Ausgabe>
-<Vor-_x0020_Nachname>Zornitsa Markova</Vor-_x0020_Nachname>
+<Name>Zornitsa Markova</Name>
 </TAB_R_Mitarbeiter_für_Ausgabe>
 </dataroot>

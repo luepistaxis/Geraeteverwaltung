@@ -4,12 +4,6 @@ import getpass
 import os
 from tkinter import ttk
 
-# Datenbank Verbindung
-gui_folder = os.path.dirname(os.path.abspath(__file__))
-#database_path = "K:\\IT-Assistenz\\Geräteverwaltung\\Geraeteverwaltung\\Geraeteverwaltung\\database.db"
-database_path = os.path.join(gui_folder, "..", "Datenbank", "database.db")
-connection = sqlite3.connect(database_path)
-cursor = connection.cursor()
 
 #Länge und Breite der Frames
 l = 1280
@@ -20,6 +14,14 @@ benutzername = getpass.getuser()
 
 
 class Vorgaenge(tk.Frame):
+
+    # Datenbank Verbindung
+    gui_folder = os.path.dirname(os.path.abspath(__file__))
+    #database_path = "K:\\IT-Assistenz\\Geräteverwaltung\\Geraeteverwaltung\\Geraeteverwaltung\\database.db"
+    database_path = os.path.join(gui_folder, "..", "Datenbank", "database.db")
+    connection = sqlite3.connect(database_path)
+    cursor = connection.cursor()
+
     
     def __init__(self, parent, wareneingang_btn, ausgabe_btn, warenausgang_btn, vorgaenge_btn, uebersichtMitarbeiter_btn, uebersichtGeraete_btn):
         super().__init__(parent)
@@ -32,47 +34,49 @@ class Vorgaenge(tk.Frame):
         self.uebersichtGeraete_btn = uebersichtGeraete_btn
 
     def open_vorgaenge(self):
-        buttons = [self.wareneingang_btn, self.ausgabe_btn, self.warenausgang_btn, self.vorgaenge_btn, self.uebersichtMitarbeiter_btn, self.uebersichtGeraete_btn]
-        for button in buttons:
+        self.buttons = [self.wareneingang_btn, self.ausgabe_btn, self.warenausgang_btn, self.vorgaenge_btn, self.uebersichtMitarbeiter_btn, self.uebersichtGeraete_btn]
+        for button in self.buttons:
             button.state(['!pressed'])
         self.vorgaenge_btn.state(['pressed'])
 
-        vorgaenge_frame = tk.Frame(self.parent, bg="white")
-        vorgaenge_frame.place(x=161, y=1, anchor="nw", relheight=500, relwidth=805)
+        self.vorgaenge_frame = tk.Frame(self.parent, bg="white")
+        self.vorgaenge_frame.place(x=161, y=1, anchor="nw", relheight=500, relwidth=805)
 
-        title = tk.Label(vorgaenge_frame, fg="black", bg='white', text="Alle Vorgänge", font=('Arial', 14))
+        title = tk.Label(self.vorgaenge_frame, fg="black", bg='white', text="Alle Vorgänge", font=('Arial', 14))
         title.place(x=10, y=10)
 
-        cursor.execute('SELECT Nummer, "WaBewVor-Datum", BewArt_KurzBeschreibung AS Beschreibung, InventarNr, "WaBewVor-MA_Ausgabe" AS "ausgegeben an", "WaBewVor-Benutzer" AS "bearbeitet durch" FROM Vorgang ORDER BY Nummer DESC')
-        rows = cursor.fetchall()
+        self.cursor.execute('SELECT * FROM Vorgaenge ORDER BY Nummer DESC')
+        self.rows = self.cursor.fetchall()
+        
 
-        tree = ttk.Treeview(vorgaenge_frame)
-        scrollbar = tk.Scrollbar(vorgaenge_frame, orient="vertical", command=tree.yview)
+        self.tree = ttk.Treeview(self.vorgaenge_frame)
+        scrollbar = tk.Scrollbar(self.vorgaenge_frame, orient="vertical", command=self.tree.yview)
         scrollbar.place(x=1081, y=60, height=620)
-        tree.configure(yscrollcommand=scrollbar.set, height=30)
+        self.tree.configure(yscrollcommand=scrollbar.set, height=30)
 
-        columns = cursor.description
+        columns = self.cursor.description
         column_names = [column[0] for column in columns]
         #column_names = column_names[1:]
-        tree['columns'] = column_names
+        self.tree['columns'] = column_names
         
-        tree.column(column_names[0], width=70)
-        tree.column(column_names[1], width=150)
-        tree.column(column_names[2], width=200)
-        tree.column(column_names[3], width=100)
-        tree.column(column_names[4], width=180)
-        tree.column(column_names[5], width=120)
+        self.tree.column(column_names[0], width=70)
+        self.tree.column(column_names[1], width=150)
+        self.tree.column(column_names[2], width=200)
+        self.tree.column(column_names[3], width=100)
+        self.tree.column(column_names[4], width=180)
+        self.tree.column(column_names[5], width=120)
 
         for column in column_names:
-            tree.heading(column, text=column)
+            self.tree.heading(column, text=column)
 
-        tree.configure(show="tree headings tree")
+        self.tree.configure(show="tree headings tree")
 
-        for row in rows:
-            tree.insert('', 'end', values=row)
+        for row in self.rows:
+            self.tree.insert('', 'end', values=row)
         
-        scrollbar.config(command=tree.yview)
+        scrollbar.config(command=self.tree.yview)
 
-        tree.configure(xscrollcommand=scrollbar.set)
+        self.tree.configure(xscrollcommand=scrollbar.set)
 
-        tree.place(x=-200, y=60)
+        self.tree.place(x=-200, y=60)
+        
